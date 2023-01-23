@@ -9,14 +9,13 @@ import * as  AOS from 'aos';
 })
 export class TextBlockComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() { 
 
     AOS.init();
-    AOS.refresh();
 
+  }
 
+  ngOnInit(): void {
   }
 
 }

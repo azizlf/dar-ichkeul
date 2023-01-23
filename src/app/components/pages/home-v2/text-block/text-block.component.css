@@ -6,8 +6,8 @@
 
 .read-more-btn{
 
-    width: 35%;
-    padding: 4% 0;
+    width: 54%;
+    padding: 5% 0 3% 0;
     border-radius: 2px;
     background-color: #da5f57;
     color: white;
@@ -18,5 +18,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+
+
+@media (max-width: 767px){
+
+
+    .read-more-btn{
+
+        font-size: 26px;
+
+    }
 
 }

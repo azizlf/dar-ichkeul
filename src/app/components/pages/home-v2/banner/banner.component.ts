@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as  AOS from 'aos';
 
 
 @Component({
@@ -15,7 +14,7 @@ export class BannerComponent implements OnInit {
     {
       img: "assets/img/banner/04.jpg",
       tag: 'The ultimate luxury experience',
-      title: "<p>LÀ OÙ LA VIE EST PLUS DOUCE</p>",
+      title: "<p>Dar Ichkeul Le luxe et La nature</p>",
     },
     {
       img: "assets/img/banner/05.jpg",
@@ -75,8 +74,6 @@ export class BannerComponent implements OnInit {
 
   ngOnInit(): void {
 
-    AOS.init();
-    AOS.refresh();
 
   }
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
 .title {
     font-size: 42px !important;
     letter-spacing: 8px !important;
     line-height: 5vw !important;
     transform: scale(1.8);
-    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -224,7 +224,7 @@
         justify-content: space-around;
         background-color: #ffffffc4;
         position: relative;
-        border: 2px solid #8c332d;
+        border: 2px solid transparent;
         border-radius: 5px;
         margin-bottom: 5%;
 
@@ -277,7 +277,7 @@
         justify-content: space-around;
         background-color: #ffffffc4;
         position: relative;
-        border: 2px solid #8c332d;
+        border: 2px solid transparent;
         border-radius: 5px;
 
     }

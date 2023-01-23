@@ -8,7 +8,6 @@
                 <div class="navbar-close" (click)="toggleNav()">
                     <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                 </div>
-
                 <!-- Off canvas Menu  -->
                 <!-- <div class="toggle" (click)="canvasToggle()">
                     <a href="javascript:void(0)" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
@@ -33,17 +32,14 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- from pushed-item -->
                 <div class="nav-pushed-item"></div>
             </div>
-
             <!-- Site Logo -->
             <div class="site-logo">
                 <a routerLink="/" class="main-logo"><img src="assets/img/logo-white.png" alt="Logo"></a>
                 <a routerLink="/" class="sticky-logo"><img src="assets/img/logo.png" alt="Logo"></a>
             </div>
-
             <!-- Header Info Pussed To Menu Wrap -->
             <div class="nav-push-item" [ngClass]="visible ? '' : 'd-none'" (window:resize)="detectHeader()">
                 <!-- Header Info -->
