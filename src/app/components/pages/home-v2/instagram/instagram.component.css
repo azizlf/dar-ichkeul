@@ -1,0 +1,44 @@
+/*.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+    padding-left: 10px;
+    background-color: #222;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+.slick-slide img {
+    display: inline-block;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.title {
+    font-family: 'Courgette', cursive;
+    font-size: 90px;
+    margin-bottom: 6%;
+    /*margin-left: 15px;*/
+}
+
+
+/* Mobile xs */
+
+@media (max-width: 420px) {
+    .title {
+        font-family: 'Courier, monospace';
+        font-size: 60px !important;
+    }
+}
+
+
+/* Mobile & Tablet Rules */
+
+@media (max-width: 767px) {
+    .title {
+        font-family: 'Courier, monospace';
+        font-size: 60px !important;
+    }
+}

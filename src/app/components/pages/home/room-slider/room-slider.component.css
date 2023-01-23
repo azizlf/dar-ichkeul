@@ -1,0 +1,5 @@
+.room-slider .rooms-slider-two .slick-current .single-rooms-box .room-desc,
+.room-slider .rooms-slider-two .slick-current .single-rooms-box .icons {
+    visibility: hidden !important;
+    /* opacity: 1; */
+}

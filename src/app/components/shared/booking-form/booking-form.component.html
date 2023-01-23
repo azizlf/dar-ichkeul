@@ -1,0 +1,49 @@
+<div class="booking-form-inner">
+    <form [formGroup]="reservationChambreForm">
+        <div class="row d-flex justify-content-between">
+
+            <!--<div class="inputs-filed mt-30">
+                    <label for="arrival-date">Arrival Date</label>
+                    <div class="icon"><i class="fal fa-calendar-alt"></i></div>
+                    <input type="text" placeholder="24th march 2022" name="arrival-date" id="arrival-date">
+                </div>-->
+            <div style="font-size: 10px" class="col-lg-3 col-md-6 mt-5">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Date d’arrivée</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date_arrive" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div style="font-size: 10px" class="col-lg-3 col-md-6 mt-5">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Date de départ</mat-label>
+                    <input matInput [matDatepicker]="picker2" formControlName="date_depart" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+
+            <!--<div class="col-lg-3 col-md-6">
+                <div class="inputs-filed mt-30">
+                    <label for="guests">Guests</label>
+                    <select name="guests" id="guests" nice-select>
+                        <option value="" disabled selected>Select From Here</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+            </div>-->
+            <div class="col-lg-3 col-md-6 mt-4">
+                <div class="inputs-filed mt-35">
+                    <!--<button routerLink="room-list" type="submit">check availability</button>-->
+                    <button (click)="addNewReservation()">check availability</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

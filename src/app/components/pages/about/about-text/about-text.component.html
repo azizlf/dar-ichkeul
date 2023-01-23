@@ -1,0 +1,47 @@
+<section class="about-section pt-115 pb-115">
+    <div class="container">
+        <div class="video-wrap video-wrap-two video-about mb-60" [style.background-image]="'url(assets/img/text-block/04.jpg)'">
+            <a href="assets/img/video2.mp4" class="popup-video"><i
+                    class="fas fa-play"></i></a>
+        </div>
+        <div class="section-title about-title text-center">
+            <span class="title-tag"> depuis <span>2015</span></span>
+            <!--<h2>Hello. Our hotel has been present for over 20 years. We make the best or all our customers.</h2>-->
+            <h4>Vous êtes à la recherche d'un cadre romantique en pleine campagne du Nord verdâtre de la Tunisie et d'une gamme de services conçus pour sublimer vos vacances ? Voilà ce qu'il vous faut: Dar Ichkeul. Située à proximité de la ville de Mateur
+                avec une vue imprenable sur le parc national d'Ichkeul, elle vous apporte entière satisfaction. Dar Ichkeul dispose de 8 suites, différemment décorées avec soin et élégance et offrant tout le confort dont vous avez besoin et d'un service
+                de chambre impeccable pour rendre votre séjour encore plus plaisant. Outre la piscine et son grand jardin, l’établissement rural situé au cœur d’une ferme agricole d’une dizaine d’hectares vous propose de nombreux espaces où on peut se
+                retrouver entre familles ou amis, pour profiter du calme de la campagne, se prélasser au soleil, participer à la récolte des différents fruits, déguster les plats concoctés sur place, jouer au tennis ou faire des activités équestres. Le
+                personnel de la maison d'hôtes se fera également un plaisir de vous servir lors de votre visite et vous fournir un petit déjeuner traditionnel de la région, succulent et savoureux</h4>
+        </div>
+        <ul class="about-features">
+            <li *ngFor="let item of category | slice:0:5">
+                <a>
+                    <i [class]="item.icon"></i>
+                    <i class="hover-icon {{item.icon}}"></i>
+                    <span class="title">{{item.title}}</span>
+                </a>
+            </li>
+        </ul>
+        <!--routerLink="{{item.url}}"-->
+        <!--
+        <div class="about-text-box">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="assets/img/text-block/05.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <span>Restaurant</span>
+                        <h3>Get Restaurant Facilities & Many Other More</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        </p>
+                        <a routerLink="/contact" class="main-btn btn-filled">take a tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</section>

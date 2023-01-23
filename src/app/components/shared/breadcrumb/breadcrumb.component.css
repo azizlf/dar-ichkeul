@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.title {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Mobile xs */
+
+@media (max-width: 420px) {
+    .breadcrumb-area .breadcrumb-text h2.page-title {
+        font-size: 30px;
+    }
+}
+
+
+/* Mobile & Tablet Rules */
+
+@media (max-width: 767px) {
+    .breadcrumb-area .breadcrumb-text h2.page-title {
+        font-size: 30px;
+    }
+}

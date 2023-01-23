@@ -1,0 +1,15 @@
+video{
+
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+}
+
+a{
+
+	position: absolute;
+	z-index: 3;
+	pointer-events: none;
+
+}
