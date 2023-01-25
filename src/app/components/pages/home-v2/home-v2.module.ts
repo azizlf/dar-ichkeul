@@ -22,11 +22,12 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MenuAreaComponent } from '../home-v3/menu-area/menu-area.component';
 import { AboutTextComponent } from '../home-v3/about-text/about-text.component';
+import { LogoComponent } from './logo/logo.component';
 
 /********************************* */
 
 @NgModule({
-  declarations: [HomeV2Component, BannerComponent, TextBlockComponent, CoreFeaturesComponent, FeatureRoomComponent, VideoWrapComponent, BlogPostComponent, InstagramComponent, MenuAreaComponent,AboutTextComponent],
+  declarations: [HomeV2Component, BannerComponent, TextBlockComponent, CoreFeaturesComponent, FeatureRoomComponent, VideoWrapComponent, BlogPostComponent, InstagramComponent, MenuAreaComponent,AboutTextComponent, LogoComponent],
   imports: [
     CommonModule,
     FormsModule,

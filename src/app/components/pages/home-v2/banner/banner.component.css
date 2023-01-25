@@ -2,76 +2,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
-.title {
-    font-size: 42px !important;
-    letter-spacing: 8px !important;
-    line-height: 5vw !important;
-    transform: scale(1.8);
+.nav-bar{
+
+    width: 100%;
+    height: 38%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+}
+
+.nav-bar .logo{
+
+    width: 17%;
+    height: 63%;
+    transform: scale(1.3);
+
 }
 
 
-/* Mobile xs */
+.nav-bar .menu-nav-bar{
 
-@media (max-width: 420px) {
-    .title {
-        font-size: 6vw !important;
-        letter-spacing: 8px !important;
-        transform: scale(1.1);
-    }
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.nav-bar .menu-nav-bar .list{
 
-/* Mobile & Tablet Rules */
-
-@media (max-width: 767px) {
-    .title {
-        font-size: 6vw !important;
-        letter-spacing: 8px !important;
-        line-height: 11vw !important;
-        transform: scale(1.1);
-    }
-}
-
-.form-home-page{
-    
-    width: 73%;
-    height: 10%;
-    background-color: transparent;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.nav-bar .menu-nav-bar .list .item{
+
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.nav-bar .menu-nav-bar .list .item:hover{
+
+    text-decoration: underline;
+
+} 
+
+
+
+
+.cover-section{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cover-section .cover-image{
+
+    width: 100%;
+    height: 100%;
+    animation: imagesAnim 6s infinite alternate;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+@keyframes imagesAnim{
+
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1.2);
+    }
+
+}
+
+.cover-section .content-cover-section{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000006e;
+    position: absolute;
+    top: 0;
+
+}
+
+.cover-section .content-cover-section .title-cover-section{
+
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    font-family: 'Merriweather', serif;
+
+}
+
+
+
+.form-home-page{
+    
+    width: 100%;
+    height: 12%;
+    background-color: #00000070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 500;
-    top: 680px;
-    left: 14%;
+    bottom: 0;
+    left: 0;
     border-radius: 2px;
+    padding-right: 2%;
 
 }
 
 .form-home-page .input-col-6-form{
 
     display: flex;
-    height: 100%;
-    width: 53%;
+    height: 60%;
+    width: 48%;
     align-items: center;
     justify-content: space-around;
-
 
 }
 
 
 .form-home-page .input-col-6-form .input{
 
-    width: 48%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #ffffffc4;
     position: relative;
-    border: 2px solid #8c332d;
-    border-radius: 5px;
+    border: none;
+    border-right: .1vw solid gray;
 
 }
 
@@ -85,7 +170,6 @@
     background-color: #ffffffc4;
     position: relative;
     border: 2px solid #8c332d;
-    border-radius: 5px;
 
 }
 
@@ -127,6 +211,7 @@
     text-align: left;
     padding: 0;
     background-color: transparent;
+    border:none;
 
 }
 
@@ -138,15 +223,14 @@
 
 .form-home-page button{
 
-    width: 17%;
-    height: 96%;
-    border-radius: 2px;
+    width: 18%;
+    height: 60%;
     background-color: #da5f57;
     color: white;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
     cursor: pointer;
     font-family: 'Solitreo', cursive;
-    padding-top: 1%;
+    padding-top: .7%;
     border: 2px solid #da5f57;
     transition: .4s;
 
@@ -174,30 +258,47 @@
 }
 
 
-.title-section-1{
+.menu-bar-icon,.side-bar-mobile{
 
-    color: red;
+    display: none;
 
 }
 
 
-@media (max-width: 767px){
+@media (max-width:700px){
+
+    .nav-bar .logo {
+    width: 65%;
+    height: auto;
+    margin-top: 15%;
+  }
+
+    .cover-section .content-cover-section .title-cover-section {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    color: white;
+    font-family: 'Quicksand';
+    margin-top: -28%;
+    line-height: 52px;
+    }
 
     .form-home-page{
+
         width: 100%;
-        height: 39%;
-        background-color: #00000000;
+        height: 24%;
+        background-color: #00000075;
         display: block;
         align-items: center;
         justify-content: space-between;
         position: absolute;
-        z-index: 50;
-        top: 66%;
+        z-index: 5;
+        bottom: 0;
         left: 0;
         text-align: center;
         overflow: hidden;
         padding: 3%;
-    }
+  }
 
 
     .form-home-page #titleFormReserve{
@@ -216,8 +317,8 @@
 
     .form-home-page .input{
 
-        width: 100%;
-        height: 19%;
+        width: 99%;
+        height: 16%;
         padding: 0;
         display: flex;
         align-items: center;
@@ -225,7 +326,7 @@
         background-color: #ffffffc4;
         position: relative;
         border: 2px solid transparent;
-        border-radius: 5px;
+        border-radius: 0;
         margin-bottom: 5%;
 
     }
@@ -245,24 +346,25 @@
 
     .form-home-page button{
         
-        width: 99%;
-        height: 19%;
-        padding: 4% 0 3% 0;
+        width: 100%;
+        height: 33%;
+        padding: 4% 0;
         background-color: #da5f57;
         color: white;
         font-size: 6vw;
         cursor: pointer;
         border: 2px solid #da5f57;
+        border-radius: 0;
 
     }
 
     .form-home-page .input-col-6-form{
 
         display: flex;
-        height: auto;
+        height: 53%;
         align-items: center;
         justify-content: space-between;
-        width: auto;
+        width: 100%;
 
 
     }
@@ -270,16 +372,81 @@
 
     .form-home-page .input-col-6-form .input{
 
-        width: 48%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: #ffffffc4;
-        position: relative;
-        border: 2px solid transparent;
-        border-radius: 5px;
+            width: 50%;
+            height: 67%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #ffffffc4;
+            position: relative;
+            border-radius: 0;
+            padding: 4% 0;
 
     }
+
+    .form-home-page .input-col-6-form .input input{
+        padding-left: 6%;
+    }
+
+        .nav-bar .menu-nav-bar{
+            display: none;
+        }
+
+        .menu-bar-icon{
+        width: 12%;
+        padding: 2.5% 0;
+        background-color: #00800000;
+        position: absolute;
+        top: 3%;
+        left: 6%;
+        z-index: 5;
+        display: flex;
+        font-size: 23px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        color: white;
+        }
+
+        .side-bar-mobile{
+
+            display: block;
+            width: 80%;
+            height: 100%;
+            position: fixed;
+            z-index: 6;
+            background-color: #ae4842;
+            transition: 0.4s;
+            left: -100%;
+            display: flex;
+            justify-content: center;
+            z-index: 50000000000000000000000;
+
+        }
+
+        .side-bar-mobile .menu-bar-icon{
+        width: 14%;
+        margin-left: 2%;
+        position: absolute;
+        left: 79%;
+        top: 2%;
+        background-color: transparent;
+        }
+
+        .side-bar-mobile .list{
+
+            width: 80%;
+            margin-top: 31%;
+
+        }
+
+        .side-bar-mobile .list .item{
+
+            width: 100%;
+            padding: 10% 0;
+            color: white;
+            font-size: 25px;
+
+        }
 
 }

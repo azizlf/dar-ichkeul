@@ -12,17 +12,20 @@ export class BannerComponent implements OnInit {
 
   bannerPosts = [
     {
-      img: "assets/img/banner/04.jpg",
+      img: "/assets/img/banner/dar-ich2.png",
       tag: 'The ultimate luxury experience',
-      title: "<p>Dar Ichkeul Le luxe et La nature</p>",
+      title: "Dar Ichkeul Le luxe et La nature",
     },
     {
-      img: "assets/img/banner/05.jpg",
+      img: "/assets/img/banner/dar-ich3.jpg",
       tag: 'The ultimate luxury experience',
-      title: "<p>LÀ OÙ LA VIE EST PLUS DOUCE</p>",
+      title: "LÀ OÙ LA VIE EST PLUS DOUCE",
       
     },
   ];
+
+  bannerBgImage = ""
+  bannerTitle = ""
 
   settings = {
     infinite: true,
@@ -72,8 +75,38 @@ export class BannerComponent implements OnInit {
 
   }
 
+  counter_banner_spec = 1
+
+  getBgBanner(index:any){
+
+    this.bannerBgImage = "url('"+this.bannerPosts[index].img+"')"    
+
+  }
+
+  getTitleBanner(index:any){
+
+    this.bannerTitle =  this.bannerPosts[index].title+""
+
+  }
+
   ngOnInit(): void {
 
+    this.getTitleBanner(0)
+    this.getBgBanner(0)
+
+    setInterval(()=>{
+
+      this.getTitleBanner(this.counter_banner_spec)
+      this.getBgBanner(this.counter_banner_spec)
+      this.counter_banner_spec++
+
+      if(this.counter_banner_spec === this.bannerPosts.length){
+
+        this.counter_banner_spec = 0
+
+      }
+
+    },5000)
 
   }
 

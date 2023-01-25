@@ -30,12 +30,12 @@
 
 	.whatsapp-bull{
 
-		width: 16.7%;
-	    padding: 3% 0;
+		width: auto;
+	    padding: 4% 4.7%;
 	    background-color: #25d366;
 	    position: fixed;
-	    bottom: 5%;
-	    right: 10%;
+	    bottom: 4%;
+	    right: 8%;
 	    border-radius: 100vw;
 	    display: flex;
 	    align-items: center;

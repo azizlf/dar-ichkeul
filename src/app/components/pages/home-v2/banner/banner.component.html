@@ -1,53 +1,43 @@
-<ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="banner-area banner-style-two" id="bannerSlider">
-    <div ngxSlickItem class="single-banner d-flex align-items-center justify-content-center" *ngFor="let item of bannerPosts">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8" style="flex: auto !important;">
-                    <div class="banner-content text-center">
-                        <!--<span class="promo-tag">{{item.tag}}</span>-->
-                        <h1 class="title" style="font-family: 'Quicksand';" [innerHtml]="item.title"></h1>
-                        <!--ul>
-                            <!-<li>
-                                <a class="main-btn btn-filled" routerLink="/room-details/">take a tour</a>
-                            </li>->
-                            <li>
-                                <a class="main-btn btn-filled" routerLink="/room-grid">Réserver</a>
-                            </li>
-                            <li>
-                                <a class="main-btn btn-border" routerLink="/about">Lire plus</a>
-                            </li>
-                        </ul-->
-                    </div>
-                </div>
+<div class="nav-bar">
+        <img src="/assets/img/banner/ichkeul-logo.png" class="logo">
+        <div class="menu-nav-bar">
+            <div class="list">
+                <div class="item" routerLink="/">Acceuil</div>
+                <div class="item" routerLink="/about">À propos</div>
+                <div class="item" routerLink="/room-grid">Nos Suites</div>
+                <div class="item" routerLink="/">Notre cuisine</div>
+                <div class="item" routerLink="/">Nos Activités</div>
+                <div class="item" routerLink="/contact">Contact</div>
             </div>
         </div>
-        <!-- banner bg -->
-        <div class="banner-bg" [style.background-image]="'url('+item.img+')'"></div>
-        <div class="banner-overly"></div>
-    </div>
-</ngx-slick-carousel>
-<div class="form-home-page">
-
-    <div class="input-col-6-form">
-        <div class="input">
-            <input id="dateDebut" placeholder="Date d'arrivée" class="input-show" />
-            <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event)" />
-            <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
-            <mat-datepicker #dateDebutReserv></mat-datepicker>
+</div>
+<div class="cover-section">
+        <div class="cover-image" [ngStyle]="{'background-image': this.bannerBgImage}"></div>
+        <div class="content-cover-section">
+            <div class="title-cover-section">{{this.bannerTitle}}</div>
         </div>
 
-        <div class="input">
-            <input id="dateFin" placeholder="Date de départ" class="input-show" />
-            <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event)">
-            <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
-            <mat-datepicker #dateFinReserv></mat-datepicker>
+        <app-logo></app-logo>
+
+
+        <div class="form-home-page">
+
+            <div class="input-col-6-form">
+                <div class="input">
+                    <input id="dateDebut" placeholder="Date d'arrivée" class="input-show" />
+                    <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event)" />
+                    <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
+                    <mat-datepicker #dateDebutReserv></mat-datepicker>
+                </div>
+
+                <div class="input">
+                    <input id="dateFin" placeholder="Date de départ" class="input-show" />
+                    <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event)">
+                    <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
+                    <mat-datepicker #dateFinReserv></mat-datepicker>
+                </div>
+            </div>
+
+            <button>Réserver</button>
         </div>
-    </div>
-
-    <div class="input">
-        <i class="fa-solid fa-user"></i>
-        <input style="position:relative;" id="NbrPersonne" placeholder="Nombre des personnes" class="input-show input-text" />
-    </div>
-
-    <button>Réserver</button>
 </div>

@@ -1,0 +1,173 @@
+.nav-bar-onscroll{
+
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	position: fixed;
+	z-index: 1000000000000000000000000;
+	box-shadow: 0 0 .5vw 0 #000000a3;
+	display: flex;
+	align-items: center;
+	transition: .4s;
+	animation: navbarscroll 1s;
+	top: 0;
+	left: 0;
+
+}
+
+
+@keyframes navbarscroll {
+
+	0%{
+		opacity: 0;
+		height: 12%;
+	}
+
+}
+
+
+.nav-bar-onscroll .logo{
+
+	width: 15%;
+
+}
+
+.nav-bar-onscroll .menu-nav-bar{
+
+	width: 53%;
+	display: flex;
+	align-items: center;
+	margin-left: 9%;
+
+}
+
+.nav-bar-onscroll .menu-nav-bar .list{
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.3vw;
+
+}
+
+.nav-bar-onscroll .menu-nav-bar .list .item{
+
+	cursor: pointer;
+
+}
+
+.nav-bar-onscroll .menu-nav-bar .list .item:hover{
+
+	text-decoration: underline;
+
+}
+
+
+.menu-bar-icon,.side-bar-mobile{
+
+	display: none;
+
+}
+
+
+.selected {
+	display: none;
+}
+
+@media (max-width:700px){
+
+	.selected {
+		display: none;
+	}
+	.nav-bar-onscroll .menu-bar-icon{
+
+		width: 14%;
+	    height: 50%;
+	    background-color: #00800000;
+	    position: absolute;
+	    top: 20%;
+	    left: 77%;
+	    z-index: 5;
+	    display: flex;
+	    font-size: 23px;
+	    align-items: center;
+	    justify-content: center;
+	    border: 1px solid black;
+	    color: black;
+
+	}
+
+	.nav-bar .menu-nav-bar{
+			display: none;
+		}
+
+		.nav-bar-onscroll .menu-nav-bar{
+			display: none;
+		}
+
+		.nav-bar-onscroll .logo{
+			width: 54%;
+			margin-top: 4%;
+		}
+
+		.menu-bar-icon{
+			width: 12%;
+	    height: 6%;
+	    background-color: #00800000;
+	    position: absolute;
+	    top: 3%;
+	    left: 6%;
+	    z-index: 5;
+	    display: flex;
+	    font-size: 23px;
+	    align-items: center;
+	    justify-content: center;
+	    border: 1px solid white;
+	    color: white;
+		}
+
+		.side-bar-mobile{
+
+			display: block;
+			width: 80%;
+			height: 100%;
+			position: fixed;
+			z-index: 6;
+			background-color: #ae4842;
+			transition: 0.4s;
+			display: flex;
+			justify-content: center;
+			z-index: 50000000000000000000000;
+			top: 0;
+
+		}
+
+		.side-bar-mobile .menu-bar-icon{
+		width: 14%;
+	    padding: 2.5% 0;
+	    margin-left: 2%;
+	    position: absolute;
+	    left: 79%;
+	    top: 2%;
+	    background-color: transparent;
+		}
+
+		.side-bar-mobile .list{
+
+			width: 80%;
+			margin-top: 31%;
+
+		}
+
+		.side-bar-mobile .list .item{
+
+			width: 100%;
+			padding: 10% 0;
+			color: white;
+			font-size: 25px;
+
+		}
+
+
+}
