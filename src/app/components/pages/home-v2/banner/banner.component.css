@@ -225,13 +225,13 @@
 
     width: 18%;
     height: 60%;
-    background-color: #da5f57;
+    background-color: #ce8933;
     color: white;
     font-size: 2.1vw;
     cursor: pointer;
     font-family: 'Solitreo', cursive;
     padding-top: .7%;
-    border: 2px solid #da5f57;
+    border: 2px solid #ce8933;
     transition: .4s;
 
 }
@@ -240,7 +240,7 @@
 .form-home-page button:hover{
 
     background-color: transparent;
-    color: #da5f57;
+    color: #ce8933;
 
 }
 
@@ -265,22 +265,82 @@
 }
 
 
+
+.contact-box{
+
+        position: absolute;
+    top: 4%;
+    right: 0%;
+    width: 39%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(.9);
+
+}
+
+
+.contact-box .item{
+
+    width: 49%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.contact-box .item i{
+
+    font-size: 1.4vw;
+    margin-right: 10%;
+    padding: 5%;
+    background-color: #ce8933;
+    border-radius: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-box .item div p{
+
+    font-size: 1.2vw;
+    margin-bottom: 6%;
+    font-weight: bold;
+
+}
+
+.contact-box .item div span{
+
+    font-size: 1.3vw;
+
+}
+
+
+
+
 @media (max-width:700px){
 
+    .contact-box{
+
+        display: none;
+
+    }
+
     .nav-bar .logo {
-    width: 65%;
-    height: auto;
-    margin-top: 15%;
-  }
+        width: 65%;
+        height: auto;
+        margin-top: 15%;
+    }
 
     .cover-section .content-cover-section .title-cover-section {
-    width: 100%;
-    text-align: center;
-    font-size: 38px;
-    color: white;
-    font-family: 'Quicksand';
-    margin-top: -28%;
-    line-height: 52px;
+        width: 100%;
+        text-align: center;
+        font-size: 38px;
+        color: white;
+        margin-top: -28%;
+        line-height: 52px;
     }
 
     .form-home-page{

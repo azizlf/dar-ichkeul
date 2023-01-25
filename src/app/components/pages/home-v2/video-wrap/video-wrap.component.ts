@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { HelperService } from '../../../services/helper.service'
 
 @Component({
   selector: 'app-video-wrap',
   templateUrl: './video-wrap.component.html',
   styleUrls: ['./video-wrap.component.css']
 })
-export class VideoWrapComponent extends HelperService implements OnInit {
+export class VideoWrapComponent implements OnInit {
 
 
   
-  constructor(public helperService: HelperService) {
-    super()
+  constructor() {
   }
 
   element:any
@@ -43,18 +41,23 @@ export class VideoWrapComponent extends HelperService implements OnInit {
         if (visible > fraction) {
           video.style.opacity = 1
           video.controls = "true"
-          video.play();
+          video.play()
           this.playBtn.style.display = "none"
         } else {
           video.style.opacity = 0
           video.controls = "false"
-          video.pause();
+          video.pause()
           this.playBtn.style.display = "block"
 
         }
 
       }, 
     false);
+
+    window.scrollBy({
+      top: 10,
+      behavior : "smooth"
+    })
 
   }
 
