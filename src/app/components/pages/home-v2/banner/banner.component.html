@@ -2,7 +2,7 @@
         <img src="/assets/img/banner/ichkeul-logo.png" class="logo">
         <div class="menu-nav-bar">
             <div class="list">
-                <div class="item" routerLink="/">Acceuil</div>
+                <div class="item active" routerLink="/">Acceuil</div>
                 <div class="item" routerLink="/about">À propos</div>
                 <div class="item" routerLink="/room-grid">Nos Suites</div>
                 <div class="item" routerLink="/">Notre cuisine</div>
@@ -11,28 +11,39 @@
             </div>
         </div>
 </div>
-<div class="cover-section">
-        <div class="cover-image" [ngStyle]="{'background-image': this.bannerBgImage}"></div>
-        <div class="content-cover-section">
-            <div class="title-cover-section">{{this.bannerTitle}}</div>
-        </div>
 
-        <app-logo></app-logo>
+<div class="cover-section">
+        <div class="cover-contact">
+            <div class="contact-item phone">
+                <i class="fa-solid fa-phone"></i>
+                <div class="desc-item">
+                    <p class="title">Numéro de téléphone</p>
+                    <p class="num">+216 27 595 239</p>
+                </div>
+            </div>
+        </div>
+        <div class="cover-image" [ngStyle]="{'background-image': this.bannerBgImage}"></div>
+        <div class="content-cover-section"><p>{{this.bannerTitle}}</p></div>
+
+        <div class="btn-to-rooms-and-suites" (mouseover)="overBtn(btnRoomSuites)" (mouseout)="outBtn(btnRoomSuites)">
+            <div class="bg-btn" id="bgBtn" #btnRoomSuites></div>
+            <p>rooms & suites</p>
+        </div>
 
 
         <div class="form-home-page">
 
             <div class="input-col-6-form">
                 <div class="input">
-                    <input id="dateDebut" placeholder="Date d'arrivée" class="input-show" />
-                    <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event)" />
+                    <input placeholder="Date d'arrivée" class="input-show" #dateDebut/>
+                    <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebut)" />
                     <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReserv></mat-datepicker>
                 </div>
 
                 <div class="input">
-                    <input id="dateFin" placeholder="Date de départ" class="input-show" />
-                    <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event)">
+                    <input placeholder="Date de départ" class="input-show" #dateFin/>
+                    <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)">
                     <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReserv></mat-datepicker>
                 </div>
@@ -42,22 +53,28 @@
         </div>
 </div>
 
-<div class="contact-box">
+<div class="form-home-page-mobile">
+        
+        <div class="form-content">
             
-        <div class="item">
-            <i class="fa-solid fa-phone"></i>
-            <div>
-                <p>Numéro de téléphone</p>
-                <span>+216 27 595 239</span>
-            </div>
-        </div>
+            <div class="input-col-6-form">
+                <div class="input">
+                    <input placeholder="Date d'arrivée" class="input-show" #dateDebutMobile/>
+                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)" />
+                    <mat-datepicker-toggle [for]="dateDebutReservMobile"></mat-datepicker-toggle>
+                    <mat-datepicker #dateDebutReservMobile></mat-datepicker>
+                </div>
 
-        <div class="item">
-            <i class="fa-regular fa-envelope"></i>
-            <div>
-                <p>Adresse email</p>
-                <span>Support@darichkeul.tn</span>
+                <div class="input">
+                    <input placeholder="Date de départ" class="input-show" #dateFinMobile/>
+                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
+                    <mat-datepicker-toggle [for]="dateFinReservMobile"></mat-datepicker-toggle>
+                    <mat-datepicker #dateFinReservMobile></mat-datepicker>
+                </div>
             </div>
-        </div>
 
+            <button>Réserver</button>
+
+        </div>
+        
 </div>

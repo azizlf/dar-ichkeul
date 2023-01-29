@@ -25,16 +25,19 @@ export class AppComponent implements OnInit {
   public selected = false;
 
   sideBarLeft = "-100%"
+  sideBarIsOpened = false
 
-  sideBarOC(condition:boolean){
+  sideBarOC(){
 
-    if(!condition){
+    if(!this.sideBarIsOpened){
 
-        this.sideBarLeft = "-100%"
+        this.sideBarLeft = "58%"
+        this.sideBarIsOpened = true
 
     }else{
 
         this.sideBarLeft = "0%"
+        this.sideBarIsOpened = false
 
     }
 
@@ -43,13 +46,14 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.breadcrumbService.breadcrumbChanged.subscribe(crumbs => {
-      this.titleService.setTitle(this.createTitle(crumbs));
-    });
 
     this.renderer.listen(window, 'scroll', ($event) => {
       this.scroll = (window.scrollY / this.sections);
     })
+
+    this.breadcrumbService.breadcrumbChanged.subscribe(crumbs => {
+      this.titleService.setTitle(this.createTitle(crumbs));
+    });
   }
   onActivate(_event:any){
     window.scroll(0,0);

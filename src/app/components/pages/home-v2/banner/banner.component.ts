@@ -12,12 +12,12 @@ export class BannerComponent implements OnInit {
 
   bannerPosts = [
     {
-      img: "/assets/img/banner/dar-ich2.png",
+      img: "/assets/img/banner/dar-ic3.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar Ichkeul Le luxe et La nature",
     },
     {
-      img: "/assets/img/banner/dar-ich3.jpg",
+      img: "/assets/img/banner/dar-ic2.jpg",
       tag: 'The ultimate luxury experience',
       title: "LÀ OÙ LA VIE EST PLUS DOUCE",
       
@@ -39,9 +39,7 @@ export class BannerComponent implements OnInit {
   dateDebutInput:any
   dateFinInput:any
 
-  getDateDebutValue(e:any){
-
-    this.dateDebutInput = document.getElementById("dateDebut")
+  getDateDebutValue(e:any,dateInput:any){
 
     var date = Date.parse(e.target.value+"")
     
@@ -53,13 +51,11 @@ export class BannerComponent implements OnInit {
 
     var date_final = [dt_Date, dt_Month, dt_Year].join('/')
 
-    this.dateDebutInput.value = date_final+""
+    dateInput.value = date_final+""
 
   }
 
-  getDateFinValue(e:any){
-
-    this.dateFinInput = document.getElementById("dateFin")
+  getDateFinValue(e:any,dateInput:any){
 
     var date = Date.parse(e.target.value+"")
     
@@ -71,7 +67,7 @@ export class BannerComponent implements OnInit {
 
     var date_final = [dt_Date, dt_Month, dt_Year].join('/')
 
-    this.dateFinInput.value = date_final+""
+    dateInput.value = date_final+""
 
   }
 
@@ -86,6 +82,27 @@ export class BannerComponent implements OnInit {
   getTitleBanner(index:any){
 
     this.bannerTitle =  this.bannerPosts[index].title+""
+
+  }
+
+
+  overBtn(btn:any){
+
+    btn.style.right = ""
+    btn.style.left = "-1%"
+    btn.style.width = "101.02%"
+    btn.style.border = "1px solid white"
+
+  }
+
+  outBtn(btn:any){
+
+    btn.style.left = ""  
+    btn.style.right = "-1%"  
+    btn.style.width = "0%"  
+    setTimeout(()=>{
+      btn.style.border = "none"  
+    },350)
 
   }
 

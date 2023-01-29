@@ -1,51 +1,68 @@
-<section class="text-block pt-115 pb-115">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-7">
-                <div class="text-img text-center text-lg-left mb-small">
-                    <div class="logo-rotation-section" data-aos="fade-up">
-                        <div class="logo">
-                            <img src="/assets/img/text-block/pl-photo-text-block.png" class="front">
-                            <img src="/assets/img/text-block/pl-photo-text-block.png" class="back">
-                        </div>
-                    </div>
+<div class="text-block-section">
+        <div class="content">
+            <div class="desc-block">
+                <div class="stars">
+                    <i class="star-icon"></i>
+                    <i class="star-icon"></i>
+                    <i class="star-icon"></i>
+                    <i class="star-icon"></i>
+                    <i class="star-icon"></i>
                 </div>
+                <p class="title">Dar ichkeul</p>
+                <p class="sb-title">Le luxe et La nature</p>
+                <p class="description">
+                    Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
+                </p>
+                <div class="reservation-container"><i class="fa-brands fa-whatsapp"></i><div class="text">
+                    <p>Réservation</p>
+                    <p class="num">+216 27 595 239</p>
+                </div></div>
+                <div class="read-more-btn">Lire plus</div>
             </div>
-            <div class="col-lg-5 col-md-8 col-sm-10" >
-                <div class="block-text">
-                    <div class="section-title mb-20">
-                        <!--<span class="title-tag">FAIRE UN TOUR</span>-->
-                        <h2  class="title" data-aos="fade-up" style=" 
-                            display: block;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 3;
-                            -webkit-box-orient: vertical;
-                            max-height: 3 * 22vh;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                            font-family: 'Merriweather', serif;
-                        ">Le luxe et La nature</h2>
-                    </div>
-                    <p style="color: #232323;font-size: 18px;line-height: 28px;" data-aos="fade-up">
-                        Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
+            <div class="images">
+                <div class="image right" data-aos="fade-up" style="background-image: url('/assets/img/text-block/dar-ic2.jpg');"></div>
+                <div class="image left" data-aos="fade-up"  style="background-image: url('/assets/img/text-block/dar-ic1.jpg');"></div>
+            </div>
+        </div>  
+</div>
 
-                    </p>
-                    <div class="read-more-btn" routerLink="/about" data-aos="fade-up">
-                        <span>Lire plus</span>
+
+<div class="rooms-suites">
+        <p class="title" data-aos="fade-up" >Dar ichkeul</p>
+        <p class="sb-title" data-aos="fade-up">Rooms & Suites</p>
+        <div class="rooms-list">
+            <div class="content"> 
+                    <div class="flex-item flex-vertical">
+                            
+                        <div class="item" data-aos="fade-right" *ngFor="let room of vertical_items">
+                            <div class="cover-item" [style.background-image]="'url(/assets/img/text-block/'+room.image+')'"></div>
+                            <div class="content">
+                                <button [routerLink]="'/room-details/'+room.id">Details</button>
+                                <div class="title-price">
+                                    <p class="price">{{room.price}} DT / Nuit</p>
+                                    <p class="title">{{room.title}}</p>
+                                    <div class="hr"></div>
+                                    <div class="description-item">{{room.description}}</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <!--a routerLink="/about" class="main-btn btn-filled mt-40">Lire plus</a-->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="text-block-next-section">
-        <div class="block-content">
-            <div class="image" data-aos="fade-up">
-                <div class="img"></div>
-            </div>
-            <div class="text-content" data-aos="fade-up">
-                Tels de petits refuges discrets et intimes, les espaces de vie de la maison répondent à vos envies de détente, de lecture ou de contemplation. A vous de choisir celui qui sied le mieux à votre humeur du moment
+
+                    <div class="flex-item flex-horizontal">
+                        <div class="item" data-aos="fade-up" *ngFor="let room of horizontal_items">
+                            <div class="cover-item" [style.background-image]="'url(/assets/img/text-block/'+room.image+')'"></div>
+                            <div class="content">
+                                <button>Details</button>
+                                <div class="title-price">
+                                    <p class="price">{{room.price}} DT / Nuit</p>
+                                    <p class="title">{{room.title}}</p>
+                                    <div class="hr"></div>
+                                    <div class="description-item">{{room.description}}</div>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
             </div>
         </div>
 </div>

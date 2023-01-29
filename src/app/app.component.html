@@ -1,7 +1,7 @@
 <div class="nav-bar-onscroll" [class.selected]="scroll < 75">
 		
 		<img src="/assets/img/banner/ichkeul-logo.png" class="logo">
-		<div class="menu-bar-icon" (click)="sideBarOC(true)"><i class="fa-solid fa-bars"></i></div>
+		<div class="menu-bar-icon" (click)="sideBarOC()"><i class="fa-solid fa-bars"></i></div>
 
 		<div class="menu-nav-bar">
 			<div class="list">
@@ -14,12 +14,11 @@
 			</div>
 		</div>
 
-	</div>
+</div>
 
-	<div class="menu-bar-icon" (click)="sideBarOC(true)"><i class="fa-solid fa-bars"></i></div>
+<div class="menu-bar-icon" (click)="sideBarOC()"><i class="fa-solid fa-bars"></i></div>
 
-	<div class="side-bar-mobile" [ngStyle]="{'left':this.sideBarLeft}">
-		<div class="menu-bar-icon" (click)="sideBarOC(false)"><i class="fa-solid fa-xmark"></i></div>
+<div class="side-bar-mobile" [ngStyle]="{'height':this.sideBarLeft}">
 		<div class="list">
                 <div class="item" routerLink="/">Acceuil</div>
                 <div class="item" routerLink="/about">À propos</div>
