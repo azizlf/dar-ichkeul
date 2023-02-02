@@ -40,6 +40,7 @@
               "src/assets/css/default.css",
               "src/assets/css/style.css",
               "./node_modules/aos/dist/aos.css",
+              "./node_modules/swiper/swiper-bundle.css",
               "src/styles.css",
             ],
             "scripts": [

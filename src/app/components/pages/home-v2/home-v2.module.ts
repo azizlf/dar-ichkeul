@@ -23,11 +23,12 @@ import { FormsModule } from '@angular/forms';
 import { MenuAreaComponent } from '../home-v3/menu-area/menu-area.component';
 import { AboutTextComponent } from '../home-v3/about-text/about-text.component';
 import { LogoComponent } from './logo/logo.component';
+import { PricesComponent } from './text-block/prices/prices.component';
 
 /********************************* */
 
 @NgModule({
-  declarations: [HomeV2Component, BannerComponent, TextBlockComponent, CoreFeaturesComponent, FeatureRoomComponent, VideoWrapComponent, BlogPostComponent, InstagramComponent, MenuAreaComponent,AboutTextComponent, LogoComponent],
+  declarations: [HomeV2Component, BannerComponent, TextBlockComponent, CoreFeaturesComponent, FeatureRoomComponent, VideoWrapComponent, BlogPostComponent, InstagramComponent, MenuAreaComponent,AboutTextComponent, LogoComponent, PricesComponent],
   imports: [
     CommonModule,
     FormsModule,

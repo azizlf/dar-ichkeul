@@ -1,3 +1,12 @@
+<div class="nav-bar">
+        <img src="/assets/img/banner/ichkeul-logo.png" class="logo">
+        <div class="menu-nav-bar">
+            <div class="list">
+                <div class="item" *ngFor="let item of routes_btn_list" [routerLink]="'/'+item.router_link"> {{item.title}} </div>
+            </div>
+        </div>
+</div>
+
 <div class="nav-bar-onscroll" [class.selected]="scroll < 75">
 		
 		<img src="/assets/img/banner/ichkeul-logo.png" class="logo">
@@ -5,12 +14,7 @@
 
 		<div class="menu-nav-bar">
 			<div class="list">
-                <div class="item" routerLink="/">Acceuil</div>
-                <div class="item" routerLink="/about">À propos</div>
-                <div class="item" routerLink="/room-grid">Nos Suites</div>
-                <div class="item" routerLink="/">Notre cuisine</div>
-                <div class="item" routerLink="/">Nos Activités</div>
-                <div class="item" routerLink="/contact">Contact</div>
+                <div class="item" *ngFor="let item of routes_btn_list" [routerLink]="'/'+item.router_link"> {{item.title}} </div>
 			</div>
 		</div>
 
@@ -18,14 +22,9 @@
 
 <div class="menu-bar-icon" (click)="sideBarOC()"><i class="fa-solid fa-bars"></i></div>
 
-<div class="side-bar-mobile" [ngStyle]="{'height':this.sideBarLeft}">
+<div class="side-bar-mobile" [ngStyle]="{'height':this.sideBarHeight}">
 		<div class="list">
-                <div class="item" routerLink="/">Acceuil</div>
-                <div class="item" routerLink="/about">À propos</div>
-                <div class="item" routerLink="/room-grid">Nos Suites</div>
-                <div class="item" routerLink="/">Notre cuisine</div>
-                <div class="item" routerLink="/">Nos Activités</div>
-                <div class="item" routerLink="/contact">Contact</div>
+                <div class="item" *ngFor="let item of routes_btn_list" [routerLink]="'/'+item.router_link" > {{item.title}} </div>
 		</div>
 </div>
 <app-preloader></app-preloader>

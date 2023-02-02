@@ -24,25 +24,67 @@ export class AppComponent implements OnInit {
 
   public selected = false;
 
-  sideBarLeft = "-100%"
+  sideBarHeight = "-100%"
   sideBarIsOpened = false
 
   sideBarOC(){
 
     if(!this.sideBarIsOpened){
 
-        this.sideBarLeft = "58%"
+        this.sideBarHeight = "58%"
         this.sideBarIsOpened = true
 
     }else{
 
-        this.sideBarLeft = "0%"
+        this.sideBarHeight = "0%"
         this.sideBarIsOpened = false
 
     }
 
 
   }
+
+  // list des boutons nav bar
+
+  routes_btn_list = [
+    {
+
+      title:"Acceuil",
+      router_link:""
+
+    },
+    {
+
+      title:"À propos",
+      router_link:"about"
+
+    },
+    {
+
+      title:"Nos Suites",
+      router_link:"room-grid"
+
+    },
+    {
+
+      title:"Notre cuisine",
+      router_link:""
+
+    },
+    {
+
+      title:"Nos Activités",
+      router_link:""
+
+    },
+    {
+
+      title:"Contact",
+      router_link:"contact"
+
+    }
+  ]
+
 
 
   ngOnInit(): void {

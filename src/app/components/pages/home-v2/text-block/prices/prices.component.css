@@ -1,0 +1,350 @@
+.our-services{
+
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.our-services .content{
+
+    width: 90%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+} 
+
+.our-services .content .desc-services{
+
+    width: 40%;
+    height: 100%;
+    color: white;
+
+}
+
+.our-services .content .desc-services p{
+
+    margin-bottom: 5%;
+
+}
+
+
+.our-services .content .desc-services .title{
+
+    font-size: 2vw;
+    color: #aa8453;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.our-services .content .desc-services .sb-title{
+
+    font-size: 4vw;
+    font-family: 'Gilda Display', serif;
+
+}
+
+.our-services .content .desc-services .description{
+
+    width: 80%;
+    font-size: 1.4vw;
+    line-height: 3vw;
+    color: #adadad;
+    font-family: 'Barlow Condensed', sans-serif;    
+
+}
+
+
+
+.our-services .content .slider{
+
+    width: 57%;
+    height: 90%;
+    overflow: hidden;
+
+}
+
+.our-services .content .slider .btn-slider{
+
+    width: 4%;
+    padding: .6% 0;
+    border: .1vw solid #aa8453;
+    color: #aa8453;
+    position: absolute;
+    font-size: 2.3vw;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    top: 42%;
+    cursor: pointer;
+
+}
+
+.our-services .content .slider .btn-slider.left{
+
+    left: 38%;
+
+}
+
+.our-services .content .slider .btn-slider.right{
+
+    right: -4.5%;
+
+}
+
+
+
+
+.our-services .content .slider .slider-prices{
+
+    width: 99%;
+    height: 100%;
+
+
+}
+
+
+.our-services .content .slider .slider-prices .slides-container{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .swiper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .swiper .swiper-wrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide{
+
+    width: 51%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .image-cover{
+
+    width: 100%;
+    height: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide{
+
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content{
+
+    width: 80%;
+    height: 70%;
+    display: block;
+    color: black;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .title-slide{
+
+    font-size: 1.9vw;
+    font-family: 'Gilda Display', serif;
+
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .price{
+
+    font-size: 1.6vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 7%;
+    color: gray;
+
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .price span{
+
+    font-size: 2.6vw;
+    font-family: 'Gilda Display', serif;
+    color: #aa8453;
+
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .services-slide{
+
+    width: 100%;
+    height: 60%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .services-slide .service{
+
+    width: 100%;
+    margin-top: 1%;
+    padding: 3% 0;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;    
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .content .services-slide .service i{
+
+    width: 11%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .read-more{
+
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    border: .2vw solid white;
+    padding: 1% 3%;
+    font-size: 1.3vw;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;    
+
+}
+
+
+@media (max-width:700px){
+
+
+    .our-services .content{
+
+        display: block;
+        height: 89%;
+
+    }
+
+    .our-services .content p{
+
+        margin: 0;
+
+    }
+
+
+    .our-services .content .desc-services{
+
+        width: 100%;
+        height: 61%;
+
+    }
+
+    .our-services .content .desc-services .title{
+
+        font-size: 23px;
+
+    }
+
+    .our-services .content .desc-services .sb-title{
+
+        font-size: 39px;
+
+    }
+    .our-services .content .desc-services .description{
+
+        font-size: 21px;
+        line-height: 24px;
+
+    }
+
+    .our-services .content .slider{
+
+        width: 100%;
+        height: 39%;
+
+    }
+
+    .our-services .content .slider .slider-prices{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .our-services .content .slider .btn-slider{
+
+        display: none;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .content .title-slide{
+
+        font-size: 13px;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .content .price{
+
+        font-size: 9px;
+        margin: 0;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .content .services-slide .service{
+
+        font-size: 10px;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .read-more{
+
+        padding: 0 2%;
+        font-size: 11px;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .content .services-slide .service{
+
+        padding: 1% 0;
+
+    }
+
+
+
+}

@@ -6,88 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
 
-.nav-bar{
 
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    top: 0;
-
-}
-
-
-.nav-bar{
-
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    top: 0;
-
-}
-
-.nav-bar .logo{
-
-    width: 17%;
-    transform: scale(1.3);
-
-}
-
-
-.nav-bar .menu-nav-bar{
-
-    width: 50%;
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.nav-bar .menu-nav-bar .list{
-
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.nav-bar .menu-nav-bar .list .item{
-
-    font-size: 1.6vw;
-    font-weight: 300;
-    color: white;
-    cursor: pointer;
-    transition: .4s;
-    font-family: 'Barlow Condensed', sans-serif;
-    letter-spacing: .1vw;
-
-
-}
-
-.nav-bar .menu-nav-bar .list .item.active{
-
-    color: #aa8453;
-
-}
-
-
-.nav-bar .menu-nav-bar .list .item:hover{
-
-    color: #aa8453;
-
-}
 
 .cover-section{
 
@@ -395,11 +314,7 @@
 
 @media (max-width:700px){
 
-    .nav-bar .logo {
-        width: 65%;
-        height: auto;
-        margin-top: 87%;
-    }
+
 
     .cover-section .cover-contact{
 
@@ -443,9 +358,7 @@
 
     }
 
-    .nav-bar .menu-nav-bar{
-        display: none;
-    }
+
 
     .nav-bar-onscroll .menu-bar-icon{
 

@@ -21,6 +21,9 @@ import { PreloaderComponent } from './preloader/preloader.component';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+
 registerLocaleData(localeFr);
 
 @NgModule({
@@ -49,6 +52,7 @@ registerLocaleData(localeFr);
     FormsModule,
     ReactiveFormsModule,
     MatDatepickerModule,
+    NgxUsefulSwiperModule,
   ],
   providers: [{ 
     provide: MAT_SNACK_BAR_DATA, useValue: {} },

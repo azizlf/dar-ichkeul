@@ -3,6 +3,9 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.breadcrumb-area{
+    margin: 0 !important;
+}
 
 /* Mobile xs */
 
