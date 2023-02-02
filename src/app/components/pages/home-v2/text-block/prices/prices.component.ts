@@ -132,10 +132,10 @@ export class PricesComponent implements OnInit {
   containerSlides:any
 
   phoneScreen:any
-
+ 
   createSlide(slide:any){
 
-    this.phoneScreen = window.matchMedia('(max-width: 700px)')
+    this.phoneScreen = window.matchMedia('(max-width:   700px)')
 
     this.containerSlides = document.getElementById("containerSlides")
 
