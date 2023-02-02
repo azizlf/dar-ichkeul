@@ -6,7 +6,7 @@ export const environment = {
   production: false,
    //API: 'http://localhost:3000/',
    //local
-    API: 'http://vps-5e9efc98.vps.ovh.net:3000/'
+    API: 'https://www.heart-of-carthage-dubai.com/admin/me/'
 };
 
 /*
