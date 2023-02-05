@@ -1,37 +1,167 @@
-<section class="room-details pt-120 pb-90" *ngFor="let item of roomdetails">
-    <div class="container">
+<div class="slider-cover-room-details">
+
+    <div class="container-slider-room">
+            
+        <div class="swiper room-slider">
+                
+            <div class="swiper-wrapper" id="containerSliderRoomDetails"></div>
+
+        </div>
+
+        <div class="btn-slider-room-detail slide-room-left"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="btn-slider-room-detail slide-room-right"><i class="fa-solid fa-angle-right"></i></div>
+
+    </div>
+        
+</div>
+
+
+<div class="room-details-infos" *ngFor="let item of room_selected">
+        
+        <div class="content">
+            <div class="left-section">
+                
+                <div class="rating-room">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="titles">
+                    <span>Dar Ichkeul</span>
+                    <p> {{item.title}} </p>
+                </div>
+                <div class="description" [innerHtml]="item.longdesc"></div>
+
+                <div class="amenities-section">
+                    <div class="amenitie-item" *ngFor="let am of item.amenities">
+                        <i [class]="am.icon"></i>
+                        <span> {{am.title}} </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-section">
+                <div class="reservation-form-room-details">
+                        
+                    <div class="form step-1" *ngIf="step_active === 'step 1'">
+
+                        <div class="input-col-6-form">
+                                <label>Date d'arrivée</label>
+                                <div class="input date">
+                                    <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebutMobile/>
+                                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)" />
+                                    <mat-datepicker-toggle style="width: 16%;" [for]="dateDebutReservMobile"></mat-datepicker-toggle>
+                                    <mat-datepicker #dateDebutReservMobile></mat-datepicker>
+                                </div>
+
+                                <label>Date de départ</label>
+                                <div class="input date">
+                                    <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
+                                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
+                                    <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
+                                    <mat-datepicker #dateFinReservMobile></mat-datepicker>
+                                </div>
+
+                                <label>Chambre</label>
+                                <div class="input">
+                                    <input [value]="item.title" style="pointer-events: none;user-select: none;" readonly class="input-show" />
+                                </div>
+                                <button class="button" (click)="nextStep('step 2')">Suivant</button>
+                        </div>
+
+                    </div>
+                    <div class="form step-2" *ngIf="step_active === 'step 2'">
+                        <div class="input-col-6-form">
+                                <label>Nom</label>
+                                <div class="input">
+                                    <input placeholder="Nom" class="input-show"/>
+                                </div>
+
+                                <label>Prénom</label>
+                                <div class="input">
+                                    <input placeholder="Prénom" class="input-show"/>
+                                </div>
+
+                                <label>Adresse E-mail</label>
+                                <div class="input">
+                                    <input placeholder="Adresse E-mail" class="input-show"/>
+                                </div>
+
+                                <label>Numéro de téléphone</label>
+                                <div class="input">
+                                    <input placeholder="Numéro de téléphone" class="input-show"/>
+                                </div>
+
+                                <label>Nombre de personnes</label>
+                                <div class="input">
+                                    <input placeholder="Nombre de personnes" class="input-show"/>
+                                </div>
+
+                                <label>Type</label>
+                                <div class="input">
+                                    <select class="input-show select">
+                                        <option value="Haute de saison double">Haute de saison double</option>
+                                        <option value="Basse de saison double">Basse de saison double</option>
+                                        <option value="Basse de saison single">Basse de saison single</option>
+                                        <option value="Haute de saison single">Haute de saison single</option>
+                                    </select>
+                                </div>
+                                <button class="button" (click)="confirmReservation()">Confirmer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tarifs-section"> 
+            <div class="content-tarifs">            
+                <span class="title-tarifs-section">tarifs</span>
+                <div class="hr"></div>
+                <div class="tarif-item" *ngFor="let tarif of item.rules">
+                    <i class="fa-solid fa-check"></i>
+                    <div class="desc-tarif"> {{tarif}} </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<app-prices-room-details></app-prices-room-details>
+
+
+    <!--div class="container">
         <div class="row">
-            <!-- details -->
+            <details>
             <div class="col-lg-8">
                 <div class="deatils-box">
                     <div class="title-wrap">
                         <div class="title" >
-                            <!--<div class="room-cat" *ngFor="let category of getCategories(item.category) | slice:0:1">{{category.title}}</div>-->
+                            <<div class="room-cat" *ngFor="let category of getCategories(item.category) | slice:0:1">{{category.title}}</div>>
                             <h2>{{item.title}}</h2>
                             <p [innerHtml]="item.longdesc" class="mt-5"></p>
                         </div>
-                        <!--<div class="price">
+                        <div class="price">
                             ${{item.price | number:'1.0-0'}}<span>/{{item.period}}</span>
-                        </div>-->
+                        </div>
                     </div>
                     <div class="slider-images">
                         <div class="btn-slider left" (click)="this.previousSlide('image-room'+item.title)"><i class="fa-solid fa-angle-left"></i></div>
                         <div class="btn-slider right" (click)="this.nextSlide('image-room'+item.title)"><i class="fa-solid fa-angle-right"></i></div>
-                        <!--img [src]="item.sliderimage" class="w-100" [alt]="item.title"-->
+                        <img [src]="item.sliderimage" class="w-100" [alt]="item.title">
                         <div class="slider-images-room-details" id="sliderImagesRoomDetails">
                             <div class="image" *ngFor="let img of item.sliderimage" [id]="'image-room'+item.title">
                                 <img [src]="img" [alt]="item.title"/>
                             </div>
                         </div>
                     </div>
-                    <!------------>
+                    
                     <div class="room-rules clearfix mb-60 ">
                         <h3 class="subtitle ">Tarifs</h3>
                         <ul class="room-rules-list ">
                             <li *ngFor="let text of item.rules ">{{text}}</li>
                         </ul>
                     </div>
-                    <!------------->
                     <div class="room-fearures clearfix mt-60 mb-60 ">
                         <h3 class="subtitle ">Amenities</h3>
                         <ul class="room-fearures-list ">
@@ -39,7 +169,7 @@
                         </ul>
                     </div>
                     <div></div>
-                    <!-- <div class="testimonials mt-60 mb-20 ">
+                    <div class="testimonials mt-60 mb-20 ">
                         <div class="row ">
                             <div class="col-lg-6 col-sm-6 " *ngFor="let author of getAuthor(item.authors) | slice:0:2 ">
                                 <div class="testimonial-box ">
@@ -82,10 +212,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>-->
+                    </div>>
                 </div>
             </div>
-            <!-- form -->
+            <form>
             <div class="col-lg-4 ">
                 <app-room-sidebar [changeView]="checkserver " [childMessage]="item " (bookTitleCreated)=onBookAdded($event) (FormCreated)=onAddInfo($event)></app-room-sidebar>
             </div>
@@ -95,5 +225,4 @@
             </div>
 
         </div>
-    </div>
-</section>
+    </div-->

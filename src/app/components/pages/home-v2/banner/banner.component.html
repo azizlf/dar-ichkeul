@@ -17,24 +17,21 @@
         </div>
 
 
-        <div class="form-home-page">
-
+        <div class="form-home-page" [formGroup]="reservationChambreForm">
             <div class="input-col-6-form">
                 <div class="input">
-                    <input placeholder="Date d'arrivée" class="input-show" #dateDebut/>
+                    <input placeholder="Date d'arrivée" formControlName='dateArr'  class="input-show" #dateDebut/>
                     <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebut)" />
                     <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReserv></mat-datepicker>
                 </div>
-
                 <div class="input">
-                    <input placeholder="Date de départ" class="input-show" #dateFin/>
+                    <input placeholder="Date de départ" formControlName='dateFin' class="input-show" #dateFin/>
                     <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)">
                     <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReserv></mat-datepicker>
                 </div>
             </div>
-
             <button>Réserver</button>
         </div>
 </div>

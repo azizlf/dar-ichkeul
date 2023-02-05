@@ -10,14 +10,15 @@
         ],
         "gridimage": "assets/img/room/01.jpg",
         "listimage": "assets/img/bg/04.jpg",
-        "sliderimage": ["assets/img/room-slider/01.jpg","assets/img/room-slider/011.jpg","assets/img/room-slider/02.jpg"],
+        "sliderimage": ["assets/img/room-slider/01.jpg","assets/img/room-slider/03.jpg","assets/img/room-slider/02.jpg"],
         "text": "Suite Vue sur le Jardin",
         "longdesc": "<p>Isolez-vous en toute tranquillité dans cet espace lumineux où seul le chant des oiseaux vient interrompre le silence</p>",
         "authors": [
             1,
             2
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -47,7 +48,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -95,7 +96,8 @@
             3,
             4
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -125,7 +127,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -202,7 +204,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -279,7 +281,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -356,7 +358,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -433,7 +435,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -510,7 +512,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",
@@ -587,7 +589,7 @@
             },
             {
                 "title": "Douche",
-                "icon": "fal fa-Douche"
+                "icon": "fa-solid fa-shower"
             },
             {
                 "title": "24/7 Support en ligne",

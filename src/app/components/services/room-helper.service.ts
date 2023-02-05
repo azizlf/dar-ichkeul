@@ -22,8 +22,9 @@ export class RoomHelperService implements AfterContentInit {
 
   ApiPath = environment.API ;
 
+  
 
-  constructor(private route: ActivatedRoute, private http : HttpClient, private snackBar: MatSnackBar) { }
+  constructor(public route: ActivatedRoute, private http : HttpClient, private snackBar: MatSnackBar) { }
   // Get Category
   public getCategories(items: string | any[]) {
     var elems = roomcategory.filter((item: { id: string; }) => {
@@ -59,6 +60,10 @@ export class RoomHelperService implements AfterContentInit {
   }
 
 
+
+
+
+
   
   showNotification(colorName:any, text:any, placementFrom:any, placementAlign:any) {
     this.snackBar.open(text, '', {
@@ -70,9 +75,9 @@ export class RoomHelperService implements AfterContentInit {
   }
 
   //check available booking
-checkAvailableBooking(data : any){
-  return this.http.post(this.ApiPath + '/booking', data)
-}
+  checkAvailableBooking(data : any){
+    return this.http.post(this.ApiPath + '/booking', data)
+  }
 
   // En ligne reservation and send email 
   reservationEnligneAndSendEmail(data : any){

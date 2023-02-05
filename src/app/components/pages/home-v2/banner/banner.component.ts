@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FormBuilder, FormControl, Validators, FormGroup, FormGroupDirective, NgForm, FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-banner',
@@ -7,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
+
+  public maxResvation:Date = new Date();
+  public todayDate:Date = new Date();
+  public DateArr: any
+  suites:any[]=[]
+  tabDate:any[]=[]
+  makes:any[]=[]
 
   constructor() { }
 
@@ -27,6 +35,22 @@ export class BannerComponent implements OnInit {
   bannerBgImage = ""
   bannerTitle = ""
 
+  reservationChambreForm = new FormGroup({
+
+    dateArr:new FormControl('',[Validators.required ]),
+
+    dateFin:new FormControl('',[Validators.required ]),
+
+    name: new FormControl('',[Validators.required ]),
+   
+    lastName: new FormControl(''),
+
+    phone: new FormControl('',Validators.required),
+
+    email: new FormControl('',[Validators.required,Validators.email])
+  })
+
+
   settings = {
     infinite: true,
     autoplay: true,
@@ -35,6 +59,8 @@ export class BannerComponent implements OnInit {
     fade: true,
     arrows: false,
   };
+
+
 
   dateDebutInput:any
   dateFinInput:any
@@ -105,6 +131,23 @@ export class BannerComponent implements OnInit {
     },350)
 
   }
+
+  public DateNoDispoFilter= (d: Date): boolean => {
+    if(d !== null){
+      const time=d.getTime();
+      console.log(d,'hhhha')
+     
+      var tab:any[]=[]  
+      tab=this.tabDate.map(ele=>new Date(formatDate(ele, 'MM/dd/yyyy', 'en')))
+     
+      return !tab.find(x=>x.getTime()==time);
+      
+    }
+   
+  else return true
+   //!this.myHolidayDates.find(x=>x.getTime()==time);
+  }
+
 
   ngOnInit(): void {
 

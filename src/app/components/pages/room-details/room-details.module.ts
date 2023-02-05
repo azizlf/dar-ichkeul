@@ -21,12 +21,13 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AboutModule } from '../about/about.module';
 import { RoomSliderComponent } from '../home-v3/room-slider/room-slider.component';
 import { HomeV3Module } from '../home-v3/home-v3.module';
+import { PricesRoomDetailsComponent } from './prices-room-details/prices-room-details.component';
 /********************************* */
 
 
 
 @NgModule({
-  declarations: [RoomDetailsComponent, ContentComponent],
+  declarations: [RoomDetailsComponent, ContentComponent, PricesRoomDetailsComponent],
   imports: [
     CommonModule,
     RoomDetailsRoutingModule,

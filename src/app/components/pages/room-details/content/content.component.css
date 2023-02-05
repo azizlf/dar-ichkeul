@@ -1,9 +1,3 @@
-.room-details .room-booking-form input,
-.room-details .room-booking-form .nice-select,
-.room-details .room-booking-form select {
-    background-color: #f5f5f5;
-}
-
 .success {
     background: #05b956;
     color: rgb(255, 255, 255);
@@ -14,114 +8,438 @@
     color: rgb(255, 255, 255);
 }
 
-
-.slider-images .slider-images-room-details{
+.slider-cover-room-details{
 
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    overflow-x: auto;
-    position: relative;
-    background-color: white;
 
 }
 
-.slider-images .slider-images-room-details .image{
+
+.slider-cover-room-details .container-slider-room{
 
     width: 100%;
-    height: 489px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 
 }
 
 
-.slider-images .slider-images-room-details .image img{
+.slider-cover-room-details .container-slider-room .room-slider{
 
-    width: 67%;
+    width: 100%;
+    height: 100%;
 
 }
 
 
-.slider-images .btn-slider{
+.slider-cover-room-details .container-slider-room .room-slider .swiper-wrapper{
 
-    width: 9%;
-    background: #ea5046;
-    color: white;
-    padding: 2%;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-room-details .container-slider-room .room-slider .swiper-wrapper .room-slide-image{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.slider-cover-room-details .container-slider-room .btn-slider-room-detail{
+
     position: absolute;
+    width: 5%;
+    padding: 1.3% 0;
+    top: 0;
+    z-index: 6;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
-    top: 29%;
-    z-index: 10;
-    border: 1px solid #ea5046;
-    cursor: pointer;
+    border-radius: 100vw;
+    border: .1vw solid #b48b57;
     transition: .4s;
+    cursor: pointer;
+    color: #b48b57;
+    font-size: 2vw;
+    top: 43%;
 
 }
 
-.slider-images .btn-slider:hover{
+.slider-cover-room-details .container-slider-room .btn-slider-room-detail:hover{
 
-    background: white;
-    color: #ea5046;
-
-}
-
-.slider-images .btn-slider.left{
-
-    left: 5.5%;
-
-}
-
-
-.slider-images .btn-slider.right{
-
-    right: 7%;
-
-}
-
-
-.slider-images .slider-images-room-details::-webkit-scrollbar {
-  height: .01vw;
-}
-
-.slider-images .slider-images-room-details::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.slider-images .slider-images-room-details::-webkit-scrollbar-thumb {
-  background-color: transparent;
+    background-color: #b48b57;
+    color: black;
 
 }
 
 
 
+.slider-cover-room-details .container-slider-room .btn-slider-room-detail.slide-room-left{
 
-@media (max-width: 700px){
+    left: 4%;
 
-    .slider-images .btn-slider{
+}
 
-        display: none;
+
+
+.slider-cover-room-details .container-slider-room .btn-slider-room-detail.slide-room-right{
+
+    right: 4%;
+
+} 
+
+
+
+.room-details-infos{
+
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    padding: 5% 0;
+    color: black;
+
+}
+
+.room-details-infos .content{
+
+    width: 100%;
+    min-height: 80%;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.room-details-infos .content .left-section{
+
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.room-details-infos .content .left-section .rating-room{
+
+    width: 100%;
+    font-size: 1.2vw;
+    color: #b48b57;
+    display: flex;
+    align-items: center;
+
+}
+
+.room-details-infos .content .left-section .titles{
+
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Gilda Display', serif;
+
+}
+
+.room-details-infos .content .left-section .titles span{
+
+    font-size: 1.3vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 2%;
+
+}
+
+
+.room-details-infos .content .left-section .description{
+
+    width: 80%;
+    padding: 3% 1%;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #2c2c2c;
+    margin-bottom: 3%;
+
+}
+
+
+.room-details-infos .content .left-section .amenities-section{
+
+    width: 100%;
+
+}
+
+.room-details-infos .content .left-section .amenities-section .amenitie-item{
+
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 50%;
+    font-size: 1.3vw;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.room-details-infos .content .left-section .amenities-section .amenitie-item i{
+
+    margin-right: 5%;
+    color: #b48b57;
+    width: 7%;
+    text-align: center;
+
+}
+
+
+
+.room-details-infos .content .right-section{
+
+    width: 35%;
+    padding: 2% 0;
+    background-color: #f6f6f6;
+    height: 0%;
+
+}
+
+.room-details-infos .tarifs-section{
+
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.room-details-infos .tarifs-section .content-tarifs{
+
+    width: 90%;
+    padding: 1% 0;
+}
+
+.room-details-infos .tarifs-section .content-tarifs .title-tarifs-section{
+
+    width: 100%;
+    font-size: 2vw;
+    font-family: 'Gilda Display', serif;
+    text-transform: uppercase;
+
+}
+
+.room-details-infos .tarifs-section .content-tarifs .hr{
+
+    border-top: .1vw solid gray;
+    width: 100%;
+    margin-top: 2%;
+
+}
+
+.room-details-infos .tarifs-section .content-tarifs .tarif-item{
+
+    width: 97%;
+    padding: 3% 1%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #2c2c2c;
+
+}
+
+.room-details-infos .tarifs-section .content-tarifs .tarif-item i{
+
+    margin-right: 2%;
+    color: #b48b57;
+
+}
+
+
+.room-details-infos .content .right-section .reservation-form-room-details{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form{
+
+    width: 85%;
+    height: auto;
+    padding: 3% 0;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form{
+
+    width: 100%;
+    position: relative;
+    border: none;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input{
+
+    width: 100%;
+    padding: 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ededed;
+    position: relative;
+    margin-bottom: 6%;
+    margin-top: 2%;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input.date{
+
+    padding: 4% 0;
+
+}
+
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input .date-picker-no-show{
+
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        pointer-events: none;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input .input-show{
+
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+        left: 5%;
+        font-size: 16px;
+        height: 100%;
+        width: 75%;
+        text-align: left;
+        padding: 0;
+        background-color: transparent;
+        border:none;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input .input-show.select{
+
+    width: 90%;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .button{
+
+    width: 50%;
+    padding: 4% 0;
+    font-size: 1.3vw;
+    border: none;
+    color: white;
+    background-color: #aa8453;
+    cursor: pointer;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form.step-2 .input-col-6-form .button{
+
+    width: 100%;
+
+}
+
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form label{
+
+    font-size: 1.4vw;
+
+}
+
+@media (max-width:700px){
+
+    .room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .button{
+
+        font-size: 21px;
 
     }
 
-    .slider-images .slider-images-room-details .image{
+    .room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form label{
 
-        height: 231px;
+        font-size: 18px;
+
+    }
+
+    .room-details-infos .content{
+
+        display: block;
+
+    }
+
+    .room-details-infos .content .left-section{
+
+        width: 100%;
+
+    }
+
+    .room-details-infos .content .right-section{
+
+        width: 100%;
+
+    }   
+
+    .room-details-infos .content .left-section .rating-room{
+
+        font-size: 9px;
+
+    }
+
+    .room-details-infos .content .left-section .titles span{
+
+        font-size: 16px;
 
     }
 
 
+    .room-details-infos .content .left-section .titles{
+
+        font-size: 38px;
+
+    }
+
+    .room-details-infos .content .left-section .description{
+
+        font-size: 14px;
+        line-height: 27px;
+
+    }
+
+    .room-details-infos .content .left-section .amenities-section .amenitie-item{
+
+        font-size: 13px;
+        width: 78%;
+
+    }
+
+    .room-details-infos .tarifs-section .content-tarifs .title-tarifs-section{
+
+        font-size: 24px;
+
+    }
+
+    .room-details-infos .tarifs-section .content-tarifs .tarif-item{
+
+        font-size: 11px;
+
+    }
+
 }
-
-
-
-
-
-
 
 
 

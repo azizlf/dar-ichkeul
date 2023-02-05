@@ -8,6 +8,11 @@
     color: rgb(255, 255, 255);
 }
 
+.room-details .room-booking-form input,
+.room-details .room-booking-form .nice-select,
+.room-details .room-booking-form select {
+    background-color: #f5f5f5;
+}
 
 /* Mobile xs */
 
