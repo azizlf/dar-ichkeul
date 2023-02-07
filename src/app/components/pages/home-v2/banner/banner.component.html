@@ -27,7 +27,7 @@
                     <mat-datepicker #dateDebutReserv></mat-datepicker>
                 </div>
                 <div class="input">
-                    <input placeholder="Date de départ" readonly formControlName='date_arrive'  class="input-show" #dateFin />
+                    <input placeholder="Date de départ" readonly formControlName='date_depart'  class="input-show" #dateFin />
                     <input [matDatepicker]="dateFinReserv"[min]="DateArr"  [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)" formControlName='date_depart' >
                     <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReserv></mat-datepicker>
@@ -72,7 +72,7 @@
 
             <div class="container-slides-reserv" #containerSlides>
                 
-                <div class="swiper rooms-list-dispo">
+                <div class="swiper rooms-list-dispo" id="containerSwiperRooms">
                     <div class="swiper-wrapper" id="roomListDispoContainer"></div>
                 </div>
 
@@ -114,19 +114,19 @@
 
     <div class="form-home-page-mobile">
         
-        <div class="form-content">
+        <div class="form-content" [formGroup]="reservationChambreFormMobile">
             
-            <div class="input-col-6-form">
+            <div class="input-col-6-form" >
                 <div class="input">
-                    <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebutMobile/>
-                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebut)"  [matDatepickerFilter]="DateNoDispoFilter2"  />
+                    <input placeholder="Date d'arrivée" readonly formControlName='date_arrive_mobile' class="input-show" #dateDebutMobile/>
+                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)"  [matDatepickerFilter]="DateNoDispoFilter2"  />
                     <mat-datepicker-toggle [for]="dateDebutReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReservMobile></mat-datepicker>
                 </div>
 
                 <div class="input">
-                    <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
-                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)">
+                    <input placeholder="Date de départ" readonly formControlName='date_depart_mobile' class="input-show" #dateFinMobile/>
+                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
                     <mat-datepicker-toggle [for]="dateFinReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReservMobile></mat-datepicker>
                 </div>

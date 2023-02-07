@@ -24,7 +24,7 @@
 
 <div class="side-bar-mobile" [ngStyle]="{'height':this.sideBarHeight}">
 		<div class="list">
-                <div class="item" *ngFor="let item of routes_btn_list" [routerLink]="'/'+item.router_link" > {{item.title}} </div>
+                <div class="item" (click)="sideBarOC()" *ngFor="let item of routes_btn_list" [routerLink]="'/'+item.router_link" > {{item.title}} </div>
 		</div>
 </div>
 <app-preloader></app-preloader>

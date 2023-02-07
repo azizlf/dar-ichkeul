@@ -27,11 +27,13 @@ export class AppComponent implements OnInit {
   sideBarHeight = "-100%"
   sideBarIsOpened = false
 
+
+
   sideBarOC(){
 
     if(!this.sideBarIsOpened){
 
-        this.sideBarHeight = "58%"
+        this.sideBarHeight = "60%"
         this.sideBarIsOpened = true
 
     }else{
@@ -116,4 +118,5 @@ export class AppComponent implements OnInit {
       return `${prev} | ${curr.displayName}`;
     }, '');
   }
+
 }

@@ -46,6 +46,13 @@ export class BannerComponent implements OnInit {
     
   })
 
+  reservationChambreFormMobile = new FormGroup({
+
+    date_arrive_mobile :new FormControl('',[Validators.required ]),
+    date_depart_mobile : new FormControl('',[Validators.required ])
+    
+  })
+
 
 
 
@@ -60,8 +67,23 @@ export class BannerComponent implements OnInit {
     
   })
 
+  containerSwiperRooms:any
 
   suivant(){
+
+    console.log(this.reservationChambreFormMobile.get('date_arrive_mobile')?.value+"   -  "+this.reservationChambreFormMobile.get('date_depart_mobile')?.value)
+
+    this.containerSwiperRooms = document.getElementById("containerSwiperRooms")
+    this.roomListDispoContainer = document.getElementById("roomListDispoContainer")
+
+    this.roomListDispoContainer.remove()
+
+    var container = document.createElement("div")
+
+    container.setAttribute("class","swiper-wrapper")
+    container.id = "roomListDispoContainer"
+
+    this.containerSwiperRooms.appendChild(container)
 
     this.tabSuitesDispo.map((room:any)=>{
 
@@ -72,6 +94,7 @@ export class BannerComponent implements OnInit {
     })
 
     this.initRoomsDispoSlider()
+
   }
 
   register(){
