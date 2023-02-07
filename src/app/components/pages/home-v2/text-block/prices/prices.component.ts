@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import gallery from '../../../../data/menugallery.json';
 
 import Swiper from "swiper";
 
@@ -9,102 +10,11 @@ import Swiper from "swiper";
 })
 export class PricesComponent implements OnInit {
 
+
+
   // prices schema list
 
-  prices = [
-
-    {
-
-      image:"dar-ic1.jpg",
-      title:"titre 1",
-      price:"50",
-      services:[
-        {
-          name:"service 1",
-          dispo:true
-        },
-        {
-          name:"service 2",
-          dispo:false
-        },
-        {
-          name:"service 3",
-          dispo:true
-        }
-      ] // max 3 service
-
-    },
-    {
-
-      image:"dar-ic1.jpg",
-      title:"titre 2",
-      price:"100",
-      services:[
-
-        {
-          name:"service 1",
-          dispo:true
-        },
-        {
-          name:"service 2",
-          dispo:true
-        },
-        {
-          name:"service 3",
-          dispo:true
-        }
-
-      ] // max 3 service
-
-    },
-    {
-
-      image:"dar-ic1.jpg",
-      title:"titre 3",
-      price:"200",
-      services:[
-
-        {
-          name:"service 1",
-          dispo:false
-        },
-        {
-          name:"service 2",
-          dispo:false
-        },
-        {
-          name:"service 3",
-          dispo:true
-        }
-
-      ] // max 3 service
-
-    },
-    {
-
-      image:"dar-ic1.jpg",
-      title:"titre 4",
-      price:"250",
-      services:[
-
-        {
-          name:"service 1",
-          dispo:true
-        },
-        {
-          name:"service 2",
-          dispo:false
-        },
-        {
-          name:"service 3",
-          dispo:false
-        }
-
-      ] // max 3 service
-
-    }
-
-  ]
+  prices = gallery
 
 
   initPricesSlider(){
@@ -145,9 +55,7 @@ export class PricesComponent implements OnInit {
     const content_slide = document.createElement("div")
     const content = document.createElement("div")
     const services_slide = document.createElement("div")
-    const title_slide = document.createElement("p")
     const price = document.createElement("p")
-    const price_number = document.createElement("span")
 
     container.setAttribute("style",`
 
@@ -172,7 +80,7 @@ export class PricesComponent implements OnInit {
     cover_image.setAttribute("style",`
 
         width: 100%;
-        height: 40%;
+        height: 50%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -183,7 +91,7 @@ export class PricesComponent implements OnInit {
     content_slide.setAttribute("style",`
 
         width: 100%;
-        height: 60%;
+        height: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -201,27 +109,11 @@ export class PricesComponent implements OnInit {
 
     `)
 
-    title_slide.setAttribute("style",`
-
-        font-size: 1.9vw;
-        font-family: 'Gilda Display', serif;
-
-    `)
-
     price.setAttribute("style",`
 
-        font-size: 1.6vw;
-        font-family: 'Barlow Condensed', sans-serif;
-        margin-top: 7%;
-        color: gray;
-
-    `)
-
-    price_number.setAttribute("style",`
-
-        font-size: 2.6vw;
-        font-family: 'Gilda Display', serif;
-        color: #aa8453;
+      font-size: 2.6vw;
+      font-family: 'Gilda Display', serif;
+      color: #aa8453;
 
     `)
 
@@ -253,20 +145,11 @@ export class PricesComponent implements OnInit {
 
       `)
 
-      title_slide.setAttribute("style",`
-
-        font-size: 13px;
-        font-family: 'Gilda Display', serif;
-        margin: 0;
-
-      `)
-
       price.setAttribute("style",`
 
-        font-size: 9px;
-        margin: 0;
-        font-family: 'Barlow Condensed', sans-serif;
-        color: gray;
+        font-size: 2.6vw;
+        font-family: 'Gilda Display', serif;
+        color: #aa8453;
 
       `)
 
@@ -287,7 +170,7 @@ export class PricesComponent implements OnInit {
 
 
 
-    cover_image.style.backgroundImage = "url('/assets/img/text-block/"+slide.image+"')"
+    cover_image.style.backgroundImage = "url('"+slide.img+"')"
 
     content_slide.setAttribute("class","content-slide")
 
@@ -296,19 +179,10 @@ export class PricesComponent implements OnInit {
     content.setAttribute("class","content")
 
 
-    title_slide.setAttribute("class","title-slide")
-
-    title_slide.innerText = slide.title+""
-
-
     price.setAttribute("class","price")
 
 
-    price_number.innerText = slide.price+" DT"
-
-    price.appendChild(price_number)
-
-    price.innerHTML +="/jour"
+    price.innerText = slide.title+""
 
     services_slide.setAttribute("class","services-slide")
 
@@ -391,7 +265,6 @@ export class PricesComponent implements OnInit {
     container.appendChild(cover_image)
     container.appendChild(content_slide)
     content_slide.appendChild(content)
-    content.appendChild(title_slide)
     content.appendChild(price)
     content.appendChild(services_slide)
 
@@ -404,7 +277,7 @@ export class PricesComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.prices.map((item)=>{
+    this.prices.map((item:any)=>{
 
       this.createSlide(item)
 

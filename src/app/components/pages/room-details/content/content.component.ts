@@ -1,9 +1,11 @@
 import { formatDate } from '@angular/common';
 import { Component,OnInit, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+;
 import { ActivatedRoute } from '@angular/router';
 import { RoomHelperService } from '../../../services/room-helper.service';
 import authors from '../../../data/authors.json';
+
+import { FormBuilder, FormControl, Validators, FormGroup, FormGroupDirective, NgForm, FormArray } from '@angular/forms';
 
 import Swiper from "swiper";
 
@@ -14,12 +16,47 @@ import Swiper from "swiper";
   encapsulation: ViewEncapsulation.None,
 })
 export class ContentComponent extends RoomHelperService implements OnInit {
+  public maxResvation:Date = new Date();
+  public todayDate:Date = new Date();
+ public DateArr:Date = new Date();
+ public tabDate:any[]=[]
+ reservationChambreForm = new FormGroup({
 
+  date_arrive :new FormControl('',[Validators.required ]),
+    date_depart : new FormControl('',[Validators.required ])
+  
+})
+user= new FormGroup({
+
+  nom :new FormControl('',[Validators.required ]),
+    prenom : new FormControl('',[Validators.required ]),
+    email :new FormControl('',[Validators.required, Validators.email ]),
+    phone : new FormControl('',[Validators.required ]),
+    nb_personne:new FormControl('',[Validators.required ])
+  
+})
+
+ public DateNoDispoFilter= (d: Date): boolean => {
+  if(d !== null){
+    const time=d.getTime();
+    console.log(d,'hhhha')
+   
+    var tab:any[]=[]  
+    tab=this.tabDate.map(ele=>new Date(formatDate(ele, 'MM/dd/yyyy', 'en')))
+   
+    return !tab.find(x=>x.getTime()==time);
+    
+  }
+ 
+else return true
+ //!this.myHolidayDates.find(x=>x.getTime()==time);
+}
   zoom: number = 12;
   lat: number = 31.53912;
   lng: number = -89.29163;
   room_selected:any = []
   step_active = 'step 1'
+  titleRoom:any
 
   title = 'BindingUp';
   favBooks = {}
@@ -131,11 +168,13 @@ export class ContentComponent extends RoomHelperService implements OnInit {
   getRoomDetails(items:any){
 
     var id  = parseInt(this.route.snapshot.params.id)
-
+     
     items.map((item:any)=>{
 
       if(item.id === id){
         this.room_selected.push(item)
+         this.titleRoom=item.title
+
       }
 
     })
@@ -157,6 +196,17 @@ export class ContentComponent extends RoomHelperService implements OnInit {
 
     dateInput.value = date_final+""
 
+    this.DateArr=e.target.value
+    this.tabDate.sort((a, b) => a.getTime() - b.getTime());
+    if(this.tabDate.some(ele=>ele>this.DateArr.getTime())==true){
+      
+      this.maxResvation=this.tabDate.find(ele=>ele>this.DateArr.getTime())
+      console.log(this.maxResvation,'max')
+    }  
+    if(this.tabDate.some(ele=>ele>this.DateArr.getTime())==false ){
+      this.maxResvation=new Date("12/12/2028");
+      console.log(this.maxResvation,"max2")
+    }
   }
 
   getDateFinValue(e:any,dateInput:any){
@@ -185,6 +235,11 @@ export class ContentComponent extends RoomHelperService implements OnInit {
 
   confirmReservation(){
     alert("reservation confirmé")
+    this.reservationEnligneAndSendEmail({nom:this.user.get('nom')?.value,
+                                         email:this.user.get('email')?.value,
+                                         phone:this.user.get('phone')?.value,
+                                         date_arrive : this.reservationChambreForm.get("date_arrive")?.value,
+                                         date_depart :this.reservationChambreForm.get(" date_depart ")?.value })
   }
 
 
@@ -251,7 +306,18 @@ settings = {
     // <<  get room details  >>
 
     this.getRoomDetails(this.roomdetails)
+    this.getSingleSuite(this.titleRoom).subscribe((resp:any)=>{
+      var newArray = Array.prototype.concat.apply([], resp);
+     
+      for(let i = 0; i< newArray.length; i++){
+          this.tabDate.push(new Date(newArray[i].slice(0,10)))
 
+           
+      }
+      console.log(this.titleRoom)
+      console.log(resp)
+    })
+    
     var images:any
 
     this.containerSliderRoomDetails = document.getElementById("containerSliderRoomDetails")

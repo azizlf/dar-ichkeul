@@ -17,47 +17,123 @@
         </div>
 
 
+
         <div class="form-home-page" [formGroup]="reservationChambreForm">
             <div class="input-col-6-form">
                 <div class="input">
-                    <input placeholder="Date d'arrivée" formControlName='dateArr'  class="input-show" #dateDebut/>
+                    <input placeholder="Date d'arrivée" readonly  formControlName='date_arrive'  class="input-show" #dateDebut />
+                    <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" [min]="todayDate" (dateChange)="this.getDateDebutValue($event,dateDebut)" formControlName='date_arrive' [matDatepickerFilter]="DateNoDispoFilter2" />
+                    <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
+                    <mat-datepicker #dateDebutReserv></mat-datepicker>
+                </div>
+                <div class="input">
+                    <input placeholder="Date de départ" readonly formControlName='date_arrive'  class="input-show" #dateFin />
+                    <input [matDatepicker]="dateFinReserv"[min]="DateArr"  [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)" formControlName='date_depart' >
+                    <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
+                    <mat-datepicker #dateFinReserv></mat-datepicker>
+                </div>
+            </div>
+            <button type="submit" [disabled]="!reservationChambreForm.valid" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
+        </div>
+</div>
+
+        
+        <!--div class="form-home-page" >
+            <div class="input-col-6-form">
+                <div class="input">
+                    <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebut/>
                     <input [matDatepicker]="dateDebutReserv" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebut)" />
                     <mat-datepicker-toggle [for]="dateDebutReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReserv></mat-datepicker>
                 </div>
                 <div class="input">
-                    <input placeholder="Date de départ" formControlName='dateFin' class="input-show" #dateFin/>
+                    <input placeholder="Date de départ" readonly class="input-show" #dateFin/>
                     <input [matDatepicker]="dateFinReserv" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)">
                     <mat-datepicker-toggle [for]="dateFinReserv"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReserv></mat-datepicker>
                 </div>
             </div>
-            <button>Réserver</button>
-        </div>
-</div>
+            <button [innerHtml]="btnReserveHtmlValue" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)"></button>
+        </div-->
 
-<div class="form-home-page-mobile">
+
+
+
+        <div class="slider-after-btn-reserv-clicked" id="sliderContainerRoomsDispo" #sliderContainerRoomsDispo>
+            
+            <div class="btns-slider" #btnSlide1>
+                <div class="btn-left"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="btn-right"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+
+            <div class="next-btn" *ngIf="current_step_reserv_form === 'step 1'">
+                <div class="btn" (click)="nextStepReservSlider(containerSlides,btnSlide1)">suivant</div>
+            </div>
+
+            <div class="container-slides-reserv" #containerSlides>
+                
+                <div class="swiper rooms-list-dispo">
+                    <div class="swiper-wrapper" id="roomListDispoContainer"></div>
+                </div>
+
+            </div>
+
+
+            <div class="form-reserv-client-infos" *ngIf="current_step_reserv_form === 'step 2'">
+                
+                <div class="flex-inputs">
+                    <div class="input">
+                        <label>Nom</label><br>
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div class="input">
+                        <label>Prénom</label><br>
+                        <input type="text" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="input">
+                    <label>Adresse Email</label><br>
+                    <input type="text" placeholder="Adresse Email">
+                </div>
+                <div class="input">
+                    <label>Numéro de téléphone</label><br>
+                    <input type="text" placeholder="Numéro de téléphone">
+                </div>
+                <div class="input">
+                    <label>Nombre de presonnes</label><br>
+                    <input type="text" placeholder="Nombre de presonnes">
+                </div>
+                <button class="confirm-btn-reserv" >confirmer</button>
+                <button class="return-btn-reserv" (click)="nextStepReservSlider(containerSlides,btnSlide1)">retour</button>
+
+            </div>
+
+
+        </div>
+
+
+    <div class="form-home-page-mobile">
         
         <div class="form-content">
             
             <div class="input-col-6-form">
                 <div class="input">
-                    <input placeholder="Date d'arrivée" class="input-show" #dateDebutMobile/>
-                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)" />
+                    <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebutMobile/>
+                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebut)"  [matDatepickerFilter]="DateNoDispoFilter2"  />
                     <mat-datepicker-toggle [for]="dateDebutReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReservMobile></mat-datepicker>
                 </div>
 
                 <div class="input">
-                    <input placeholder="Date de départ" class="input-show" #dateFinMobile/>
-                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
+                    <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
+                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFin)">
                     <mat-datepicker-toggle [for]="dateFinReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReservMobile></mat-datepicker>
                 </div>
             </div>
 
-            <button>Réserver</button>
+            <button type="submit" [disabled]="!reservationChambreForm.valid" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
 
         </div>
         
-</div>
+    </div>

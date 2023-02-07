@@ -2,8 +2,8 @@
 
     {
         "id": 1,
-        "title": "Bonneli",
-        "price": 350,
+        "title": "Bonnelli",
+        "price": 210,
         "period": "Nuit",
         "category": [
             1
@@ -82,7 +82,7 @@
     {
         "id": 2,
         "title": "Cicogne",
-        "price": 350,
+        "price": 265,
         "period": "Nuit",
         "category": [
             2
@@ -160,7 +160,7 @@
     {
         "id": 3,
         "title": "Amorpha",
-        "price": 385,
+        "price": 245,
         "period": "Nuit",
         "category": [
             3
@@ -174,7 +174,8 @@
             1,
             2
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -237,7 +238,7 @@
     {
         "id": 4,
         "title": "Ruppia",
-        "price": 385,
+        "price": 245,
         "period": "Nuit",
         "category": [
             4
@@ -251,7 +252,8 @@
             3,
             4
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -314,7 +316,7 @@
     {
         "id": 5,
         "title": "Ciconia",
-        "price": 370,
+        "price": 230,
         "period": "Nuit",
         "category": [
             5
@@ -328,7 +330,8 @@
             1,
             2
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -391,7 +394,7 @@
     {
         "id": 6,
         "title": "Colony",
-        "price": 420,
+        "price": 385,
         "period": "Nuit",
         "category": [
             2
@@ -405,7 +408,8 @@
             3,
             4
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -468,7 +472,7 @@
     {
         "id": 7,
         "title": "Marabou",
-        "price": 370,
+        "price": 300,
         "period": "Nuit",
         "category": [
             2
@@ -482,7 +486,8 @@
             3,
             4
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },
@@ -545,7 +550,7 @@
     {
         "id": 8,
         "title": "Brecon",
-        "price": 405,
+        "price": 335,
         "period": "Nuit",
         "category": [
             2
@@ -559,7 +564,8 @@
             3,
             4
         ],
-        "amenities": [{
+        "amenities": [
+            {
                 "title": "Climatiseur",
                 "icon": "fal fa-bath"
             },

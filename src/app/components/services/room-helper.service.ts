@@ -25,6 +25,26 @@ export class RoomHelperService implements AfterContentInit {
   
 
   constructor(public route: ActivatedRoute, private http : HttpClient, private snackBar: MatSnackBar) { }
+  
+
+
+
+  getAllSuites(){
+    
+    return this.http.get(this.ApiPath+'/suits?today=true')
+  
+  }
+  getAllResvation(){
+    
+    return this.http.get(this.ApiPath+'/reservations/check/room?room=all&front=true')
+  
+  }
+
+
+
+
+
+
   // Get Category
   public getCategories(items: string | any[]) {
     var elems = roomcategory.filter((item: { id: string; }) => {
@@ -55,6 +75,12 @@ export class RoomHelperService implements AfterContentInit {
   public setRoom(id: any) {
     this.roomdetails = rooms.filter((item: { id: any; }) => { return item.id == id });
   }
+
+  public getSingleSuite(title:string){
+    return this.http.get(this.ApiPath+'/reservations/check/room?room='+title)
+ 
+  }
+  
   ngAfterContentInit(): void {
     this.setRoom(this.route.snapshot.params.id);
   }

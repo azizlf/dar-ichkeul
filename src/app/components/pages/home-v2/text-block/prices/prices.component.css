@@ -49,6 +49,7 @@
 
     font-size: 4vw;
     font-family: 'Gilda Display', serif;
+    line-height: 5vw;
 
 }
 
@@ -284,6 +285,7 @@
     .our-services .content .desc-services .sb-title{
 
         font-size: 39px;
+        line-height: 44px;
 
     }
     .our-services .content .desc-services .description{

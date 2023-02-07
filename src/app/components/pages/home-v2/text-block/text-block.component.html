@@ -15,7 +15,7 @@
                 <p class="description">
                     Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
                 </p>
-                <div class="reservation-container"><i class="fa-brands fa-whatsapp"></i><div class="text">
+              <div class="reservation-container"><i class="fa-brands fa-whatsapp"></i><div class="text">
                     <p>Réservation</p>
                     <p class="num">+216 27 595 239</p>
                 </div></div>
@@ -37,42 +37,64 @@
             <div class="content"> 
                     <div class="flex-item flex-vertical">
                             
-                        <div class="item" data-aos="fade-right" *ngFor="let room of vertical_items">
-                            <div class="cover-item" [style.background-image]="'url(/assets/img/text-block/'+room.image+')'"></div>
-                            <div class="content">
+                        <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
+                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                            <div class="content" >
                                 <button [routerLink]="'/room-details/'+room.id">Details</button>
                                 <div class="title-price">
-                                    <p class="price">{{room.price}} DT / Nuit</p>
+                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
                                     <p class="title">{{room.title}}</p>
                                     <div class="hr"></div>
-                                    <div class="description-item">{{room.description}}</div>
+                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
+                    </div> 
+                    
                     <div class="flex-item flex-horizontal">
-                        <div class="item" data-aos="fade-up" *ngFor="let room of horizontal_items">
-                            <div class="cover-item" [style.background-image]="'url(/assets/img/text-block/'+room.image+')'"></div>
-                            <div class="content">
-                                <button>Details</button>
+                        <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites">
+                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                            <div class="content" >
+                                <button [routerLink]="'/room-details/'+room.id">Details</button>
                                 <div class="title-price">
-                                    <p class="price">{{room.price}} DT / Nuit</p>
+                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
                                     <p class="title">{{room.title}}</p>
                                     <div class="hr"></div>
-                                    <div class="description-item">{{room.description}}</div>
+                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
                                 </div>
                             </div>
                         </div>                         
                     </div>
+
+                    <div class="flex-item flex-vertical">
+                            
+                        <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
+                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                            <div class="content" >
+                                <button [routerLink]="'/room-details/'+room.id">Details</button>
+                                <div class="title-price">
+                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
+                                    <p class="title">{{room.title}}</p>
+                                    <div class="hr"></div>
+                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+ 
             </div>
+            
         </div>
+        
 </div>
 
 <!-- best prices section  --> 
 
 <app-prices></app-prices>
+
+<!--  video section   -->
+
+<app-video-wrap></app-video-wrap>
 
 <!-- services  -->
 

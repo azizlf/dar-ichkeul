@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import * as  AOS from 'aos';
+import { RoomHelperService } from 'src/app/components/services/room-helper.service';
 
 import Swiper from "swiper";
 
@@ -56,6 +58,12 @@ export class TextBlockComponent implements OnInit {
   
   horizontal_items:any = []
 
+
+  
+  vertical_Suites:any = this.suites.rooms.slice(6)
+  
+  horizontal_Suites:any = this.suites.rooms.slice(0,3)
+  horizontal_Suites2:any = this.suites.rooms.slice(3,6)
   // testimonials schema list
 
   testimonials = [
@@ -306,8 +314,8 @@ export class TextBlockComponent implements OnInit {
   }
 
 
-  constructor() { 
-
+  constructor(public suites:RoomHelperService ,private route:Router) { 
+  
     AOS.init();
 
   }
@@ -367,5 +375,6 @@ export class TextBlockComponent implements OnInit {
     this.initTestimonialsSlider()
 
   }
+//Routing
 
 }
