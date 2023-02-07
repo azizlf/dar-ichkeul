@@ -119,20 +119,20 @@
             <div class="input-col-6-form" >
                 <div class="input">
                     <input placeholder="Date d'arrivée" readonly formControlName='date_arrive_mobile' class="input-show" #dateDebutMobile/>
-                    <input [matDatepicker]="dateDebutReservMobile" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)"  [matDatepickerFilter]="DateNoDispoFilter2"  />
+                    <input [matDatepicker]="dateDebutReservMobile" [min]="todayDate" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)"  [matDatepickerFilter]="DateNoDispoFilter2"  />
                     <mat-datepicker-toggle [for]="dateDebutReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateDebutReservMobile></mat-datepicker>
                 </div>
 
                 <div class="input">
                     <input placeholder="Date de départ" readonly formControlName='date_depart_mobile' class="input-show" #dateFinMobile/>
-                    <input [matDatepicker]="dateFinReservMobile" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
+                    <input [matDatepicker]="dateFinReservMobile" [min]="DateArr" [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)">
                     <mat-datepicker-toggle [for]="dateFinReservMobile"></mat-datepicker-toggle>
                     <mat-datepicker #dateFinReservMobile></mat-datepicker>
                 </div>
             </div>
 
-            <button type="submit" [disabled]="!reservationChambreForm.valid" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
+            <button type="submit" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
 
         </div>
         
