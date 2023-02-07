@@ -63,7 +63,7 @@ export class BannerComponent implements OnInit {
 
   suivant(){
 
-    this.helper.roomdetails.map((room:any)=>{
+    this.tabSuitesDispo.map((room:any)=>{
 
       var slide = room.suite
       
