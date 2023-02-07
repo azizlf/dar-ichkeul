@@ -334,7 +334,7 @@ export class BannerComponent implements OnInit {
 
     if(this.phoneScreen.matches){
 
-      slider.style.display = "none"
+      slider.style.display = "block"
 
       this.btnReserveHtmlValue = "<span>Réserver</span>"
 
