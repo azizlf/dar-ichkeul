@@ -8,8 +8,8 @@
         "category": [
             1
         ],
-        "gridimage": "assets/img/room/01.jpg",
-        "listimage": "assets/img/bg/04.jpg",
+        "gridimage": "https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg",
+        "listimage": "https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg",
         "sliderimage": ["https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg","https://assets.hansgrohe.com/celum/web/axw-inspiration-style-mix-bath-view-3333x1875.jpg?format=HBW48"],
         "text": "Suite Vue sur le Jardin",
         "longdesc": "<p>Isolez-vous en toute tranquillité dans cet espace lumineux où seul le chant des oiseaux vient interrompre le silence</p>",
@@ -87,8 +87,8 @@
         "category": [
             2
         ],
-        "gridimage": "assets/img/room/02.jpg",
-        "listimage": "assets/img/room/list-2.jpg",
+        "gridimage": "https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg",
+        "listimage": "https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg",
         "sliderimage": ["https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg","https://contentmedia.dornbracht.com/-/media/dcom/page-content/slideshow/bathroom/home/dornbracht-vaia-platinum-matte-bathroom.jpg?rev=183a23c4326e4fc8b4ef5ff8a205f7f7&h=679&w=1200&la=fr&hash=01A78BCA07F507249D0BFA158389F963"],
         "text": "Suite Standard Vue sur la Ferme",
         "longdesc": "<p>Réveillez-vous au son du silence et en admirant des levers de soleil spectaculaires</p>",
@@ -165,8 +165,8 @@
         "category": [
             3
         ],
-        "gridimage": "assets/img/room/03.jpg",
-        "listimage": "assets/img/room/list-3.jpg",
+        "gridimage": "https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000",
+        "listimage": "https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000",
         "sliderimage": ["https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000","http://chestnutsandpeonies.com/wp-content/uploads/2021/02/IMG_6726.jpg"],
         "text": "Suite avec Jacuzzi",
         "longdesc": "<p>Avec sa Jacuzzi, profitez du calme en vous offrant tout le confort dont vous avez besoin</p>",
@@ -243,8 +243,8 @@
         "category": [
             4
         ],
-        "gridimage": "assets/img/room/04.jpg",
-        "listimage": "assets/img/room/list-4.jpg",
+        "gridimage": "https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg",
+        "listimage": "https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg",
         "sliderimage": ["https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg","https://img-3.journaldesfemmes.fr/MU6gSE-ugafsZJoy6A3bZiraqsE=/1500x/smart/5aa5fb7e78414535958cc1e4c100748d/ccmcms-jdf/26078654.jpg"],
         "text": "Suite avec Jacuzzi Vue sur la Piscine",
         "longdesc": "<p>Une suite dotée d'un Jacuzzi offrant une vue imprenable sur la piscine qui sera vous séduire par le style raffiné et luxueux</p>",
@@ -321,8 +321,8 @@
         "category": [
             5
         ],
-        "gridimage": "assets/img/room/05.jpg",
-        "listimage": "assets/img/room/list-5.jpg",
+        "gridimage": "https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg",
+        "listimage": "https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg",
         "sliderimage": ["https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg","https://www.espace-aubade.fr/uploads/product/picture/1416x954/meuble-salle-de-bain-delpha-delphy-intuitive140-blanc-ultra-1-2021.jpg"],
         "text": "Suite Standard avec Terrasse",
         "longdesc": "<p>Avec sa terrasse privée, le regard s’attarde sur chaque détail à l'extrême raffinement</p>",
@@ -399,8 +399,8 @@
         "category": [
             2
         ],
-        "gridimage": "assets/img/room/06.jpg",
-        "listimage": "assets/img/room/list-6.jpg",
+        "gridimage": "https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG",
+        "listimage": "https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG",
         "sliderimage": ["https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG","https://resize.elle.fr/original/var/plain_site/storage/images/deco/pieces/salle-de-bain/40-idees-deco-pour-la-salle-de-bains/70300606-15-fre-FR/Idees-deco-salle-de-bain-l-art-de-rafraichir-cette-piece-avec-trois-fois-rien.jpg"],
         "text": "Suite De Luxe avec Vue panoramique",
         "longdesc": "<p>Une suite moderne et luxueuse baignée de lumière naturelle, offrant un intérieur chaleureux et apaisant avec un fabuleux paysage, vous permet de contempler la beauté de la ville, de jour comme de nuit</p>",
@@ -477,8 +477,8 @@
         "category": [
             2
         ],
-        "gridimage": "assets/img/room/07.jpg",
-        "listimage": "assets/img/room/list-6.jpg",
+        "gridimage": "https://images.bestwestern.com/bwi/brochures/93610/photos/1024/26029126.jpg",
+        "listimage": "https://images.bestwestern.com/bwi/brochures/93610/photos/1024/26029126.jpg",
         "sliderimage": ["https://images.bestwestern.com/bwi/brochures/93610/photos/1024/26029126.jpg","https://www.dispano.fr/sites/default/files/2022-08/salle-de-bain-panneau-mural-solution-esthetique-economique-banniere-une-dispano.jpg"],
         "text": "Suite Vue sur la Piscine",
         "longdesc": "<p>Une suite vue sur la Piscine vous offre le calme et la beauté de la nature</p>",
@@ -555,8 +555,8 @@
         "category": [
             2
         ],
-        "gridimage": "assets/img/room/08.jpg",
-        "listimage": "assets/img/room/list-6.jpg",
+        "gridimage": "https://www.yonder.fr/sites/default/files/destinations/la%20badira%20Suite%20Cocteau%20chambre.jpg",
+        "listimage": "https://www.yonder.fr/sites/default/files/destinations/la%20badira%20Suite%20Cocteau%20chambre.jpg",
         "sliderimage": ["https://www.yonder.fr/sites/default/files/destinations/la%20badira%20Suite%20Cocteau%20chambre.jpg","https://djwn2awl267ga.cloudfront.net/cache/img/maison-mere-suite-reine-mere-ecran-ultra-hd-119340-1920-1080-auto.jpg?q=1664286121"],
         "text": "Suite De Luxe avec Vue panoramique",
         "longdesc": "<p>Suite De Luxe avec Vue panoramique un suite moderne et luxueux baigné de lumière naturelle, offrant un intérieur chaleureux et apaisant avec un fabuleux paysage, vous permet de contempler la beauté de la ville, de jour comme de nuit</p>",
