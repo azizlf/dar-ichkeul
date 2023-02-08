@@ -67,7 +67,7 @@
             </div>
 
             <div class="next-btn" *ngIf="current_step_reserv_form === 'step 1'">
-                <div class="btn" (click)="nextStepReservSlider(containerSlides,btnSlide1)">suivant</div>
+                <div class="btn" (click)="nextStepReservSlider(containerSlides,btnSlide1,closeFormBtn)">suivant</div>
             </div>
 
             <div class="container-slides-reserv" #containerSlides>
@@ -77,6 +77,8 @@
                 </div>
 
             </div>
+
+            <div class="close-reserv-rooms" #closeFormBtn (click)="closeReservFormOpen(sliderContainerRoomsDispo)" ><i class="fa-solid fa-xmark"></i></div>
 
 
             <div class="form-reserv-client-infos" *ngIf="current_step_reserv_form === 'step 2'">
@@ -104,7 +106,7 @@
                     <input type="text" placeholder="Nombre de presonnes">
                 </div>
                 <button class="confirm-btn-reserv" >confirmer</button>
-                <button class="return-btn-reserv" (click)="nextStepReservSlider(containerSlides,btnSlide1)">retour</button>
+                <button class="return-btn-reserv" (click)="nextStepReservSlider(containerSlides,btnSlide1,closeFormBtn)">retour</button>
 
             </div>
 

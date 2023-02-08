@@ -721,13 +721,13 @@
 
     .text-block-section .content .desc-block .stars .star-icon{
 
-        font-size: 6px;
+        font-size: 8px;
 
     }
 
     .text-block-section .desc-block .title{
 
-        font-size: 14px;
+        font-size: 23px;
 
     }
 
@@ -740,7 +740,7 @@
     .text-block-section .desc-block .description{
 
         line-height: 14px;
-        font-size: 11px;
+        font-size: 12px;
 
     }
 
@@ -753,6 +753,7 @@
     .text-block-section .content .desc-block .read-more-btn{
 
         font-size: 14px;
+        height: 15%;
 
     }
 

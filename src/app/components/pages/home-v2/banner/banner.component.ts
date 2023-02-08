@@ -163,7 +163,7 @@ export class BannerComponent implements OnInit {
   btnReserveHtmlValue = "<span>Réserver</span>"
 
 
-  nextStepReservSlider(slidesContainer:any,btnSlide:any){
+  nextStepReservSlider(slidesContainer:any,btnSlide:any,closeFormBtn:any){
 
     if(this.rooms_dispo_selected_items.length > 0){
 
@@ -171,12 +171,14 @@ export class BannerComponent implements OnInit {
 
         slidesContainer.style.display = "none"
         btnSlide.style.display = "none"
+        closeFormBtn.style.display = "none"
         this.current_step_reserv_form = "step 2"
 
       }else{
 
         this.current_step_reserv_form = "step 1"
         slidesContainer.style.display = "flex"
+        closeFormBtn.style.display = "flex"
         btnSlide.style.display = "flex"
 
       }
@@ -324,7 +326,11 @@ export class BannerComponent implements OnInit {
 
   }
 
-  
+  closeReservFormOpen(slider:any){
+
+    slider.style.display = "none"
+
+  }
 
   sliderReservFormOpen(slider:any){
 
@@ -344,16 +350,11 @@ export class BannerComponent implements OnInit {
       if(slider.style.height === "0%"){
 
         slider.style.height = "70%"
-
-        this.sliderReservClosed = false
         this.btnReserveHtmlValue = "<i class='fa-solid fa-xmark'></i>"
 
       }else{
 
         slider.style.height = "0%"
-
-
-        this.sliderReservClosed = true
         this.btnReserveHtmlValue = "<span>Réserver</span>"
 
       }
@@ -645,7 +646,7 @@ export class BannerComponent implements OnInit {
 
         width: 10%;
         padding: 4.6% 0;
-        border: .2vw solid #FF9800;
+        border: 1px solid #FF9800;
         border-radius: 100vw;
         position: absolute;
         top: 4%;

@@ -131,6 +131,12 @@ export class PricesComponent implements OnInit {
 
       //for mobile 
 
+      container.setAttribute("style",`
+
+        width: 100%;
+        height: 100%;
+
+      `)
 
       read_more_btn.setAttribute("style",`
 
@@ -140,14 +146,14 @@ export class PricesComponent implements OnInit {
         border: .2vw solid white;
         color: white;
         font-family: 'Barlow Condensed', sans-serif; 
-        padding: 0 2%;
-        font-size: 11px; 
+        padding: 3% 2%;
+        font-size: 27px;
 
       `)
 
       price.setAttribute("style",`
 
-        font-size: 2.6vw;
+        font-size: 46px;
         font-family: 'Gilda Display', serif;
         color: #aa8453;
 
@@ -200,8 +206,8 @@ export class PricesComponent implements OnInit {
 
           width: 100%;
           margin-top: 1%;
-          padding: 1% 0;
-          font-size: 10px;
+          padding: 4% 0;
+          font-size: 19px;
           display: flex;
           align-items: center;
           font-family: 'Barlow Condensed', sans-serif;    
@@ -218,14 +224,15 @@ export class PricesComponent implements OnInit {
 
         `)
 
-      }else{
+      }
+      else{
 
         service.setAttribute("style",`
 
           width: 100%;
           margin-top: 1%;
-          padding: 3% 0;
-          font-size: 1.3vw;
+          padding: 4% 0;
+          font-size: 1.5vw;
           display: flex;
           align-items: center;
           font-family: 'Barlow Condensed', sans-serif;    
