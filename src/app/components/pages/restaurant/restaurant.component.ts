@@ -228,11 +228,6 @@ export class RestaurantComponent implements OnInit {
       }
 
     }
-    this.menusItems.map((item:any)=>{
-
-      console.log(item)
-
-    })
 
   }
 
@@ -256,9 +251,18 @@ export class RestaurantComponent implements OnInit {
     container.addEventListener("click",()=>{
 
       this.generateMenusItems(container.id)
-      
-    })
 
+      this.titleMenus.map((item:any)=>{
+
+        this.btnActiveTitle = document.getElementById(item.id)
+
+        this.btnActiveTitle.style.borderColor = "transparent"
+
+      })
+        
+      container.style.borderColor = "#aa8453"
+
+    })
 
     container.setAttribute("style",`
 
@@ -273,8 +277,7 @@ export class RestaurantComponent implements OnInit {
       font-family: 'Gilda Display', serif;
       font-size: 2vw;
       cursor: pointer;
-      border: .1vw solid #aa8453;
-      background-color:#aa8453;
+      border: .1vw solid transparent;
 
 
     `)
