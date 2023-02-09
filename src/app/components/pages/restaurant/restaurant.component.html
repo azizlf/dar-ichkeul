@@ -1,19 +1,105 @@
-<!--<p>restaurant works!</p>
-<app-header [layout]="Headerclassname"></app-header>
-<app-breadcrumb></app-breadcrumb>
-<app-restaurant-block></app-restaurant-block>
-<app-menu-area></app-menu-area>
-<app-footer></app-footer>-->
-<app-breadcrumb></app-breadcrumb>
-<section class="gallery-wrappper pt-120 pb-120">
-    <div class="container">
-        <div class="gallery-loop">
-            <div class="single-gallery-image" *ngFor="let item of gallery">
-                <a class="popup-image">
-                    <img [src]="item.img" alt="Images">
-                </a>
+<div class="slider-cover-restau">
+
+    <div class="container-slider-restau">
+            
+        <div class="swiper restau-slider">
+                
+            <div class="swiper-wrapper" id="containerSliderRestau"></div>
+
+        </div>
+
+        <div class="btn-slider-restau slide-restau-left"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="btn-slider-restau slide-restau-right"><i class="fa-solid fa-angle-right"></i></div>
+
+    </div>
+        
+</div>
+<div class="restau-about">
+        <div class="rating-stars-restau">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="title">Dar Ichkeul</div>
+        <div class="sb-title">The Restaurant</div>
+        <div class="restau-description">
+            Led by Chef de Micheal Martin, The Restaurant is celebrated for its excellent cuisine and unique ambience. The gorgeous dining room features three open studio kitchens, allowing you to enjoy the sights and sounds of the culinary artistry on display. The menu showcases both Asian and European influences, with a tempting selection of classic favorites and creative dishes for you to sample. Cheese connoisseurs will be drawn to the The Wine and Cheese Cellar, housed in five-meter-high glass walls, where our knowledgeable staff can introduce you to some of New York's greatest culinary treasures.
+        </div>
+        <div class="section-title">Hours</div>
+        <div class="section-content">
+            <div class="hour-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Breakfast: 7.00 am – 11.00 am (daily)</span>
+            </div>
+            <div class="hour-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Breakfast: 7.00 am – 11.00 am (daily)</span>
+            </div>
+            <div class="hour-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Breakfast: 7.00 am – 11.00 am (daily)</span>
+            </div>
+        </div>
+        <div class="section-title">Dress Code</div>
+            <div class="section-content">
+                <div class="description">
+                    Smart casual (no shorts, hats, or sandals permitted)
+                </div>
+            </div>
+        <div class="section-title">Terrace</div>
+            <div class="section-content">
+                <div class="description">
+                    Open for drinks only
+                </div>
+            </div>
+</div>
+
+<div class="restau-menu">
+        <div class="title">Restaurant Menu</div>
+        <div class="container-slider-menu">
+            <div class="swiper slider-menu">
+                <div class="swiper-wrapper" id="containerSliderTitles"></div>
+            </div>
+            <div class="btn-menu-slider left-menu-btn"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="btn-menu-slider right-menu-btn"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="menus">
+            <div class="list-container">
+                <div class="list left-list">
+                    <div class="menu-item" *ngFor="let item of menuLeft">
+                        <div class="item-title">
+                            <span class="name"> {{item.name}} </span>
+                            <span class="price"> {{item.price}} DT</span>
+                        </div>
+                        <div class="item-description">{{item.phraseDescription}}</div>
+                    </div>
+                </div>
+                <div class="list right-list">
+                    <div class="menu-item" *ngFor="let item of menuRight">
+                        <div class="item-title">
+                            <span class="name"> {{item.name}} </span>
+                            <span class="price"> {{item.price}} DT</span>
+                        </div>
+                        <div class="item-description">{{item.phraseDescription}}</div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+</div>
+<div class="testimonial-section" style="background-image: url('/assets/img/text-block/dar-ic1.jpg') ;">
+    <div class="container-ctn">
+        <div class="content">
+            <p class="title">testimonilas</p>
+            <div class="hr"></div>
+            <div class="container-slider">     
+                <div class="swiper testimonilas-slider" id="containerSwiperTestimonials">   
+                    <div class="swiper-wrapper" id="containerTestimonialsSlider"></div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<app-footer></app-footer>
+</div>
+<app-footer-two></app-footer-two>

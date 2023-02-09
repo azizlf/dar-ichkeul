@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
     {
 
       title:"Notre cuisine",
-      router_link:""
+      router_link:"restaurant"
 
     },
     {
