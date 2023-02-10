@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
     {
 
       title:"Nos Activités",
-      router_link:""
+      router_link:"activités"
 
     },
     {

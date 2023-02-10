@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
+
+
+.acts-about{
+
+    width: 90%;
+    padding: 8% 5%;
+    padding-bottom: 8%;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.acts-about .rating-stars-acts{
+
+    color: #e4a853;
+    font-size: 1.3vw;
+    margin-left: 4%;
+
+}
+
+.acts-about .title{
+
+    margin-left: 4%;
+    font-size: 1.9vw;
+    color: #666;
+}
+
+.acts-about .sb-title{
+
+    margin-left: 4%;
+    font-size: 5vw;
+    color: #222;
+    font-family: 'Gilda Display', serif;
+    padding: 3% 0;
+
+}
+
+
+.acts-about .acts-description{
+
+    width: 70%;
+    margin-left: 4%;
+    line-height: 3vw;
+    font-size: 1.2vw;
+    color: #666;
+
+}
+
+.acts-about .section-title{
+
+    font-size: 2vw;
+    margin-left: 4%;
+    padding-top: 3%;
+    font-family: 'Gilda Display', serif;
+    color: #222;
+
+}
+
+.acts-about .section-content{
+
+    margin-left: 4%;
+    width: 80%;
+    padding: 1% 0;
+
+}
+
+.acts-about .section-content .hour-item{
+
+    width: 70%;
+    padding: 1% 0;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    color: #666;
+
+}
+
+.acts-about .section-content .hour-item i{
+
+    width: 7%;
+    text-align: center;
+    color: #aa8453;
+    font-size: 1.5vw;
+
+}
+
+
+.acts-about .section-content .description{
+
+    font-size: 1.5vw;
+    padding-left: 2%;
+    color: #666;
+
+}
+
+
+.act-section{
+
+    width: 100%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.act-section .content{
+
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.act-section .content .image{
+
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.act-section .content .description-section{
+
+    width: 50%;
+    height: 100%;
+    background: #f8f5f0;
+
+}
+
+.act-section .content .description-section .title{
+
+    font-size: 3vw;
+    font-family: 'Gilda Display', serif;
+    margin: 5%;
+    margin-top: 11%;
+
+}
+
+.act-section .content .description-section .desc-act{
+
+    width: 90%;
+    padding: 0 4%;
+    line-height: 2vw;
+    font-size: 1.5vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #666;
+
+}
+
+.act-section .content .description-section .time-act{
+
+    width: 80%;
+    padding: 3% 5%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #666;
+    font-size: 1.5vw;
+    margin-top: 5%;
+
+}
+
+.act-section .content .description-section .time-act i{
+
+    margin-right: 4%;
+
+}
+
+
+.act-section-mobile{
+    display: none;
+}
+
+
+@media (max-width:700px){
+
+    .acts-about{
+
+        width: 97%;
+        padding: 8% 1%;
+        padding-bottom: 8%;
+        font-family: 'Barlow Condensed', sans-serif;    
+
+    }
+
+    .acts-about .rating-stars-acts{
+
+        font-size: 15px;
+
+    }
+
+    .acts-about .title{
+
+        font-size: 30px;
+
+    }
+
+
+    .acts-about .sb-title{
+
+        font-size: 38px;
+
+    }
+
+
+    .acts-about .acts-description{
+
+        width: 92%;
+        margin-left: 4%;
+        line-height: 27px;
+        font-size: 19px;
+        color: #666;
+
+    }
+
+    .acts-about{
+
+        padding: 7% 0;
+
+    }
+
+    .acts-about .section-title{
+
+        font-size: 27px;
+        margin-left: 4%;
+        padding-top: 3%;
+        font-family: 'Gilda Display', serif;
+        color: #222;
+
+    }
+
+    .acts-about .section-content .hour-item{
+
+        width: 100%;
+        padding: 4% 4%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        color: #666;
+
+    }
+
+
+    .acts-about .section-content .hour-item i{
+
+        width: 11%;
+        text-align: left;
+        font-size: 19px;
+
+    }
+
+    .acts-about .section-content .description{
+
+        font-size: 19px;
+
+    }
+
+    .act-section{
+
+        display: none;
+
+    }
+    .act-section-mobile{
+
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .act-section-mobile .content{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .act-section-mobile .content .image{
+
+        width: 100%;
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .act-section-mobile .content .description-section{
+
+        width: 100%;
+        height: 50%;
+        background: #f8f5f0;
+
+    }
+
+    .act-section-mobile .content .description-section .title{
+
+        font-size: 31px;
+        font-family: 'Gilda Display', serif;
+        padding: 5% 5%;
+    }
+
+    .act-section-mobile .content .description-section .desc-act{
+
+        width: 90%;
+        padding: 0 4%;
+        line-height: 26px;
+        font-size: 18px;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #666;
+
+    }
+
+    .act-section-mobile .content .description-section .time-act{
+
+        width: 80%;
+        padding: 3% 5%;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #666;
+        font-size: 16px;
+        margin-top: 3%;
+
+    }
+
+    .act-section-mobile .content .description-section .time-act i{
+
+        margin-right: 4%;
+
+    }
+
+
+}

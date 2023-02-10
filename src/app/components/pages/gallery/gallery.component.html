@@ -1,3 +1,57 @@
-<app-breadcrumb></app-breadcrumb>
-<app-content></app-content>
-<app-footer></app-footer>
+<div class="acts-about">
+		<div class="rating-stars-acts">
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>
+		</div>
+		<div class="title">Dar Ichkeul</div>
+		<div class="sb-title">Nos Activités</div>
+		<div class="acts-description">
+			Led by Chef de Micheal Martin, The Restaurant is celebrated for its excellent cuisine and unique ambience. The gorgeous dining room features three open studio kitchens, allowing you to enjoy the sights and sounds of the culinary artistry on display. The menu showcases both Asian and European influences, with a tempting selection of classic favorites and creative dishes for you to sample. Cheese connoisseurs will be drawn to the The Wine and Cheese Cellar, housed in five-meter-high glass walls, where our knowledgeable staff can introduce you to some of New York's greatest culinary treasures.
+		</div>
+	
+</div>
+
+<div class="act-section" *ngFor="let item of actsList">
+	<div class="content" *ngIf="item.position_image === 'left'">
+		<div class="image" [style.background-image]="'url('+item.image+')'" data-aos="fade-right"></div>
+		<div class="description-section" data-aos="fade-left">
+			<div class="title"> {{item.title}} </div>
+			<div class="desc-act"> {{item.description}} </div>
+			<div class="time-act">
+				<i class="fa-regular fa-clock"></i>
+				<span> {{item.period}} : {{item.start_at}} am to {{item.end_at}} pm</span>
+			</div>
+		</div>
+	</div>
+	<div class="content" *ngIf="item.position_image === 'right'">
+		<div class="description-section" data-aos="fade-right">
+			<div class="title"> {{item.title}} </div>
+			<div class="desc-act"> {{item.description}} </div>
+			<div class="time-act">
+				<i class="fa-regular fa-clock"></i>
+				<span> {{item.period}} : {{item.start_at}} am to {{item.end_at}} pm</span>
+			</div>
+		</div>
+		<div class="image" [style.background-image]="'url('+item.image+')'" data-aos="fade-left"></div>
+	</div>
+</div>
+
+<div class="act-section-mobile" *ngFor="let item of actsList">
+	<div class="content">
+		<div class="image" [style.background-image]="'url('+item.image+')'" data-aos="fade-right"></div>
+		<div class="description-section" data-aos="fade-left">
+			<div class="title">{{item.title}}</div>
+			<div class="desc-act"> {{item.description}} </div>
+			<div class="time-act">
+				<i class="fa-regular fa-clock"></i>
+				<span>{{item.period}} : {{item.start_at}} am to {{item.end_at}} pm</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br><br><br>
+<app-footer-two></app-footer-two>

@@ -24,7 +24,7 @@ const routes: Routes = [
   // About
   { path: 'about', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule), data: { breadcrumb: 'À propos' } },
   // Gallery
-  { path: 'gallery', loadChildren: () => import('./components/pages/gallery/gallery.module').then(m => m.GalleryModule), data: { breadcrumb: 'Piscine' } },
+  { path: 'activités', loadChildren: () => import('./components/pages/gallery/gallery.module').then(m => m.GalleryModule), data: { breadcrumb: 'Piscine' } },
   // Restaurant
   { path: 'restaurant', loadChildren: () => import('./components/pages/restaurant/restaurant.module').then(m => m.RestaurantModule), data: { breadcrumb: 'Restaurant' } },
   // Places
