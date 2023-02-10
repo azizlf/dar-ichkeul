@@ -1,5 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
 
+.slider-cover-restau{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider-cover-restau .container-slider-restau{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper .restau-slide-image{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+    position: absolute;
+    width: 5%;
+    padding: 1.3% 0;
+    top: 0;
+    z-index: 6;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vw;
+    border: .1vw solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    font-size: 2vw;
+    top: 43%;
+
+}
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-left{
+
+    left: 4%;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-right{
+
+    right: 4%;
+
+} 
+
+
 
 .acts-about{
 
