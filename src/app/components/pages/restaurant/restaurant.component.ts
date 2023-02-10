@@ -297,8 +297,7 @@ export class RestaurantComponent implements OnInit {
         font-family: 'Gilda Display', serif;
         font-size: 15px;
         cursor: pointer;
-        border: .1vw solid #aa8453;
-        background-color:#aa8453;
+        border: .1vw solid transparent;;
 
 
       `)
