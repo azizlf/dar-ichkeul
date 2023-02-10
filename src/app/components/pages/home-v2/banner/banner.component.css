@@ -996,7 +996,7 @@
     .slider-after-btn-reserv-clicked .close-reserv-rooms{
 
         width: 14%;
-        height: 8%;
+        padding: 2.2% 0%;
         position: absolute;
         bottom: 3%;
         left: 43%;
