@@ -420,5 +420,21 @@
 
     }
 
+    .slider-cover-restau{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+        width: 14.7%;
+        padding: 3% 0;
+        font-size: 31px;
+
+    }
+
+
 
 }
