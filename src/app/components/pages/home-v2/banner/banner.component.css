@@ -566,6 +566,7 @@
     width: 45%;
     height: 100%;
     margin: 0;
+    position: relative;
 
 }
 
@@ -582,6 +583,7 @@
     width: 99%;
     height: 12%;
     margin-top: 5%;
+    position: relative;
 
 }
 
@@ -968,7 +970,7 @@
         cursor: pointer;
         border: none;
         outline: none;
-        margin-top: 14%;
+        margin-top: 23%;
         float: right;
         font-size: 25px;
         margin-right: 1%;
@@ -1009,6 +1011,15 @@
         font-size: 28px;
         color: #aa8453;
         border: 1vw solid #aa8453;
+
+    }
+
+    .alertErrorInput{
+
+        color: red;
+        position: absolute;
+        left: 0;
+        font-size: 13px;
 
     }
 

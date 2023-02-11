@@ -60,7 +60,7 @@
                                 <label>Date de départ</label>
                                 <div class="input date">
                                     <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
-                                    <input [matDatepicker]="dateFinReservMobile" [min]="DateArr" [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_depart'>
+                                    <input [matDatepicker]="dateFinReservMobile" [min]="DateArr2" [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_depart'>
                                     <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
                                     <mat-datepicker #dateFinReservMobile></mat-datepicker>
                                 </div>
@@ -75,44 +75,85 @@
                     </div>
                     <div class="form step-2" [formGroup]="user" *ngIf="step_active === 'step 2'">
                         <div class="input-col-6-form">
-                                <label>Nom</label>
+                                <label>Nom *</label>
                                 <div class="input" >
                                     <input placeholder="Nom" class="input-show" formControlName='nom' />
+                                    <label *ngIf="user.controls.nom.hasError('required') && this.user.controls.nom.touched" style="
+
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
+
+                                    ">Obligatoire</label>
                                 </div>
 
-                                <label>Prénom</label>
+                                <label>Prénom *</label>
                                 <div class="input">
                                     <input placeholder="Prénom" class="input-show" formControlName='prenom'/>
+                                    <label *ngIf="user.controls.prenom.hasError('required') && this.user.controls.prenom.touched" style="
+
+
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
+
+
+                                    ">Obligatoire</label>
                                 </div>
 
-                                <label>Adresse E-mail</label>
+                                <label>Adresse E-mail *</label>
                                 <div class="input">
                                     <input placeholder="Adresse E-mail" class="input-show" formControlName='email'/>
+                                    <label *ngIf="user.controls.email.hasError('required') && this.user.controls.email.touched" style="
+
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
+
+                                    ">Obligatoire</label>
+                                <label 
+                                    *ngIf="user.controls.email.hasError('email') && this.user.controls.email.touched" style="
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
+                                    ">Adresse invalide</label>
                                 </div>
 
-                                <label>Numéro de téléphone</label>
-                                <div class="input">
-                                    <input placeholder="Numéro de téléphone" class="input-show"formControlName='nb_personne'/>
-                                </div>
+                                <label>Téléphone *</label>
+                                <div  class= "input">
+                                    <input  type="text" placeholder="Numéro de téléphone" class="input-show"formControlName='phone' (input)="validPhone($event.target.value)"/>
+                                    <label *ngIf="user.controls.phone.hasError('required') && this.user.controls.phone.touched" style="
 
-                                <label>Nombre de personnes</label>
-                                <div class="input">
-                                    <input placeholder="Nombre de personnes" class="input-show"/>
-                                </div>
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
 
-                                <label>Type</label>
+                                    ">Obligatoire</label>
+                                    <label *ngIf="testLengthPhone" style="
+
+                                    color: red;
+                                    position: absolute;
+                                    margin-top: -34%;
+                                    right: 0;
+
+                                    ">numéro invalide</label>                            
+                                </div>
+                                <label>nombres de chambres</label>
                                 <div class="input">
-                                    <select class="input-show select">
-                                        <option value="Haute de saison double">Single chambre</option>
-                                        <option value="Basse de saison double"> Double chambre</option>
-                                     
+                                    <select class="input-show select" >
+                                        <option [value]="item" *ngFor="let item of  tabPresonnes " (change)="selectTarif($event)" >{{item}}</option>
                                     </select>
                                 </div>
-                                <button class="button" [disabled]="user.valid" (click)="confirmReservation()">Confirmer</button>
-                        </div>
+                                <button class="button"  (click)="confirmReservation()">Confirmer</button>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="tarifs-section"> 
             <div class="content-tarifs">            

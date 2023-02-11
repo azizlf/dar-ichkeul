@@ -16,26 +16,44 @@ import Swiper from "swiper";
   encapsulation: ViewEncapsulation.None,
 })
 export class ContentComponent extends RoomHelperService implements OnInit {
+  public testLengthPhone=false
+  public tabPresonnes:any[]=[]
   public maxResvation:Date = new Date();
   public todayDate:Date = new Date();
  public DateArr:Date = new Date();
+ public DateArr2:Date = new Date();
  public tabDate:any[]=[]
+ public tarif:any
  reservationChambreForm = new FormGroup({
 
   date_arrive :new FormControl('',[Validators.required ]),
     date_depart : new FormControl('',[Validators.required ])
   
 })
-user= new FormGroup({
+public user= new FormGroup({
 
   nom :new FormControl('',[Validators.required ]),
     prenom : new FormControl('',[Validators.required ]),
     email :new FormControl('',[Validators.required, Validators.email ]),
-    phone : new FormControl('',[Validators.required ]),
-    nb_personne:new FormControl('',[Validators.required ])
+    phone : new FormControl('',[Validators.required,Validators.minLength(7),Validators.maxLength(8) ]),
+    
   
 })
-
+validPhone(e:any){
+  console.log(e)
+  if(e.length !=8){
+    console.log(e.length)
+    console.log(e.value)
+    console.log(this.testLengthPhone)
+    this.testLengthPhone=true
+  }
+  if(e.length ==8){
+    console.log(e.length)
+    console.log(e.value)
+    console.log(this.testLengthPhone)
+    this.testLengthPhone=false
+  }
+}
  public DateNoDispoFilter= (d: Date): boolean => {
   if(d !== null){
     const time=d.getTime();
@@ -174,6 +192,7 @@ else return true
       if(item.id === id){
         this.room_selected.push(item)
          this.titleRoom=item.title
+         this.tabPresonnes=item.prixChambres
 
       }
 
@@ -195,8 +214,12 @@ else return true
     var date_final = [dt_Date, dt_Month, dt_Year].join('/')
 
     dateInput.value = date_final+""
-
+    
     this.DateArr=e.target.value
+    
+    this.DateArr2 = new Date(e.target.value.setDate(e.target.value.getDate() + 1));
+          
+    console.log(this.DateArr2 ,"rrrr")
     this.tabDate.sort((a, b) => a.getTime() - b.getTime());
     if(this.tabDate.some(ele=>ele>this.DateArr.getTime())==true){
       
@@ -232,14 +255,17 @@ else return true
 
   }
 
-
+  selectTarif(e:any){
+    this.tarif=e.target.value  }
   confirmReservation(){
-    alert("reservation confirmé")
     this.reservationEnligneAndSendEmail({nom:this.user.get('nom')?.value,
                                          email:this.user.get('email')?.value,
-                                         phone:this.user.get('phone')?.value,
-                                         date_arrive : this.reservationChambreForm.get("date_arrive")?.value,
-                                         date_depart :this.reservationChambreForm.get(" date_depart ")?.value })
+                                         tel:this.user.get('phone')?.value,
+                                         tarif:this.tarif,
+                                         room:this.titleRoom,
+                                         dateStart: this.reservationChambreForm.get("date_arrive")?.value,
+                                         dateFin :this.reservationChambreForm.get(" date_depart ")?.value })
+    alert("reservation confirmé")
   }
 
 
@@ -306,6 +332,7 @@ settings = {
     // <<  get room details  >>
 
     this.getRoomDetails(this.roomdetails)
+
     this.getSingleSuite(this.titleRoom).subscribe((resp:any)=>{
       var newArray = Array.prototype.concat.apply([], resp);
      

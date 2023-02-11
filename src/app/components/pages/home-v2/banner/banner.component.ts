@@ -13,11 +13,14 @@ import { RoomHelperService } from 'src/app/components/services/room-helper.servi
 export class BannerComponent implements OnInit {
 
   constructor(private helper:RoomHelperService){}
-
+ public testLengthPhone=false
   public  tabMax:any[]=[]    
   public maxResvation:Date = new Date();
   public todayDate:Date = new Date();
+  public testLengthPr=false
   public DateArr: any
+  arriver:any
+  depart:any
   suites:any[]=[]
   tabDate:any[]=[]
   makes:any[]=[]
@@ -61,18 +64,43 @@ export class BannerComponent implements OnInit {
     nom :new FormControl('',[Validators.required ]),
     prenom : new FormControl('',[Validators.required ]),
     email : new FormControl('',[Validators.required , Validators.email]),
-    telephone : new FormControl('',[Validators.required ]),
-    nbr_personne : new FormControl('',[Validators.required ]),
-    suite : new FormControl('',[Validators.required ])
+    tel : new FormControl('',[Validators.required]),
+    nbr_personne : new FormControl('',[Validators.required,Validators.max(20) ]),
+    
     
   })
-
+  validPhone(e:any){
+    console.log(e)
+   if(e.length !=8){
+      console.log(e.length)
+      console.log(e.value)
+      console.log(this.testLengthPhone)
+      this.testLengthPhone=true
+    } 
+    if(e.length ==8){
+      console.log(e.length)
+      console.log(e.value)
+      console.log(this.testLengthPhone)
+      this.testLengthPhone=false
+    }
+  }
+  validPressonne(e:string){
+    if(parseInt(e) > 4){
+      this.testLengthPr=true
+      
+    } 
+    if(parseInt(e) < 4){
+      this.testLengthPr=false
+      
+    } 
+  }
   containerSwiperRooms:any
 
   suivant(){
-
-    console.log(this.reservationChambreFormMobile.get('date_arrive_mobile')?.value+"   -  "+this.reservationChambreFormMobile.get('date_depart_mobile')?.value)
-
+    this.arriver=this.reservationChambreForm.get('date_arrive')?.value
+    this.depart=this.reservationChambreForm.get('date_depart')?.value
+    console.log(this.arriver , this.depart ,"bb")
+    
     this.containerSwiperRooms = document.getElementById("containerSwiperRooms")
     this.roomListDispoContainer = document.getElementById("roomListDispoContainer")
 
@@ -98,29 +126,29 @@ export class BannerComponent implements OnInit {
   }
 
   register(){
-
-
+      
+    console.log(this.client_info.value ,"kkkk")
+    console.log(this.arriver,this.depart,'eee')
     this.rooms_dispo_selected_items.forEach((item:any)=>{
 
       var reservation = {
 
-        dateStart: this.reservationChambreForm.get('date_arrive')?.value,
-        dateFin: this.reservationChambreForm.get('date_depart')?.value,
+        dateStart: this.arriver,
+        dateFin: this.depart,
         nom: this.client_info.get('nom')?.value,
         prenom: this.client_info.get('prenom')?.value,
-        telephone: this.client_info.get('telephone')?.value,
+        tel: this.client_info.get('phone')?.value,
         nbr_personne: this.client_info.get('nbr_personne')?.value,
-        suite: item.title,
+        room: item.title,
         price: item.price
 
       } 
-
+       console.log(reservation,"reservation")
 
       this.helper.reservationEnligneAndSendEmail(reservation)
 
-
     })
-
+    alert("reservation confirmé")
 
   }
 
@@ -201,15 +229,17 @@ export class BannerComponent implements OnInit {
     var dt_Year = (d.getFullYear() < 10) ? '0' + d.getFullYear() : d.getFullYear();
 
     var date_final = [dt_Date, dt_Month, dt_Year].join('/')
+    
 
     dateInput.value = date_final+""
+    this.arriver=date_final+""
       console.log("date")
       console.log(date.target.value,'valueee')
       
 
     
        
-      this.DateArr=date.target.value 
+      this.DateArr=new Date(date.target.value.setDate(date.target.value.getDate() + 1));
       console.log( this.DateArr,"date d'arriver")
         this.suites.forEach(async (ele)=>{
           console.log(ele,'ele de suite')
@@ -221,9 +251,9 @@ export class BannerComponent implements OnInit {
             tabDate:tab
           }
           console.log(revSuites , j+1, "revSuites")
-           var test =revSuites.tabDate.some(ele=>ele  >= this.DateArr.getTime())
+           var test =revSuites.tabDate.some(ele=>ele  > this.DateArr.getTime())
           if(test ==true){
-            var rev=revSuites.tabDate.find(ele=>ele  >= this.DateArr.getTime())
+            var rev=revSuites.tabDate.find(ele=>ele  > this.DateArr.getTime())
             console.log(ele,'kaka')
             var obj={
               suite:ele.suit,
@@ -284,8 +314,9 @@ export class BannerComponent implements OnInit {
     var dt_Year = (d.getFullYear() < 10) ? '0' + d.getFullYear() : d.getFullYear();
 
     var date_final = [dt_Date, dt_Month, dt_Year].join('/')
-
+       
     dateInput.value = date_final+""
+    this.depart=date_final+""
     this.tabSuitesDispo=this.tabMax.filter(ele=>ele.reservationMax.getTime() >= e.target.value.getTime())
      console.log(this.tabSuitesDispo)
   }
@@ -339,7 +370,7 @@ export class BannerComponent implements OnInit {
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
     if(this.phoneScreen.matches){
-
+               console.log(this.reservationChambreFormMobile.get('date_depart_Mobile')?.value,555)
       slider.style.display = "block"
 
       this.btnReserveHtmlValue = "<span>Réserver</span>"
@@ -348,7 +379,7 @@ export class BannerComponent implements OnInit {
     else{
 
       if(slider.style.height === "0%"){
-
+        console.log(this.reservationChambreFormMobile.get('date_depart_Mobile')?.value,111)
         slider.style.height = "70%"
         this.btnReserveHtmlValue = "<i class='fa-solid fa-xmark'></i>"
 
@@ -368,6 +399,7 @@ export class BannerComponent implements OnInit {
 
   initSliderReservFormOpen(){
 
+   
     this.sliderContainerBoxReservForm = document.getElementById("sliderContainerRoomsDispo")
 
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
@@ -719,33 +751,40 @@ export class BannerComponent implements OnInit {
     },5000)
 
     this.initSliderReservFormOpen()
-
-    this.helper.getAllSuites().subscribe(res=>{
-      var obj:any
-      obj=res
-      this.suites=obj
-      var k= 0
-      this.helper.getAllResvation().subscribe((res:any)=>{
-        var newArray = Array.prototype.concat.apply([], res);
-        newArray=newArray.map(ele=>ele.slice(0,10))
-        console.log(newArray ,'aaaa')
-        for(let i = 0; i< newArray.length; i++){
-         
-          console.log(newArray[i])
-          if(newArray.filter(ele=>ele === newArray[i]).length  ==this.suites.length){
-            k=k+1
-            console.log(k,'ooo')
-            this.tabDate.push(newArray[i]) 
-          }           
-      }  
+    this.helper.getSingleSuiteToute().subscribe((res:any)=>{
+      var newArray = Array.prototype.concat.apply([], res);
+      newArray=newArray.map(ele=>ele.slice(0,10))
+      this.tabDate=newArray
+      console.log(this.tabDate,'1')
+      this.helper.getAllSuites().subscribe(res=>{
+        var obj:any
+        obj=res
+        this.suites=obj
+        console.log(this.suites,"haboub")
+        var k= 0
+        this.helper.getAllResvation().subscribe((res:any)=>{
+          var newArray = Array.prototype.concat.apply([], res);
+          newArray=newArray.map(ele=>ele.slice(0,10))
+          console.log(newArray ,'aaaa')
+          for(let i = 0; i< newArray.length; i++){
+           
+            console.log(newArray[i])
+            if(newArray.filter(ele=>ele === newArray[i]).length  ==this.suites.length ){
+              k=k+1
+              console.log(k,'ooo') 
+              this.tabDate.push(newArray[i]) 
+            }           
+        }  
+        console.log(this.tabDate,'2')  
+      })
+  
+  
+  
         
+     })
     })
-
-
-
-      
-   })
-
+   
+  
   }
 
 

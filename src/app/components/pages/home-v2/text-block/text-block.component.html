@@ -1,26 +1,28 @@
 <!-- text about section  -->
 
 <div class="text-block-section">
-        <div class="content">
-            <div class="desc-block">
-                <div class="stars">
-                    <i class="star-icon"></i>
-                    <i class="star-icon"></i>
-                    <i class="star-icon"></i>
-                    <i class="star-icon"></i>
-                    <i class="star-icon"></i>
-                </div>
-                <p class="title">Dar ichkeul</p>
-                <p class="sb-title">Le luxe et La nature</p>
-                <p class="description">
-                    Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
-                </p>
-              <div class="reservation-container"><i class="fa-brands fa-whatsapp"></i><div class="text">
+    <div class="content">
+        <div class="desc-block">
+            <div class="stars">
+                <i class="star-icon"></i>
+                <i class="star-icon"></i>
+                <i class="star-icon"></i>
+                <i class="star-icon"></i>
+                <i class="star-icon"></i>
+            </div>
+            <p class="title">Dar ichkeul</p>
+            <p class="sb-title">Le luxe et La nature</p>
+            <p class="description">
+                Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
+            </p>
+            <div class="reservation-container">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div class="text">
                     <p>Réservation</p>
                     <p class="num">+216 27 595 239</p>
-                </div></div>
-                <div class="read-more-btn" routerLink="/about">Lire plus</div>
+                </div>
             </div>
+        </div>
             <div class="images">
                 <div class="image right" data-aos="fade-up" style="background-image: url('/assets/img/text-block/dar-ic2.jpg');"></div>
                 <div class="image left" data-aos="fade-up"  style="background-image: url('/assets/img/text-block/dar-ic1.jpg');"></div>
@@ -31,61 +33,56 @@
 <!-- Rooms List section  -->
 
 <div class="rooms-suites">
-        <p class="title" data-aos="fade-up" >Dar ichkeul</p>
-        <p class="sb-title" data-aos="fade-up">Rooms & Suites</p>
-        <div class="rooms-list">
-            <div class="content"> 
-                    <div class="flex-item flex-vertical">
-                            
-                        <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
-                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
-                            <div class="content" >
-                                <button [routerLink]="'/room-details/'+room.id">Details</button>
-                                <div class="title-price">
-                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
-                                    <p class="title">{{room.title}}</p>
-                                    <div class="hr"></div>
-                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
-                                </div>
-                            </div>
+    <p class="title" data-aos="fade-up" >Dar ichkeul</p>
+    <p class="sb-title" data-aos="fade-up">Nos suites</p>
+    <div class="rooms-list">
+        <div class="content"> 
+            <div class="flex-item flex-vertical">                        
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
                         </div>
-                    </div> 
-                    
-                    <div class="flex-item flex-horizontal">
-                        <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites">
-                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
-                            <div class="content" >
-                                <button [routerLink]="'/room-details/'+room.id">Details</button>
-                                <div class="title-price">
-                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
-                                    <p class="title">{{room.title}}</p>
-                                    <div class="hr"></div>
-                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
-                                </div>
-                            </div>
-                        </div>                         
                     </div>
-
-                    <div class="flex-item flex-vertical">
-                            
-                        <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
-                            <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
-                            <div class="content" >
-                                <button [routerLink]="'/room-details/'+room.id">Details</button>
-                                <div class="title-price">
-                                    <p class="price">{{room.price}} DT / {{room.period}}</p>
-                                    <p class="title">{{room.title}}</p>
-                                    <div class="hr"></div>
-                                    <div class="description-item" [innerHtml]="room.longdesc"></div>
-                                </div>
-                            </div>
+                </div>
+            </div> 
+                    
+            <div class="flex-item flex-horizontal">
+                <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
                         </div>
-                    </div> 
- 
+                    </div>
+                </div>                         
             </div>
-            
-        </div>
-        
+
+            <div class="flex-item flex-vertical">                
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>  
+    </div>    
 </div>
 
 <!-- best prices section  --> 
@@ -100,72 +97,35 @@
 
 
 <div class="services-flex-list">
-        
     <div class="content">
-            
-            <p class="title">OUR SERVICES</p>
-
-            <div class="services-list">
-                
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-earth-asia"></i>
-                    <p class="title">Pick Up & Drop</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-car"></i>
-                    <p class="title">Parking Space</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-bed"></i>
-                    <p class="title">Room Service</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-person-swimming"></i>
-                    <p class="title">Swimming Pool</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-wifi"></i>
-                    <p class="title">Fibre Internet</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-                <div class="item-serv" data-aos="fade-up">
-                    
-                    <i class="fa-solid fa-mug-saucer"></i>
-                    <p class="title">Breakfast</p>
-                    <div class="description">
-                        We’ll pick up from airport while you comfy on your ride, mus nellentesque habitant.
-                    </div>
-
-                </div>
-
+        <p class="title">Nos services</p>
+        <div class="services-list">   
+            <div class="item-serv" data-aos="fade-up">  
+                <i class="fa-solid fa-earth-asia"></i>
+                <p class="title">Transfert aéroport personnalisé à la demande et en supplément</p>
             </div>
-
+            <div class="item-serv" data-aos="fade-up">                
+                <i class="fa-solid fa-car"></i>
+                <p class="title">Parking </p>
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-utensils"></i>
+                <p class="title">Petit déjeuner</p>        
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p class="title">piscine</p>
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-wifi"></i>
+                <p class="title">Accès Internet haut débit</p>
+            </div>
+            <div class="item-serv" data-aos="fade-up">                    
+                <i class="fa-solid fa-mug-saucer"></i>
+                <p class="title">Café Nespresso et thé à la demande et en supplément.</p>
+            </div>
         </div>
-
+    </div>
 </div>
 
 

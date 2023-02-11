@@ -80,7 +80,10 @@ export class RoomHelperService implements AfterContentInit {
     return this.http.get(this.ApiPath+'/reservations/check/room?room='+title)
  
   }
-  
+  public getSingleSuiteToute(){
+    return this.http.get(this.ApiPath+'/reservations/check/room?room='+"Toute la villa")
+ 
+  }
   ngAfterContentInit(): void {
     this.setRoom(this.route.snapshot.params.id);
   }
@@ -107,7 +110,7 @@ export class RoomHelperService implements AfterContentInit {
 
   // En ligne reservation and send email 
   reservationEnligneAndSendEmail(data : any){
-    return this.http.post(this.ApiPath + '/send', data)
+    return this.http.post("https://heart-of-carthage-dubai.com/backend/send-mail6", data)
   }
 
 

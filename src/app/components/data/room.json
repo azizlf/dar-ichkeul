@@ -1,5 +1,4 @@
 [
-
     {
         "id": 1,
         "title": "Bonnelli",
@@ -8,9 +7,9 @@
         "category": [
             1
         ],
-        "gridimage": "https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg",
-        "listimage": "https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg",
-        "sliderimage": ["https://thumbs.dreamstime.com/b/chambre-d-h-tel-de-luxe-55970058.jpg","https://assets.hansgrohe.com/celum/web/axw-inspiration-style-mix-bath-view-3333x1875.jpg?format=HBW48"],
+        "gridimage": "assets/img/photos_new_content/bonneli/bonneli.jpg",
+        "listimage": "assets/img/photos_new_content/bonneli/bonneli.jpg",
+        "sliderimage": ["assets/img/photos_new_content/bonneli/bonneli.jpg","assets/img/photos_new_content/bonneli/bonneli_2.jpg","assets/img/photos_new_content/bonneli/bonneli_5.jpg","assets/img/photos_new_content/bonneli/bonneli_6.jpg"],
         "text": "Suite Vue sur le Jardin",
         "longdesc": "<p>Isolez-vous en toute tranquillité dans cet espace lumineux où seul le chant des oiseaux vient interrompre le silence</p>",
         "authors": [
@@ -77,19 +76,25 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single : 210 DT/Nuit ",
+            "Chambre Double : 280 DT/Nuit "
+           
+        ],
         "offer": true
     },
     {
         "id": 2,
-        "title": "Cicogne",
+        "title": "Cigogne",
         "price": 265,
         "period": "Nuit",
         "category": [
             2
         ],
-        "gridimage": "https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg",
-        "listimage": "https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg",
-        "sliderimage": ["https://www.hoteltrianonrivegauche.com/wp-content/uploads/2020/05/Hotel-Trianon-rive-Gauche-WEB-8.jpg","https://contentmedia.dornbracht.com/-/media/dcom/page-content/slideshow/bathroom/home/dornbracht-vaia-platinum-matte-bathroom.jpg?rev=183a23c4326e4fc8b4ef5ff8a205f7f7&h=679&w=1200&la=fr&hash=01A78BCA07F507249D0BFA158389F963"],
+        "gridimage": "assets/img/photos_new_content/cigogne/IMG_6918.jpg",
+        "listimage": "assets/img/photos_new_content/cigogne/IMG_6918.jpg",
+        "sliderimage": ["assets/img/photos_new_content/cigogne/IMG_6918.jpg","assets/img/photos_new_content/cigogne/IMG_6919.jpg","assets/img/photos_new_content/cigogne/IMG_6921.jpg","assets/img/photos_new_content/cigogne/IMG_6923.jpg","assets/img/photos_new_content/cigogne/IMG_6925.jpg","assets/img/photos_new_content/cigogne/IMG_6926.jpg"],
         "text": "Suite Standard Vue sur la Ferme",
         "longdesc": "<p>Réveillez-vous au son du silence et en admirant des levers de soleil spectaculaires</p>",
         "authors": [
@@ -155,6 +160,12 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single : 265 DT/Nuit ",
+            "Chambre Double : 335 DT/Nuit "
+           
+        ],
         "offer": true
     },
     {
@@ -165,9 +176,9 @@
         "category": [
             3
         ],
-        "gridimage": "https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000",
-        "listimage": "https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000",
-        "sliderimage": ["https://img.freepik.com/photos-premium/rendu-3d-belle-suite-chambre-luxe-hotel-television-table-travail_105762-2051.jpg?w=2000","http://chestnutsandpeonies.com/wp-content/uploads/2021/02/IMG_6726.jpg"],
+        "gridimage": "assets/img/photos_new_content/amorpha/amorpha_1.jpg",
+        "listimage": "assets/img/photos_new_content/amorpha/amorpha_1.jpg",
+        "sliderimage": ["assets/img/photos_new_content/amorpha/amorpha_1.jpg","assets/img/photos_new_content/amorpha/amorpha_2.jpg","assets/img/photos_new_content/amorpha/amorpha_3.jpg","assets/img/photos_new_content/amorpha/amorpha_6.jpg"],
         "text": "Suite avec Jacuzzi",
         "longdesc": "<p>Avec sa Jacuzzi, profitez du calme en vous offrant tout le confort dont vous avez besoin</p>",
         "authors": [
@@ -233,6 +244,12 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single : 245 DT/Nuit ",
+            "Chambre Double : 315 DT/Nuit "
+           
+        ],
         "offer": false
     },
     {
@@ -243,9 +260,9 @@
         "category": [
             4
         ],
-        "gridimage": "https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg",
-        "listimage": "https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg",
-        "sliderimage": ["https://d2s0jlb9tovn77.cloudfront.net/colonnadehotel.com-696924584/cms/cache/v2/5e4c3716472c7.jpg/1600x720/fit;c:0,901,4500,2926/80/28215e0a290e6c072d04dcbc9da2c869.jpg","https://img-3.journaldesfemmes.fr/MU6gSE-ugafsZJoy6A3bZiraqsE=/1500x/smart/5aa5fb7e78414535958cc1e4c100748d/ccmcms-jdf/26078654.jpg"],
+        "gridimage": "assets/img/photos_new_content/ruppia/ruppia_2.jpg",
+        "listimage": "assets/img/photos_new_content/ruppia/ruppia_2.jpg",
+        "sliderimage": ["assets/img/photos_new_content/ruppia/ruppia_2.jpg"],
         "text": "Suite avec Jacuzzi Vue sur la Piscine",
         "longdesc": "<p>Une suite dotée d'un Jacuzzi offrant une vue imprenable sur la piscine qui sera vous séduire par le style raffiné et luxueux</p>",
         "authors": [
@@ -311,6 +328,13 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single : 245 DT/Nuit ",
+            "Chambre Double : 315 DT/Nuit ",
+            " + Lit supplémentaire : 405 DT/Nuit "
+            
+        ],
         "offer": true
     },
     {
@@ -321,9 +345,9 @@
         "category": [
             5
         ],
-        "gridimage": "https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg",
-        "listimage": "https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg",
-        "sliderimage": ["https://www.hiltonhotels.com/assets/img/Hotel%20Images/Conrad/D/DXBCDCI/DXBCDCI_gallery_k1dv01.jpg","https://www.espace-aubade.fr/uploads/product/picture/1416x954/meuble-salle-de-bain-delpha-delphy-intuitive140-blanc-ultra-1-2021.jpg"],
+        "gridimage": "assets/img/photos_new_content/Ciconia/C85A6393.jpg",
+        "listimage": "assets/img/photos_new_content/Ciconia/C85A6393.jpg",
+        "sliderimage": ["assets/img/photos_new_content/Ciconia/C85A6393.jpg"],
         "text": "Suite Standard avec Terrasse",
         "longdesc": "<p>Avec sa terrasse privée, le regard s’attarde sur chaque détail à l'extrême raffinement</p>",
         "authors": [
@@ -389,6 +413,12 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single : 230 DT/Nuit ",
+            "Chambre Double : 300 DT/Nuit "
+           
+        ],
         "offer": false
     },
     {
@@ -399,9 +429,9 @@
         "category": [
             2
         ],
-        "gridimage": "https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG",
-        "listimage": "https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG",
-        "sliderimage": ["https://ca-times.brightspotcdn.com/dims4/default/eb9916c/2147483647/strip/false/crop/2436x1457+0+0/resize/1486x889!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Fdd%2F62b8f4c942918607dcfee0d033b5%2Fcasinos-harrahs-presidential-suite.JPG","https://resize.elle.fr/original/var/plain_site/storage/images/deco/pieces/salle-de-bain/40-idees-deco-pour-la-salle-de-bains/70300606-15-fre-FR/Idees-deco-salle-de-bain-l-art-de-rafraichir-cette-piece-avec-trois-fois-rien.jpg"],
+        "gridimage": "assets/img/photos_new_content/colony/colony_3.jpg",
+        "listimage": "assets/img/photos_new_content/colony/colony_3.jpg",
+        "sliderimage": ["assets/img/photos_new_content/colony/colony_3.jpg","assets/img/photos_new_content/colony/colony_4.jpg","assets/img/photos_new_content/colony/IMG-0710.jpg"],
         "text": "Suite De Luxe avec Vue panoramique",
         "longdesc": "<p>Une suite moderne et luxueuse baignée de lumière naturelle, offrant un intérieur chaleureux et apaisant avec un fabuleux paysage, vous permet de contempler la beauté de la ville, de jour comme de nuit</p>",
         "authors": [
@@ -466,6 +496,13 @@
         "cancellation": "Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. <strong>Cancel up</strong> to <strong>14 days</strong> to get a full refund.",
         "location": [
             31.53912, -89.29163
+        ],
+        "prixChambres": [
+           
+            "Chambre Single : 385 DT/Nuit ",
+            "Chambre Double : 455 DT/Nuit ",
+            "+ Lit supplémentaire : 535 DT/Nuit ",
+            "+ Lit supplémentaire : 625 DT/Nuit "
         ],
         "offer": true
     },
@@ -545,6 +582,12 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+             "Chambre Single/ Basse saison : 300 DT/Nuit ",
+             "Chambre Double/ Basse saison : 370 DT/Nuit "
+            
+        ],
         "offer": true
     },
     {
@@ -623,7 +666,12 @@
         "location": [
             31.53912, -89.29163
         ],
+        "prixChambres": [
+           
+            "Chambre Single :335 DT/Nuit ",
+            "Chambre Double : 405 DT/Nuit "
+            
+        ],
         "offer": true
     }
-
 ]

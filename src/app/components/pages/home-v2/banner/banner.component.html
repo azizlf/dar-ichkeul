@@ -13,7 +13,7 @@
 
         <div class="btn-to-rooms-and-suites" (mouseover)="overBtn(btnRoomSuites)" (mouseout)="outBtn(btnRoomSuites)">
             <div class="bg-btn" id="bgBtn" #btnRoomSuites></div>
-            <p>rooms & suites</p>
+            <p>Nos suites</p>
         </div>
 
 
@@ -81,31 +81,113 @@
             <div class="close-reserv-rooms" #closeFormBtn (click)="closeReservFormOpen(sliderContainerRoomsDispo)" ><i class="fa-solid fa-xmark"></i></div>
 
 
-            <div class="form-reserv-client-infos" *ngIf="current_step_reserv_form === 'step 2'">
+            <div   [formGroup]="client_info" class="form-reserv-client-infos" *ngIf="current_step_reserv_form === 'step 2'">
                 
                 <div class="flex-inputs">
                     <div class="input">
+                       
                         <label>Nom</label><br>
-                        <input type="text" placeholder="Nom">
+                        <input type="text"  placeholder="Nom" formControlName='nom'>
+                        <br>
+                        <label class="alertErrorInput" *ngIf="client_info.controls.nom.hasError('required') && client_info.controls.nom.touched" style="
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+                        ">Le nom est obligatoire</label>
+                        <br>
+                        
                     </div>
                     <div class="input">
                         <label>Prénom</label><br>
-                        <input type="text" placeholder="Prénom">
+                        <input   type="text" placeholder="Prénom" formControlName='prenom'>
+                        <label class="alertErrorInput"  *ngIf="client_info.controls.prenom.hasError('required') && client_info.controls.prenom.touched" style="
+                            color: red;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-size: 15px;
+
+                        ">Le prenom est obligatoire</label>
                     </div>
                 </div>
                 <div class="input">
                     <label>Adresse Email</label><br>
-                    <input type="text" placeholder="Adresse Email">
+                    <input type="text" placeholder="Adresse Email" formControlName='email'>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('required') && this.client_info.controls.email.touched" style="
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+                    ">Adresse email est obligatoire</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('email') && this.client_info.controls.email.touched" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                    ">Adresse email invalide</label>
                 </div>
                 <div class="input">
                     <label>Numéro de téléphone</label><br>
-                    <input type="text" placeholder="Numéro de téléphone">
+                    <input type="number" placeholder="Numéro de téléphone" formControlName='tel' (input)="validPhone($event.target.value)">
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.tel.hasError('required') && this.client_info.controls.tel.touched" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                    " >Téléphone est obligatoire</label>
+                    <!-- <label *ngIf="client_info.controls.phone.hasError.('maxlength')" style="color: red;">phone non exact</label>
+                    <label *ngIf="client_info.controls.phone.hasError.('minlength')" style="color: red;">phone non exact</label> -->
+                     <label class="alertErrorInput"  *ngIf="testLengthPhone" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                     ">numéro invalide</label>
                 </div>
                 <div class="input">
                     <label>Nombre de presonnes</label><br>
-                    <input type="text" placeholder="Nombre de presonnes">
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('required') && client_info.controls.nbr_personne.touched" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                    " (input)="validPressonne($event.target.value)">champ obligatoire</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('max') && client_info.controls.nbr_personne.touched" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                    ">maximum 20 presonnes pour 8 suites</label>
+                    <label class="alertErrorInput"  *ngIf="testLengthPr" style="
+
+                        color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 15px;
+
+                    ">maximum 4 presonnes pour un suite</label>
+                    <input type="number" placeholder="Nombre de presonnes" formControlName='nbr_personne' >
                 </div>
-                <button class="confirm-btn-reserv" >confirmer</button>
+                <button class="confirm-btn-reserv" [disabled]="!client_info.valid" (click)="register()" >confirmer</button>
                 <button class="return-btn-reserv" (click)="nextStepReservSlider(containerSlides,btnSlide1,closeFormBtn)">retour</button>
 
             </div>
@@ -134,8 +216,9 @@
                 </div>
             </div>
 
-            <button type="submit" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
+            <button type="submit"  (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
 
         </div>
         
     </div>
+  

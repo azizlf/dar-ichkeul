@@ -54,7 +54,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"PISCINE",
       image:"https://tunisie.co/uploads/images/content/trt-210622-1.jpg",
-      description:"Spa center inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.",
+      description:"",
       period:"daily",
       start_at:"07",
       end_at:"08",
@@ -64,7 +64,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"EQUITATION",
       image:"https://blog.cap-adrenaline.com/wp-content/uploads/2022/03/equipement-cours-equitation.jpg",
-      description:"Spa center inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.",
+      description:"Nous proposons  des balades  en montagne dans la région de Mateur.  Ce sont des chevaux adorables pour tous niveaux et tous âges ! Venez en famille, entre amis, ou même en amoureux… Les balades sont ouvertes à tous ; enfants, adolescents, adultes, débutants, cavaliers…",
       period:"daily",
       start_at:"07",
       end_at:"08",
@@ -74,7 +74,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"TENNIS",
       image:"assets/img/aboutcarousel/03.jpg",
-      description:"Spa center inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.",
+      description:"",
       period:"daily",
       start_at:"07",
       end_at:"08",
@@ -84,7 +84,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"RANDONNÉE",
       image:"https://www.fribourgregion.ch/wp-content/uploads/2022/03/randonnee_hb.jpg",
-      description:"Spa center inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.",
+      description:"Nos randonnées accompagnées sont placées sous le signe de la convivialité et de l’exploration. Que vous ayez envie de bien-être, de découverte ou d’aventure,Partez en petit groupe découvrir les richesses d’une région ou d’un massif. Nos guides locaux, experts de leurs territoires et amoureux de la nature partageront avec vous leurs mille et une connaissances.Marcher avec un groupe, c’est aussi placer son séjour sous le signe de la convivialité, de l’échange et de la rencontre. Ces expériences vous laisseront à coup sûr de merveilleux souvenirs. Ne dit-on pas que le bonheur n’est vrai que quand il est partagé ?",
       period:"daily",
       start_at:"07",
       end_at:"08",
