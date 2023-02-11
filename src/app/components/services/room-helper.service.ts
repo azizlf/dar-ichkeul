@@ -35,7 +35,9 @@ export class RoomHelperService implements AfterContentInit {
   
   }
   getAllResvation(){
-    
+    this.http.get('http://jsonplaceholder.typicode.com/posts').subscribe(data => {
+      console.log(data);
+    });
     return this.http.get(this.ApiPath+'/reservations/check/room?room=all&front=true')
   
   }
