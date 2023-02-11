@@ -644,7 +644,7 @@
 }
 
 
-.alertErrorInput{
+.slider-after-btn-reserv-clicked .form-reserv-client-infos .input .alertErrorInput{
 
     color: red;
     position: absolute;
@@ -1025,10 +1025,11 @@
 
     }
 
-    .alertErrorInput{
+    .slider-after-btn-reserv-clicked .form-reserv-client-infos .input .alertErrorInput{
 
         color: red;
         position: absolute;
+        top: 176%;
         left: 0;
         font-size: 13px;
 

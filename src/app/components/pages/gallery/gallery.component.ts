@@ -64,7 +64,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"EQUITATION",
       image:"https://blog.cap-adrenaline.com/wp-content/uploads/2022/03/equipement-cours-equitation.jpg",
-      description:"Nous proposons  des balades  en montagne dans la région de Mateur.  Ce sont des chevaux adorables pour tous niveaux et tous âges ! Venez en famille, entre amis, ou même en amoureux… Les balades sont ouvertes à tous ; enfants, adolescents, adultes, débutants, cavaliers…",
+      description:"Nous proposons  des balades  en montagne dans la région de Mateur.  Ce sont des chevaux adorables pour tous niveaux et tous âges ! Venez en famille, entre amis, ou même en amoureux…",
       period:"daily",
       start_at:"07",
       end_at:"08",

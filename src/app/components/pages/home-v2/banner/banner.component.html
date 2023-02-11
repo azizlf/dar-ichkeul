@@ -96,89 +96,28 @@
                     <div class="input">
                         <label>Prénom</label><br>
                         <input   type="text" placeholder="Prénom" formControlName='prenom'>
-                        <label class="alertErrorInput"  *ngIf="client_info.controls.prenom.hasError('required') && client_info.controls.prenom.touched" style="
-                            color: red;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            font-size: 15px;
-
-                        ">Le prenom est obligatoire</label>
+                        <label class="alertErrorInput"  *ngIf="client_info.controls.prenom.hasError('required') && client_info.controls.prenom.touched" >Le prenom est obligatoire</label>
                     </div>
                 </div>
                 <div class="input">
                     <label>Adresse Email</label><br>
                     <input type="text" placeholder="Adresse Email" formControlName='email'>
-                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('required') && this.client_info.controls.email.touched" style="
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-                    ">Adresse email est obligatoire</label>
-                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('email') && this.client_info.controls.email.touched" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                    ">Adresse email invalide</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('required') && this.client_info.controls.email.touched" >Adresse email est obligatoire</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.email.hasError('email') && this.client_info.controls.email.touched" >Adresse email invalide</label>
                 </div>
                 <div class="input">
                     <label>Numéro de téléphone</label><br>
                     <input type="number" placeholder="Numéro de téléphone" formControlName='tel' (input)="validPhone($event.target.value)">
-                    <label class="alertErrorInput"  *ngIf="client_info.controls.tel.hasError('required') && this.client_info.controls.tel.touched" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                    " >Téléphone est obligatoire</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.tel.hasError('required') && this.client_info.controls.tel.touched" >Téléphone est obligatoire</label>
                     <!-- <label *ngIf="client_info.controls.phone.hasError.('maxlength')" style="color: red;">phone non exact</label>
                     <label *ngIf="client_info.controls.phone.hasError.('minlength')" style="color: red;">phone non exact</label> -->
-                     <label class="alertErrorInput"  *ngIf="testLengthPhone" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                     ">numéro invalide</label>
+                     <label class="alertErrorInput"  *ngIf="testLengthPhone">numéro invalide</label>
                 </div>
                 <div class="input">
                     <label>Nombre de presonnes</label><br>
-                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('required') && client_info.controls.nbr_personne.touched" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                    " (input)="validPressonne($event.target.value)">champ obligatoire</label>
-                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('max') && client_info.controls.nbr_personne.touched" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                    ">maximum 20 presonnes pour 8 suites</label>
-                    <label class="alertErrorInput"  *ngIf="testLengthPr" style="
-
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-
-                    ">maximum 4 presonnes pour un suite</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('required') && client_info.controls.nbr_personne.touched"  (input)="validPressonne($event.target.value)">champ obligatoire</label>
+                    <label class="alertErrorInput"  *ngIf="client_info.controls.nbr_personne.hasError('max') && client_info.controls.nbr_personne.touched" >maximum 20 presonnes pour 8 suites</label>
+                    <label class="alertErrorInput"  *ngIf="testLengthPr" >maximum 4 presonnes pour un suite</label>
                     <input type="number" placeholder="Nombre de presonnes" formControlName='nbr_personne' >
                 </div>
                 <button class="confirm-btn-reserv" [disabled]="!client_info.valid" (click)="register()" >confirmer</button>

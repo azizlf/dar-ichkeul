@@ -70,38 +70,38 @@ export class TextBlockComponent implements OnInit {
 
     {
       
-      name:"personne 1",
-      profession:"profession 1",
-      image:"photo.jpg",
-      rating:3,
-      description:"Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan."
-
-    },
-    {
-      
-      name:"personne 2",
-      profession:"profession 2",
-      image:"photo.jpg",
-      rating:4,
-      description:"Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan."
-
-    },
-    {
-      
-      name:"personne 3",
-      profession:"profession 3",
-      image:"photo.jpg",
-      rating:3,
-      description:"Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan."
-
-    },
-    {
-      
-      name:"personne 4",
-      profession:"profession 4",
-      image:"photo.jpg",
+      name:"Mohamed Amous",
+      profession:"Founder, qux co.",
+      image:"assets/img/testimonial/01.png",
       rating:5,
-      description:"Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan."
+      description:"Nous avons passé le week-end dernier un séjour en famille dans cette merveilleuse maison d hotes. L'accueil et le service sont à la hauteur de ce site exceptionnel."
+
+    },
+    {
+      
+      name:"Sarra Mihoub",
+      profession:"Founder, hilix",
+      image:"assets/img/testimonial/02.png",
+      rating:5,
+      description:"Une belle surprise sur la région de Bizerte pour moi j'adore l'endroit reste à voir sur place 😍."
+
+    },
+    {
+      
+      name:"Ahlem Amara",
+      profession:"Founder, Condo",
+      image:"assets/img/testimonial/03.png",
+      rating:5,
+      description:"un endroit féérique et un service hors norme, top."
+
+    },
+    {
+      
+      name:"Khédija Siala Bouassida",
+      profession:"Founder, hilix",
+      image:"assets/img/testimonial/04.png",
+      rating:5,
+      description:"On a fait l'expérience et c'était Magnifique vraiment exceptionnel."
 
     }
 
@@ -163,7 +163,7 @@ export class TextBlockComponent implements OnInit {
     client_name.innerText = slide.name
     client_profession.innerText = slide.profession
     description.innerText = slide.description
-    client_image.src = "/assets/img/text-block/"+slide.image
+    client_image.src = slide.image
     client_name.innerText = slide.name
 
     container.setAttribute("style",`
