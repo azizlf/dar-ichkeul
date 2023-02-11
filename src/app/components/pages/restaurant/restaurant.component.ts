@@ -560,7 +560,7 @@ export class RestaurantComponent implements OnInit {
     })
 
 
-    this.generateMenusItems("Breakfast")
+    this.generateMenusItems("entree_froide")
 
 
     this.cover_restau_page_images.map((img:any)=>{
