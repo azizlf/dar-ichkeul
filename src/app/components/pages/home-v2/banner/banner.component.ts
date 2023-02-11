@@ -157,16 +157,28 @@ export class BannerComponent implements OnInit {
 
   bannerPosts = [
     {
-      img: "/assets/img/banner/dar-ic3.jpg",
+      img: "assets/img/photos_new_content/les_slides/02d26d31-7ec1-437f-8404-116d23297f80.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar Ichkeul Le luxe et La nature",
     },
     {
-      img: "/assets/img/banner/dar-ic2.jpg",
+      img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
       tag: 'The ultimate luxury experience',
       title: "LÀ OÙ LA VIE EST PLUS DOUCE",
       
     },
+    {
+      img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
+      tag: 'The ultimate luxury experience',
+      title: "Dar Ichkeul Le luxe et La nature",
+      
+    },
+    {
+      img: "assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.JPG",
+      tag: 'The ultimate luxury experience',
+      title: "LÀ OÙ LA VIE EST PLUS DOUCE",
+      
+    }
   ];
   bannerBgImage = ""
   bannerTitle = ""

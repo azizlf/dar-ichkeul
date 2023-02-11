@@ -84,7 +84,7 @@ export class GalleryComponent implements OnInit {
     {
       title:"RANDONNÉE",
       image:"https://www.fribourgregion.ch/wp-content/uploads/2022/03/randonnee_hb.jpg",
-      description:"Nos randonnées accompagnées sont placées sous le signe de la convivialité et de l’exploration. Que vous ayez envie de bien-être, de découverte ou d’aventure,Partez en petit groupe découvrir les richesses d’une région ou d’un massif. Nos guides locaux, experts de leurs territoires et amoureux de la nature partageront avec vous leurs mille et une connaissances.Marcher avec un groupe, c’est aussi placer son séjour sous le signe de la convivialité, de l’échange et de la rencontre. Ces expériences vous laisseront à coup sûr de merveilleux souvenirs. Ne dit-on pas que le bonheur n’est vrai que quand il est partagé ?",
+      description:"Nos randonnées accompagnées sont placées sous le signe de la convivialité et de l’exploration. Que vous ayez envie de bien-être, de découverte ou d’aventure,Partez en petit groupe découvrir les richesses d’une région ou d’un massif. Nos guides locaux, experts de leurs territoires et amoureux de la nature partageront avec vous leurs mille et une connaissances.",
       period:"daily",
       start_at:"07",
       end_at:"08",

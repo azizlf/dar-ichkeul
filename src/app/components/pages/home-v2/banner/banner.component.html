@@ -89,13 +89,7 @@
                         <label>Nom</label><br>
                         <input type="text"  placeholder="Nom" formControlName='nom'>
                         <br>
-                        <label class="alertErrorInput" *ngIf="client_info.controls.nom.hasError('required') && client_info.controls.nom.touched" style="
-                        color: red;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 15px;
-                        ">Le nom est obligatoire</label>
+                        <label class="alertErrorInput" *ngIf="client_info.controls.nom.hasError('required') && client_info.controls.nom.touched">Le nom est obligatoire</label>
                         <br>
                         
                     </div>
