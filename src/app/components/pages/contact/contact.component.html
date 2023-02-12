@@ -1,3 +1,80 @@
-<app-breadcrumb></app-breadcrumb>
-<app-content></app-content>
-<app-footer></app-footer>
+<div class="contact-content">
+		
+		<div class="infos">
+			<div class="title-site">DAR ICHKEUL</div>
+			<div class="description">
+				Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.
+			</div>
+			<div class="contact-item">
+				<i class="fa-solid fa-phone"></i>
+				<div class="contact-text">
+					<span class="title-text">Réservation</span>
+					<br>
+					<span>+12345678</span>
+				</div>
+			</div>
+			<div class="contact-item">
+				<i class="fa-regular fa-envelope"></i>
+				<div class="contact-text">
+					<span class="title-text">Email</span>
+					<br>
+					<span>support@darichkeul.tn</span>
+				</div>
+			</div>
+			<div class="contact-item">
+				<i class="fa-solid fa-map-location-dot"></i>
+				<div class="contact-text">
+					<span class="title-text">Adresse</span>
+					<br>
+					<span>Route de Tunis Km 3 Mateur, Borj Essabai 7030 Mateur, Tunisie</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<div class="form-title">
+				<div class="hr"></div>
+				<span>CONTACTER-NOUS</span>
+				<div class="hr"></div>
+			</div>
+			<div class="flex-input-contact-form">
+				<div class="input">
+					<input type="text" placeholder="Nom et Prénom *" />
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Adresse Email *" />
+				</div>
+			</div>
+			<div class="flex-input-contact-form">
+				<div class="input">
+					<input type="text" placeholder="Numéro de téléphone *" />
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Sujet *" />
+				</div>
+			</div>
+			<textarea placeholder="Message *"></textarea>
+			<button>envoyer</button>
+		</div>
+
+</div>
+
+<div class="reserv-form-contact-page">
+	<div class="form">
+		<div class="title-form">RÉSERVER</div>
+		<div class="input date">
+            <input [matDatepicker]="dateDebutReservMobile" placeholder="Date d'arrivée" class="date-picker-no-show" />
+            <mat-datepicker-toggle style="width: 16%;" [for]="dateDebutReservMobile"></mat-datepicker-toggle>
+            <mat-datepicker #dateDebutReservMobile></mat-datepicker>
+		</div>
+		<div class="input date">
+            <input [matDatepicker]="dateFinReservMobile" placeholder="Date de depart" class="date-picker-no-show"  />
+            <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
+            <mat-datepicker #dateFinReservMobile></mat-datepicker>
+		</div>
+		<button>RÉSERVER</button>
+
+	</div>
+</div>
+
+<app-footer-two></app-footer-two>

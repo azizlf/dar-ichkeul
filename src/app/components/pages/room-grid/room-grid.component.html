@@ -1,3 +1,66 @@
-<app-breadcrumb></app-breadcrumb>
-<app-content></app-content>
-<app-footer></app-footer>
+<div class="slider-cover-restau">
+
+    <div class="container-slider-restau">
+            
+        <div class="swiper restau-slider">
+                
+            <div class="swiper-wrapper" id="containerSliderRestau"></div>
+
+        </div>
+
+        <div class="btn-slider-restau slide-restau-left"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="btn-slider-restau slide-restau-right"><i class="fa-solid fa-angle-right"></i></div>
+
+    </div>
+        
+</div>
+<div class="rooms-suites">
+    <div class="rooms-list">
+        <div class="content"> 
+            <div class="flex-item flex-vertical">                        
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-item flex-vertical">                        
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-vertical">                        
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites3">
+                    <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
+                    <div class="content" >
+                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <div class="title-price">
+                            <p class="price">{{room.price}} DT / {{room.period}}</p>
+                            <p class="title">{{room.title}}</p>
+                            <div class="hr"></div>
+                            <div class="description-item" [innerHtml]="room.longdesc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+<app-footer-two></app-footer-two>

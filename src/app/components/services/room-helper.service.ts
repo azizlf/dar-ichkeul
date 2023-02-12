@@ -112,7 +112,7 @@ export class RoomHelperService implements AfterContentInit {
 
   // En ligne reservation and send email 
   reservationEnligneAndSendEmail(data : any){
-    return this.http.post("https://heart-of-carthage-dubai.com/backend/send-mail6", data)
+    return this.http.post("https://heart-of-carthage-dubai.com/backend/mail/send-mail6", data)
   }
 
 

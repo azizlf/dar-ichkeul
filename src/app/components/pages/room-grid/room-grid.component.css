@@ -1,0 +1,447 @@
+.slider-cover-restau{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider-cover-restau .container-slider-restau{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper .restau-slide-image{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+    position: absolute;
+    width: 5%;
+    padding: 1.3% 0;
+    top: 0;
+    z-index: 6;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vw;
+    border: .1vw solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    font-size: 2vw;
+    top: 43%;
+
+}
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-left{
+
+    left: 4%;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-right{
+
+    right: 4%;
+
+} 
+
+.rooms-suites{
+
+    width: 100%;
+    background-color: #f8f5f0;
+    padding-top: 3%;
+    color: black;
+
+}
+
+
+.rooms-suites .title{
+
+    width: 96%;
+    padding-left: 4%;
+    font-size: 2vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #585353;
+
+
+}
+
+.rooms-suites .sb-title{
+
+    width: 96%;
+    padding-left: 4%;
+    font-size: 4vw;
+    font-family: 'Merriweather', serif;
+    margin-top: 2%;
+
+}
+
+.rooms-suites .rooms-list{
+
+    width: 100%;
+    height: 85%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rooms-suites .rooms-list .content{
+
+    width: 85%;
+    height: 100%;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-vertical{
+
+    width: 100%;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-vertical .item{
+
+    width: 32%;
+    height: 94%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-horizontal{
+
+    width: 100%;
+    height: 346px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.rooms-suites .rooms-list .content .flex-horizontal .item{
+
+    width: 49%;
+    height: 94%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.rooms-suites .rooms-list .content .flex-vertical .item .cover-item
+,.rooms-suites .rooms-list .content .flex-horizontal .item .cover-item{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .7s;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-item .content{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: .6s;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .content button{
+
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    background-color: transparent;
+    border: .1vw solid #cacaca;
+    color: white;
+    font-size: 1.3vw;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: .2vw;
+    cursor: pointer;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-item .content .title-price{
+
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 25%;
+    font-size: 1.5vw;
+    color: white;
+    transition: .6s;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .content .title-price .title{
+
+    color: white;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-vertical .content .title-price{
+
+    bottom: -8%;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .content .title-price .price{
+
+    margin-left: 5%;
+    font-weight: 100;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .content .title-price .hr{
+
+    border-top: .1vw solid white;
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 2%;
+    transition: .4s;
+
+}
+
+
+.rooms-suites .rooms-list .content .flex-item .content .title-price .description-item{
+
+    font-size: 1.2vw;
+    padding: 0 4%;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    margin-top: 10%;
+    font-family: 'Barlow Condensed', sans-serif;
+    user-select: none;
+    opacity: 0;
+    transition: .6s;
+
+}
+
+
+
+
+.rooms-suites .rooms-list .content .flex-item .item:hover .cover-item{
+
+    transform: scale(1.06);
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .item:hover .content{
+
+    background-color: #00000096;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .item:hover .title-price{
+
+    bottom: 11%;
+
+}
+
+.rooms-suites .rooms-list .content .flex-horizontal .item:hover .title-price{
+
+    bottom: 24%;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .item:hover  .title-price .hr{
+
+    width: 90%;
+
+}
+
+.rooms-suites .rooms-list .content .flex-item .item:hover .title-price .description-item{
+
+    opacity: 1;
+    margin-top: 2%;
+
+}
+
+@media (max-width:700px){
+
+
+    .slider-cover-restau{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+        width: 14.7%;
+        padding: 3% 0;
+        font-size: 31px;
+
+    }
+
+        .items-rooms .item{
+
+        width: 92%;
+        height: 70%;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        margin: 2% 5%;
+        float: left;
+
+    }
+
+    .rooms-suites{
+
+        height: auto;
+
+    }
+
+    .rooms-suites .title{
+
+        font-size: 18px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .rooms-suites .sb-title{
+
+        font-size: 22px;
+        margin-bottom: 8%;
+        text-align: center;
+        margin-left: 0;
+        padding: 0;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-item{
+
+        display: block;
+        height: auto;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-item .item{
+
+        width: 100%;
+        height: 500px;
+        margin-bottom: 6%;
+
+    }
+
+    .rooms-suites .rooms-list{
+
+        height: auto;
+    }
+
+    .rooms-suites .rooms-list .content{
+
+        height: auto;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-item .content button{
+
+        font-size: 23px;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-item .content .title-price{
+
+        font-size: 21px;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-item .content .title-price .title{
+
+        text-align: left;
+        margin-left: 4%;
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+
+    .rooms-suites .rooms-list .content .flex-item .content .title-price .description-item{
+
+        font-size: 20px;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-horizontal .content .title-price{
+
+        bottom: -8%;
+
+    }
+
+    .rooms-suites .rooms-list .content .flex-horizontal .item:hover .title-price{
+
+        bottom: 6%;
+
+    }
+}

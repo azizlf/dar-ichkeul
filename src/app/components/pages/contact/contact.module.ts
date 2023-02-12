@@ -13,6 +13,8 @@ import { ContentComponent } from './content/content.component';
 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
+import { MatInputModule } from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -28,6 +30,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     RecaptchaModule, 
     RecaptchaFormsModule,
+    MatInputModule,
+    MatDatepickerModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg'
     })

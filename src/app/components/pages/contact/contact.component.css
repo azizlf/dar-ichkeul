@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
+
+.contact-content{
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.contact-content .infos{
+
+    width: 39%;
+    height: auto;
+
+}
+
+.contact-content .infos .title-site{
+
+    width: 100%;
+    padding: 0 3%;
+    font-size: 6vw;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.contact-content .infos .description{
+
+    padding: 8% 4%;
+    font-size: 1.4vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #5a5a5a;
+
+}
+
+
+.contact-content .infos .contact-item{
+
+    width: 100%;
+    height: 10%;
+    margin: 4% 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-content .infos .contact-item i{
+
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: #ab8a62;
+    margin-right: 1%;
+
+}
+
+.contact-content .infos .contact-item .contact-text{
+
+    width: 60%;
+    height: 100%;
+
+}
+
+.contact-content .infos .contact-item .contact-text .title-text{
+
+    font-size: 1.7vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #4a4a4a;
+
+}
+
+.contact-content .infos .contact-item .contact-text span{
+
+    font-size: 2vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #8e6d45;
+    line-height: 2vw;
+
+}
+
+
+
+.contact-content .contact-form{
+
+    width: 38%;
+    height: 49%;
+    background-color: white;
+
+}
+
+.contact-content .contact-form .form-title{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5vw;
+    color: #ab8a62;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.contact-content .contact-form .form-title span{
+
+    margin-top: -1%;
+
+}
+
+
+.contact-content .contact-form .form-title .hr{
+
+    width: 24%;
+    padding: .1%;
+    background-color: black;
+
+}
+
+.contact-content .contact-form .flex-input-contact-form{
+
+
+    width: 100%;
+    height: 17%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contact-content .contact-form .flex-input-contact-form .input{
+
+    width: 45%;
+    height: 100%;
+
+}
+
+.contact-content .contact-form .flex-input-contact-form .input input{
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: .1vw solid #8080803d;
+    outline: none;
+    padding: 4% 0;
+    font-size: 1.2vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: transparent;
+
+}
+
+.contact-content .contact-form .flex-input-contact-form .input input:focus{
+
+    border-color: #ab8a62;
+
+}
+
+.contact-content .contact-form textarea{
+
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border: none;
+    border-bottom: .1vw solid #8080803d;
+    resize: none;
+    margin-top: 7%;
+    font-size: 1.2vw;
+    color: #666;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black !important;
+    padding: 0;
+    background-color: transparent;
+
+
+}
+
+.contact-content .contact-form  textarea:focus{
+
+    border-color: #ab8a62;
+
+}
+
+.contact-content .contact-form button{
+
+    width: 55%;
+    padding: 3% 0;
+    font-size: 1.3vw;
+    background-color: #ab8a62;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 3%;
+    transition: .4s;
+    text-transform: uppercase;
+
+}
+
+.contact-content .contact-form button:hover{
+
+    background-color: #272727;
+
+}
+
+.reserv-form-contact-page{
+
+    width: 100%;
+    height: 80%;
+    background-image: url("/assets/img/photos_new_content/les_slides/IMG-0307.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.reserv-form-contact-page .form{
+
+    width: 25%;
+    height: 70%;
+    background-color: #f8f5f0;
+    padding: 3%;
+
+}
+
+.reserv-form-contact-page .form .title-form{
+
+    font-size: 1.7vw;
+    margin-bottom: 6%;
+    color: #ab8a62;
+    text-align: left;
+    border-bottom: 0.1vw solid #ab8a62;
+    padding: 12% 0;
+    margin-top: 12%;
+
+}
+
+.reserv-form-contact-page .form .input{
+
+    padding: 4% 0;
+    background: white;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+
+.reserv-form-contact-page .form .input input{
+
+    height: 100% !important;
+    width: 79%;
+    background-color: white;
+    padding: 6%;
+}
+
+.reserv-form-contact-page .form button{
+
+    width: 100%;
+    height: 15%;
+    background-color: #ab8a62;
+    color: white;
+    border: none;
+    font-size: 1.4vw;
+
+}
+
+@media (max-width:700px){
+
+
+    .contact-content{
+
+        height: 140%;
+        padding: 11% 7%;
+        display: block;
+
+    }
+
+    .contact-content .infos{
+
+        width: 100%;
+
+    }
+
+    .contact-content .infos .title-site{
+
+        font-size: 39px;
+
+    }
+
+    .contact-content .infos .description{
+
+        padding: 1% 4%;
+        font-size: 19px;
+        line-height: 25px;
+        margin-top: 6%;
+
+    }
+
+    .contact-content .infos .contact-item i{
+
+        font-size: 18px;
+        width: 17%;
+
+    }
+
+    .contact-content .infos .contact-item .contact-text{
+
+        width: 100%;
+
+    }
+
+    .contact-content .infos .contact-item .contact-text .title-text{
+
+        font-size: 25px;
+
+    }
+
+    .contact-content .infos .contact-item .contact-text span{
+
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    .contact-content .contact-form{
+
+        width: 100%;
+
+    }
+
+    .contact-content .contact-form .flex-input-contact-form .input input{
+
+        font-size: 12px;
+
+    }
+
+    .contact-content .contact-form textarea{
+
+        font-size: 12px;
+        height: 35%;
+
+    }
+
+    .contact-content .contact-form button{
+
+        padding: 4% 0;
+        font-size: 19px;
+        width: 100%;
+
+    }
+
+    .contact-content .contact-form .form-title{
+
+        font-size: 23px;
+        margin-top: 15%;
+
+    }
+
+
+    .reserv-form-contact-page .form{
+
+        width: 83%;
+        height: 83%;
+        background-color: #f8f5f0;
+        padding: 3% 7%;
+
+    }
+
+    .reserv-form-contact-page .form .title-form{
+
+        font-size: 28px;
+
+    }
+
+    .reserv-form-contact-page .form button{
+
+        height: 13%;
+        font-size: 23px;
+
+    }
+
+}

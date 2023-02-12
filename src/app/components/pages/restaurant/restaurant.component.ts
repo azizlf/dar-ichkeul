@@ -13,16 +13,12 @@ export class RestaurantComponent implements OnInit {
   cover_restau_page_images = [
     {
         "id": 1,
-        "img": "https://www.challenges.fr/drupal/files/2022-02/restaurant-3.jpg"
+        "img": "assets/img/photos_new_content/les_slides/IMG-0307.jpg"
        
     },
     {
         "id": 2,
-        "img": "https://www.hoteldeluxe.info/wp-content/uploads/2013/06/Restaurant-Jean-Georges-du-Trump-International-Hotel-Tower-%C3%A0-New-York-City.png"
-    },
-    {
-        "id": 3,
-        "img": "https://media.cnn.com/api/v1/images/stellar/prod/141107163657-best-hotel-restaurant-restaurants-jean-george.jpg?q=w_720,h_405,x_0,y_0,c_fill/w_1280"
+        "img": "assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.JPG"
     }
   ]
 

@@ -19,24 +19,23 @@ export class GalleryComponent implements OnInit {
   cover_restau_page_images = [
     {
         "id": 1,
-        "img": "https://d1vp8nomjxwyf1.cloudfront.net/wp-content/uploads/sites/364/2021/04/01101407/Restaurant-HotelGRandAmour-%40PionPhotographie-4.jpg"
-       
+        "img": "assets/img/photos_new_content/tennis/IMG_6716.jpg"
     },
     {
         "id": 2,
-        "img": "https://tunisie.co/uploads/images/content/trt-210622-1.jpg"
-    },
-    {
-        "id": 3,
-        "img": "https://blog.cap-adrenaline.com/wp-content/uploads/2022/03/equipement-cours-equitation.jpg"
+        "img": "assets/img/photos_new_content/equitation/169819305_740302160017677_5655585245396388206_n.jpg"
     },
     {
         "id": 4,
-        "img": "assets/img/aboutcarousel/03.jpg"
+        "img": "assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jfif"
+    },
+    {
+        "id": 3,
+        "img": "assets/img/photos_new_content/equitation/196094469.jpg"
     },
     {
         "id": 5,
-        "img": "https://www.fribourgregion.ch/wp-content/uploads/2022/03/randonnee_hb.jpg"
+        "img": "assets/img/photos_new_content/les_slides/IMG-0307.jpg"
     }
   ]
 
@@ -44,7 +43,7 @@ export class GalleryComponent implements OnInit {
 
     {
       title:"RESTAURANT",
-      image:"https://d1vp8nomjxwyf1.cloudfront.net/wp-content/uploads/sites/364/2021/04/01101407/Restaurant-HotelGRandAmour-%40PionPhotographie-4.jpg",
+      image:"assets/img/photos_new_content/les_slides/IMG-0307.jpg",
       description:"Spa center inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.",
       period:"daily",
       start_at:"07",
@@ -53,7 +52,7 @@ export class GalleryComponent implements OnInit {
     },
     {
       title:"PISCINE",
-      image:"https://tunisie.co/uploads/images/content/trt-210622-1.jpg",
+      image:"assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jfif",
       description:"",
       period:"daily",
       start_at:"07",
@@ -63,7 +62,7 @@ export class GalleryComponent implements OnInit {
     },
     {
       title:"EQUITATION",
-      image:"https://blog.cap-adrenaline.com/wp-content/uploads/2022/03/equipement-cours-equitation.jpg",
+      image:"assets/img/photos_new_content/equitation/169819305_740302160017677_5655585245396388206_n.jpg",
       description:"Nous proposons  des balades  en montagne dans la région de Mateur.  Ce sont des chevaux adorables pour tous niveaux et tous âges ! Venez en famille, entre amis, ou même en amoureux…",
       period:"daily",
       start_at:"07",
@@ -73,7 +72,7 @@ export class GalleryComponent implements OnInit {
     },
     {
       title:"TENNIS",
-      image:"assets/img/aboutcarousel/03.jpg",
+      image:"assets/img/photos_new_content/tennis/IMG_6716.jpg",
       description:"",
       period:"daily",
       start_at:"07",
