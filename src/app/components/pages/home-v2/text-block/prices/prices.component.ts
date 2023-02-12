@@ -54,7 +54,7 @@ export class PricesComponent implements OnInit {
 
     container.setAttribute("style",`
 
-        width: 51%;
+        width: 75%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -64,7 +64,7 @@ export class PricesComponent implements OnInit {
     cover_image.setAttribute("style",`
 
         width: 100%;
-        height: 50%;
+        height: 100%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -78,6 +78,16 @@ export class PricesComponent implements OnInit {
 
         width: 100%;
         height: 100%;
+
+      `)
+      cover_image.setAttribute("style",`
+
+          width: 100%;
+          height: 76%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
 
       `)
 

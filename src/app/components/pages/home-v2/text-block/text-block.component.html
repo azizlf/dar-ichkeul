@@ -24,8 +24,8 @@
             </div>
         </div>
             <div class="images">
-                <div class="image right" data-aos="fade-up" style="background-image: url('/assets/img/text-block/dar-ic2.jpg');"></div>
-                <div class="image left" data-aos="fade-up"  style="background-image: url('/assets/img/text-block/dar-ic1.jpg');"></div>
+                <div class="image right" data-aos="fade-up" style="background-image: url('assets/img/photos_new_content/les_slides/IMG-0307.jpg');"></div>
+                <div class="image left" data-aos="fade-up"  style="background-image: url('assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.JPG');"></div>
             </div>
         </div>  
 </div>
@@ -38,7 +38,7 @@
     <div class="rooms-list">
         <div class="content"> 
             <div class="flex-item flex-vertical">                        
-                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
@@ -53,7 +53,7 @@
             </div> 
                     
             <div class="flex-item flex-horizontal">
-                <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites">
+                <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
@@ -68,7 +68,7 @@
             </div>
 
             <div class="flex-item flex-vertical">                
-                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
@@ -102,27 +102,45 @@
         <div class="services-list">   
             <div class="item-serv" data-aos="fade-up">  
                 <i class="fa-solid fa-earth-asia"></i>
-                <p class="title">Transfert aéroport personnalisé à la demande et en supplément</p>
+                <p class="title">Aéroport</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
             </div>
             <div class="item-serv" data-aos="fade-up">                
                 <i class="fa-solid fa-car"></i>
                 <p class="title">Parking </p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
             </div>
             <div class="item-serv" data-aos="fade-up">
                 <i class="fa-solid fa-utensils"></i>
-                <p class="title">Petit déjeuner</p>        
+                <p class="title">Petit déjeuner</p>  
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>     
             </div>
             <div class="item-serv" data-aos="fade-up">
                 <i class="fa-solid fa-person-swimming"></i>
                 <p class="title">piscine</p>
+                <div class="description">
+                   Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
             </div>
             <div class="item-serv" data-aos="fade-up">
                 <i class="fa-solid fa-wifi"></i>
-                <p class="title">Accès Internet haut débit</p>
+                <p class="title">Wifi</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
             </div>
             <div class="item-serv" data-aos="fade-up">                    
                 <i class="fa-solid fa-mug-saucer"></i>
-                <p class="title">Café Nespresso et thé à la demande et en supplément.</p>
+                <p class="title">Café Nespresso</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
             </div>
         </div>
     </div>

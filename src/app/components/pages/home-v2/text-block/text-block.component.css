@@ -531,9 +531,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
     padding-left: 5%;
-    margin-top: 3%;
+    margin-top: -14%;
     color: #232323;
     line-height: 3vw;
+
 }
 
 .services-flex-list .content .services-list .item-serv .description{
@@ -916,7 +917,7 @@
         float: left;
         overflow: hidden;
         padding-left: 5%;
-        margin-top: 3%;
+        margin-top: -13%;
         color: #232323;
         line-height: 37px;
         justify-content: left;

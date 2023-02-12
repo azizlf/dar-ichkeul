@@ -18,7 +18,7 @@
     <div class="rooms-list">
         <div class="content"> 
             <div class="flex-item flex-vertical">                        
-                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites">
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites" [routerLink]="'/room-details/'+room.id"> 
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="flex-item flex-vertical">                        
-                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2">
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="flex-item flex-vertical">                        
-                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites3">
+                <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites3" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
                         <button [routerLink]="'/room-details/'+room.id">Details</button>
