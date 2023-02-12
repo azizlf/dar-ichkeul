@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+.slider-cover-restau{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider-cover-restau .container-slider-restau{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .restau-slider .swiper-wrapper .restau-slide-image{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+    position: absolute;
+    width: 5%;
+    padding: 1.3% 0;
+    top: 0;
+    z-index: 6;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vw;
+    border: .1vw solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    font-size: 2vw;
+    top: 43%;
+
+}
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-left{
+
+    left: 4%;
+
+}
+
+
+
+.slider-cover-restau .container-slider-restau .btn-slider-restau.slide-restau-right{
+
+    right: 4%;
+
+} 
+
+.text-block-section{
+
+    width: 100%;
+    height: 100%;
+    background-color: whte;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-block-section .content{
+
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text-block-section .content .desc-block{
+
+    width: 45%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.text-block-section .content .desc-block .stars{
+
+    width: 96%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+
+}
+
+.text-block-section .content .desc-block .stars .star-icon{
+    position: relative;
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #e4a853;
+    border-left: 0.3em solid transparent;
+    font-size: .6vw;
+}
+
+.text-block-section .content .desc-block .stars .star-icon:before{
+
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #e4a853;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+
+}
+
+.text-block-section .content .desc-block .stars .star-icon:after{
+
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #e4a853;
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+}
+
+
+.text-block-section .desc-block .title{
+
+    width: 96%;
+    padding-left: 4%;
+    margin-bottom: 2%;
+    font-size: 2vw;
+    color: #4a4a4a;
+    text-transform: uppercase;
+
+}
+
+.text-block-section .desc-block .sb-title{
+
+    width: 96%;
+    padding-left: 4%;
+    font-size: 4vw;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    margin-top: 4%;
+    color: black;
+
+
+}
+
+.text-block-section .desc-block .description{
+
+    width: 96%;
+    padding-left: 4%;
+    margin-top: 3%;
+    line-height: 2.2vw;
+    color: #666;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.text-block-section .content .desc-block .reservation-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.5vw;
+    margin-left: 5%;
+    margin-top: 2%;
+
+}
+
+
+.text-block-section .content .desc-block .reservation-container i{
+
+    font-size: 3vw;
+    color: #8e6d45;
+
+}
+
+.text-block-section .content .desc-block .reservation-container .text{
+
+    font-size: 1.6vw;
+    text-align: left;
+    width: 87%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #666;
+
+}
+
+.text-block-section .content .desc-block .reservation-container .text .num{
+
+    font-size: 2vw;
+    width: 100%;
+    color: #8e6d45;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.text-block-section .content .desc-block .read-more-btn{
+
+    width: 30%;
+    height: 11%;
+    background-color: #8e6d45;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 3%;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border: .2vw solid #8e6d45;
+    transition: .4s;
+
+}
+
+.text-block-section .content .desc-block .read-more-btn:hover{
+
+    background-color: white;
+    color: #8e6d45;
+
+}
+
+
+.text-block-section .content .images{
+
+    width: 46%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.text-block-section .content .images .image{
+
+    width: 49%;
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+
+}
+
+
+.text-block-section .content .images .image.left{
+
+    bottom: 0;
+    left: 0;
+
+}
+
+.text-block-section .content .images .image.right{
+
+    right: 0;
+    top: 0;
+
+}
+
+@media (max-width:700px){
+
+    .text-block-section{
+
+        height: auto;
+        padding: 11% 0;
+
+    }
+
+    .text-block-section .content{
+
+        display: block;
+
+    }
+
+    .text-block-section .content .desc-block{
+
+        width: 100%;
+        height: 42%;
+
+    }
+
+    .text-block-section .content .desc-block .stars .star-icon{
+
+        font-size: 8px;
+
+    }
+
+    .text-block-section .desc-block .title{
+
+        font-size: 23px;
+
+    }
+
+    .text-block-section .desc-block .sb-title{
+
+        font-size: 26px;
+
+    }
+
+    .text-block-section .desc-block .description{
+
+        line-height: 14px;
+        font-size: 12px;
+
+    }
+
+    .text-block-section .content .desc-block .reservation-container{
+
+        display: none;
+
+    }
+
+    .text-block-section .content .desc-block .read-more-btn{
+
+        font-size: 14px;
+        height: 15%;
+
+    }
+
+    .text-block-section .content .images{
+
+        width: 100%;
+        height: 314px;
+
+    }
+
+    .text-block-section .content .images .image{
+
+        width: 48%;
+        height: 71%;
+
+    }
+
+    .slider-cover-restau{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .slider-cover-restau .container-slider-restau .btn-slider-restau{
+
+        width: 14.7%;
+        padding: 3% 0;
+        font-size: 31px;
+
+    }
+}
