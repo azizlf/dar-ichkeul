@@ -375,6 +375,9 @@ export class BannerComponent implements OnInit {
 
   }
 
+
+  sliderContainerRoomsDispo:any
+
   sliderReservFormOpen(slider:any){
 
     this.suivant()
@@ -382,10 +385,10 @@ export class BannerComponent implements OnInit {
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
     if(this.phoneScreen.matches){
-               console.log(this.reservationChambreFormMobile.get('date_depart_Mobile')?.value,555)
+      //console.log(this.reservationChambreFormMobile.get('date_depart_Mobile')?.value,555)
       slider.style.display = "block"
 
-      this.btnReserveHtmlValue = "<span>Réserver</span>"
+      this.sliderContainerRoomsDispo = "<span>Réserver</span>"
 
     }
     else{
@@ -739,8 +742,18 @@ export class BannerComponent implements OnInit {
 
   }
 
+  sliderFormContainerReserv:any
+  closeRoomsSliderFormReserv(e:any){
 
+    this.sliderFormContainerReserv = document.getElementById("sliderContainerRoomsDispo")
 
+    if (e.target.className === 'cover-section') {
+
+      this.sliderFormContainerReserv.style.height = "0%"
+
+    }
+
+  }
 
 
   ngOnInit(): void {

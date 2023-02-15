@@ -1,4 +1,4 @@
-<div class="cover-section">
+<div class="cover-section" (click)="closeRoomsSliderFormReserv($event)">
         <div class="cover-contact">
             <div class="contact-item phone">
                 <i class="fa-solid fa-phone"></i>
@@ -33,7 +33,7 @@
                     <mat-datepicker #dateFinReserv></mat-datepicker>
                 </div>
             </div>
-            <button type="submit" [disabled]="!reservationChambreForm.valid" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)">Réserver</button>
+            <button type="submit" [disabled]="!reservationChambreForm.valid" (click)="sliderReservFormOpen(sliderContainerRoomsDispo)" [innerHtml]="btnReserveHtmlValue"></button>
         </div>
 </div>
 

@@ -102,7 +102,7 @@ export class RestaurantComponent implements OnInit {
           phraseDescription:""
         },
         {
-          name:"Côette d'agneau grillée",
+          name:"Côtlette d'agneau grillée",
           price:"32",
           phraseDescription:""
         },
@@ -120,9 +120,121 @@ export class RestaurantComponent implements OnInit {
           name:"Grillades mixtes",
           price:"39",
           phraseDescription:""
+        },
+        {
+          name:"Cailles grillées",
+          price:"28",
+          phraseDescription:""
+        },
+        {
+          name:"Escalope de poulet à la créme",
+          price:"28",
+          phraseDescription:""
+        },
+        {
+          name:"Escalope de poulet panné",
+          price:"25",
+          phraseDescription:""
+        },
+        {
+          name:"Ojja Merguez",
+          price:"18",
+          phraseDescription:""
+        },
+        {
+          name:"Ojja chevrettes",
+          price:"28",
+          phraseDescription:""
         }
       ]
 
+    },
+    {
+
+      id:"pates",
+      title:"PÂTES",
+      menu:[
+
+        {
+          name:"Nwasser au poulet fermier",
+          price:"20",
+          phraseDescription:""
+        },
+        {
+          name:"Spaghettis Bolognaises",
+          price:"19",
+          phraseDescription:""
+        }
+
+      ]
+    },
+    {
+
+      id:"boissons",
+      title:"BOISSONS",
+      menu:[
+
+        {
+          name:"Eau Minérale 1L",
+          price:"3",
+          phraseDescription:""
+        },
+        {
+          name:"Eau gazeuse 1L",
+          price:"3",
+          phraseDescription:""
+        },
+        {
+          name:"Soda",
+          price:"4",
+          phraseDescription:""
+        },
+        {
+          name:"Jus d'Orange",
+          price:"6",
+          phraseDescription:""
+        },
+        {
+          name:"Jus de fraise",
+          price:"6",
+          phraseDescription:""
+        },
+        {
+          name:"Citronade",
+          price:"4",
+          phraseDescription:""
+        },
+        {
+          name:"Boissons énergétiques",
+          price:"8",
+          phraseDescription:""
+        },
+        {
+          name:"Nepresso",
+          price:"4.5",
+          phraseDescription:""
+        }
+
+      ]
+    },
+    {
+
+      id:"desserts",
+      title:"DESSERTs",
+      menu:[
+
+        {
+          name:"Sorbet",
+          price:"4",
+          phraseDescription:""
+        },
+        {
+          name:"Assiette de fruits (1pax)",
+          price:"8",
+          phraseDescription:""
+        }
+
+      ]
     }
   ]
 
@@ -233,7 +345,6 @@ export class RestaurantComponent implements OnInit {
 
     var phoneScreen = window.matchMedia('(max-width:   700px)')
 
-
     this.containerSliderTitles = document.getElementById("containerSliderTitles")
 
     var container = document.createElement("div")
@@ -300,7 +411,7 @@ export class RestaurantComponent implements OnInit {
 
     }
 
-    if(slide.id==="Breakfast"){container.style.borderColor = "#aa8453"}
+    if(slide.id==="entree_froide"){container.style.borderColor = "#aa8453"}
 
     this.containerSliderTitles.appendChild(container)
 

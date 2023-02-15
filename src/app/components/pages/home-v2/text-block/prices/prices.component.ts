@@ -58,6 +58,7 @@ export class PricesComponent implements OnInit {
         height: 100%;
         display: flex;
         align-items: center;
+        box-shadow: 0 0 0 0 transparent !important;
 
     `)
 
@@ -78,6 +79,9 @@ export class PricesComponent implements OnInit {
 
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 0 0 transparent !important;
 
       `)
       cover_image.setAttribute("style",`
