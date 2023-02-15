@@ -747,7 +747,7 @@ export class BannerComponent implements OnInit {
 
     this.sliderFormContainerReserv = document.getElementById("sliderContainerRoomsDispo")
 
-    if (e.target.className === 'cover-section') {
+    if (e.target.className === 'content-cover-section') {
 
       this.sliderFormContainerReserv.style.height = "0%"
 

@@ -1,4 +1,4 @@
-<div class="cover-section" (click)="closeRoomsSliderFormReserv($event)">
+<div class="cover-section">
         <div class="cover-contact">
             <div class="contact-item phone">
                 <i class="fa-solid fa-phone"></i>
@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="cover-image" [ngStyle]="{'background-image': this.bannerBgImage}"></div>
-        <div class="content-cover-section"><p>{{this.bannerTitle}}</p></div>
+        <div class="content-cover-section" (click)="closeRoomsSliderFormReserv($event)"><p>{{this.bannerTitle}}</p></div>
 
         <div class="btn-to-rooms-and-suites" (mouseover)="overBtn(btnRoomSuites)" (mouseout)="outBtn(btnRoomSuites)">
             <div class="bg-btn" id="bgBtn" #btnRoomSuites></div>

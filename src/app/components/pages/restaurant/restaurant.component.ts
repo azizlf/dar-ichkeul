@@ -220,7 +220,7 @@ export class RestaurantComponent implements OnInit {
     {
 
       id:"desserts",
-      title:"DESSERTs",
+      title:"DESSERTS",
       menu:[
 
         {
