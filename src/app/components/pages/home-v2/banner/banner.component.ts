@@ -475,7 +475,6 @@ export class BannerComponent implements OnInit {
 
   roomListDispoContainer:any
   phoneScreen:any
-
   createRoomsDispoSlide(slide:any){
 
     this.roomListDispoContainer = document.getElementById("roomListDispoContainer")
@@ -750,6 +749,7 @@ export class BannerComponent implements OnInit {
     if (e.target.className === 'content-cover-section') {
 
       this.sliderFormContainerReserv.style.height = "0%"
+      this.btnReserveHtmlValue = "<span>Réserver</span>"
 
     }
 
