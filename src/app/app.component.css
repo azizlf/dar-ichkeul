@@ -34,6 +34,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 0.9vw 0 #00000054;
     transition: .4s;
+    z-index: 500000;
 
 }
 
