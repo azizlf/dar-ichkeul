@@ -30,7 +30,7 @@
     outline: none;
     cursor: pointer;
     font-size: 1.6vw;
-    border: 0.4vw solid #aa8453;
+    border: 0.2vw solid #aa8453;
     text-transform: uppercase;
     box-shadow: 0 0 0.9vw 0 #00000054;
     transition: .4s;
@@ -387,6 +387,25 @@
         font-family: 'Barlow Condensed', sans-serif;
 
 
+    }
+
+    .reserv-btn{
+        position: fixed;
+        bottom: 6%;
+        right: 7%;
+        width: 28%;
+        padding: 4%;
+        background-color: #aa8453;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 21px;
+        border: 0.2vw solid #aa8453;
+        text-transform: uppercase;
+        box-shadow: 0 0 0.9vw 0 #00000054;
+        transition: .4s;
+        z-index: 500000;
     }
 
 

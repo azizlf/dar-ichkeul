@@ -465,7 +465,7 @@ export class RestaurantComponent implements OnInit {
     client_image.src = slide.image
     client_name.innerText = slide.name
 
-    container.setAttribute("style",`
+        container.setAttribute("style",`
 
       width: 100%;
       height: 100%;
@@ -480,7 +480,6 @@ export class RestaurantComponent implements OnInit {
       height: 30%;
       display: flex;
       align-items: center;
-      margin-top: 3%;
 
     `)
 
@@ -516,7 +515,6 @@ export class RestaurantComponent implements OnInit {
       display: flex;
       align-items: center;
       font-size: 1vw;
-      padding-left: 3%;
       margin-top: 2%;
       color: #aa8453;
 
@@ -525,11 +523,11 @@ export class RestaurantComponent implements OnInit {
     description.setAttribute("style",`
 
       width: 95%;
-      height: 50%;
       margin-left: 3%;
       margin-top: 1%;
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 1.5vw;
+      line-height: 2vw;
 
     `)
 
