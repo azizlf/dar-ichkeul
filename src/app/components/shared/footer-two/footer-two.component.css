@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Gilda+Display&display=swap');
+
+
+
+.custom-footer{
+
+    width: 100%;
+    height: 80%;
+    background-color: #222;
+
+}
+
+
+.custom-footer .content-section{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.custom-footer .content-section .section-item{
+
+    width: 20%;
+    height: 80%;
+    margin: 0 2%;
+
+}
+
+.custom-footer .content-section .section-item.about{
+
+    width: 34%;
+
+}
+
+
+.custom-footer .content-section .section-item .title{
+
+    margin: 4%;
+    font-size: 2vw;
+    font-family: 'Gilda Display', serif;
+
+}
+
+
+.custom-footer .content-section .section-item .about-description{
+
+    color: #adadad;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    padding: 4%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+
+}
+
+.custom-footer .content-section .section-item .pager-list{
+
+    width: 80%;
+    margin-left: 5%;
+    overflow: hidden;
+
+}
+
+.custom-footer .content-section .section-item .pager-list .item-list{
+
+    padding: 2% 3%;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+}
+
+.custom-footer .content-section .section-item .pager-list .item-list span{
+
+    font-size: 1.2vw; 
+    transform: translateX(-10%);
+    width: 60%;
+    text-align: left;
+    transition: .4s;
+    font-family: 'Barlow', sans-serif;
+    color: #adadad;
+}
+
+.custom-footer .content-section .section-item .pager-list .item-list .point{
+
+    width: 2.2%;
+    padding: 1.1% 0;
+    margin-right: 3%;
+    border-radius: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .4s;
+    background: #aa8453;
+
+}
+
+.custom-footer .content-section .section-item .pager-list .item-list:hover .point{
+
+    opacity: 1;
+    transform: translateX(0%);
+
+}
+
+.custom-footer .content-section .section-item .pager-list .item-list:hover span{
+
+    transform: translateX(0%);
+    color: #aa8453;
+
+}
+
+.custom-footer .content-section .section-item .contact-details{
+
+    width: 100%;
+
+}
+
+.custom-footer .content-section .section-item .contact-details .contact-adress{
+
+    font-size: 1.2vw;
+    color: #adadad;
+    padding: 2% 7%;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.custom-footer .content-section .section-item .contact-details .contact-phone{
+
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    padding: 9% 3%;
+    font-family: 'Gilda Display', serif;
+
+}
+
+.custom-footer .content-section .section-item .contact-details .contact-phone img{
+
+    width: 13%;
+    margin-right: 2%;
+
+}
+
+.custom-footer .content-section .section-item .contact-details .contact-email{
+
+    padding: 1% 5%;
+    font-size: 1.2vw;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+
+}
+
+.custom-footer .content-section .section-item .contact-details .contact-email div{
+
+    border-bottom: .1vw solid #aa8453;
+    width: auto;
+    position: absolute;
+    padding-bottom: 2%;
+
+}
+
+
+
+.custom-footer .copyright-section{
+
+    width: 100%;
+    height: 20%;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9vw;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.custom-footer .copyright-section i{
+
+    margin-right: .4%;
+
+}
+
+
+.custom-footer .copyright-section span{
+
+    cursor: pointer;
+    transition: .2s;
+    margin-left: .5%;
+
+}
+
+.custom-footer .copyright-section span:hover{
+
+    color: #aa8453;
+
+}
+
+
+
+
+
+@media (max-width:700px){
+
+    .custom-footer{
+        width: 100%;
+        height: 120%;
+        background-color: #222;
+        padding-top: 7%;
+    }
+
+    .custom-footer .content-section{
+
+        display: block;
+        height: 91%;
+
+    }
+
+    .custom-footer .content-section .section-item.about{
+
+        width: 96%;
+        height: 23%;
+
+    }
+
+    .custom-footer .content-section .section-item{
+
+        width: 97%;
+        height: 41%;
+        margin: 0 2%;
+        overflow: hidden;
+
+    }
+
+    .custom-footer .copyright-section{
+
+        width: 100%;
+        height: 9%;
+        background-color: #1e1e1e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+
+    }
+
+    .custom-footer .content-section .section-item .title{
+
+        font-size: 31px;
+
+    }
+
+    .custom-footer .content-section .section-item .about-description{
+
+        font-size: 14px;
+        line-height: 15px;
+        padding: 1% 4%;
+
+    }
+
+    .custom-footer .content-section .section-item .pager-list .item-list span{
+
+        font-size: 17px;
+
+    }
+
+    .custom-footer .content-section .section-item .contact-details .contact-adress{
+
+        font-size: 16px;
+        padding: 0 7%;
+
+    }
+
+    .custom-footer .content-section .section-item .contact-details .contact-phone{
+
+        font-size: 27px;
+        padding: 5% 3%;
+
+    }
+
+    .custom-footer .content-section .section-item .contact-details .contact-email{
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+<footer class="footer-two">
+    <div class="footer-widget-area pt-100 pb-50 {{layout}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 order-1">
+                    <!-- Site Info Widget -->
+                    <div class="widget site-info-widget mb-50">
+                        <div class="footer-logo mb-10">
+                            <img src="/assets/img/banner/ichkeul-logo.png" alt="logo">
+                        </div>
+                        <p>
+                            Dar Ichkeul vous offre le calme et la beauté de la nature, pour vous permettre de vous détendre,vous ressourcer et passer d'agréables moments en famille ou entre amis.
+                            <br> Vous y serez chaleureusement accueillis, nous vous souhaitons à tous, la bienvenue.
+                        </p>
+                        <div class="social-links mt-40">
+                            <a href="https://www.facebook.com/dar.ichkeul"><i class="fab fa-facebook-f"></i></a>
+                            <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                            <!--<a href="#"><i class="fab fa-behance"></i></a>-->
+                            <!--<a href="#"><i class="fab fa-linkedin"></i></a>-->
+                            <a href="https://www.instagram.com/dar.ichkeul/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-3 order-lg-2">
+                    <!-- Nav Widget -->
+                    <div class="widget nav-widget mb-50">
+                        <div>
+                            <!--<h4 class="widget-title">Services</h4>-->
+                            <ul>
+                                <li routerLink=""><a>Acceuil</a></li>
+                                <li routerLink="/about"><a>À propos</a></li>
+                                <li routerLink="/room-grid"><a>Nos Suites</a></li>
+                                <li routerLink="/restaurant"><a>Notre cuisine</a></li>
+                                <li routerLink="/activités"><a>Nos Activités</a></li>
+                                <li routerLink="/contact"><a>Contact</a></li>
+                                <!--<li><a href="">Teambuilding</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 order-2 order-lg-3">
+                    <!-- Contact Widget -->
+                    <div class="widget contact-widget mb-50">
+                        <h4 class="widget-title">Contactez dar Ichkeul</h4>
+                        <div class="contact-lists">
+                            <div class="contact-box">
+                                <div class="icon">
+                                    <i class="flaticon-call"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Numéro de téléphone</h6>
+                                    +216 27 595 239
+                                </div>
+                            </div>
+                            <div class="contact-box">
+                                <div class="icon">
+                                    <i class="flaticon-message"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Adresse e-mail</h6>
+                                    <a href="#">Support@darichkeul.tn</a>
+                                </div>
+                            </div>
+                            <div class="contact-box">
+                                <div class="icon">
+                                    <i class="flaticon-location-pin"></i>
+                                </div>
+                                <div class="desc">
+                                    <h6 class="title">Adresse</h6>
+                                    Route de Tunis Km 3 Mateur, Borj Essabai 7030 Mateur, Tunisie
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area pt-30 pb-30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-5 order-2 order-md-1">
+                    <p class="copyright-text copyright-two">Copyright By@<a href="#">Dar Ichkeul</a> - 2022</p>
+                </div>
+                <div class="col-lg-6 col-md-7 order-1 order-md-2">
+                    <div class="footer-menu text-center text-md-right">
+                        <ul>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Environmental Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+***/

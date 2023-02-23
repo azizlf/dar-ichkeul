@@ -285,6 +285,12 @@
 
 }
 
+.room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form label{
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
 .room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .input{
 
     width: 100%;

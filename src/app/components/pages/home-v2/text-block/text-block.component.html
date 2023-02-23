@@ -3,13 +3,6 @@
 <div class="text-block-section">
     <div class="content">
         <div class="desc-block">
-            <div class="stars">
-                <i class="star-icon"></i>
-                <i class="star-icon"></i>
-                <i class="star-icon"></i>
-                <i class="star-icon"></i>
-                <i class="star-icon"></i>
-            </div>
             <p class="title">Dar ichkeul</p>
             <p class="sb-title">Le luxe et La nature</p>
             <p class="description">
@@ -41,7 +34,7 @@
                 <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
-                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <button [routerLink]="'/room-details/'+room.id">Réserver</button>
                         <div class="title-price">
                             <p class="price">{{room.price}} DT / {{room.period}}</p>
                             <p class="title">{{room.title}}</p>
@@ -56,7 +49,7 @@
                 <div class="item" data-aos="fade-up" *ngFor="let room of  vertical_Suites" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
-                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <button [routerLink]="'/room-details/'+room.id">Réserver</button>
                         <div class="title-price">
                             <p class="price">{{room.price}} DT / {{room.period}}</p>
                             <p class="title">{{room.title}}</p>
@@ -71,7 +64,7 @@
                 <div class="item" data-aos="fade-right" *ngFor="let room of horizontal_Suites2" [routerLink]="'/room-details/'+room.id">
                     <div class="cover-item" [style.background-image]="'url('+room.gridimage+')'"></div>
                     <div class="content" >
-                        <button [routerLink]="'/room-details/'+room.id">Details</button>
+                        <button [routerLink]="'/room-details/'+room.id">Réserver</button>
                         <div class="title-price">
                             <p class="price">{{room.price}} DT / {{room.period}}</p>
                             <p class="title">{{room.title}}</p>
@@ -153,7 +146,7 @@
 <div class="testimonial-section" style="background-image: url('/assets/img/photos_new_content/les_salons/IMG_6891.jpg') ;">
     <div class="container-ctn">
         <div class="content">
-            <p class="title">testimonilas</p>
+            <p class="title">Témoignage</p>
             <div class="hr"></div>
             <div class="container-slider">     
                 <div class="swiper testimonilas-slider" id="containerSwiperTestimonials">   

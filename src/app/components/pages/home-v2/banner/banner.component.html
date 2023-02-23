@@ -11,7 +11,7 @@
         <div class="cover-image" [ngStyle]="{'background-image': this.bannerBgImage}"></div>
         <div class="content-cover-section" (click)="closeRoomsSliderFormReserv($event)"><p>{{this.bannerTitle}}</p></div>
 
-        <div class="btn-to-rooms-and-suites" (mouseover)="overBtn(btnRoomSuites)" (mouseout)="outBtn(btnRoomSuites)">
+        <div class="btn-to-rooms-and-suites" routerLink="/room-grid" (mouseover)="overBtn(btnRoomSuites)" (mouseout)="outBtn(btnRoomSuites)">
             <div class="bg-btn" id="bgBtn" #btnRoomSuites></div>
             <p>Nos suites</p>
         </div>

@@ -295,6 +295,7 @@ export class TextBlockComponent implements OnInit {
 
     }
 
+    name.appendChild(rating)
     name.appendChild(client_name)
     name.appendChild(client_profession)
 
@@ -303,9 +304,8 @@ export class TextBlockComponent implements OnInit {
     client_info.appendChild(name)
 
 
-    container.appendChild(client_info)
-    container.appendChild(rating)
     container.appendChild(description)
+    container.appendChild(client_info)
 
     container.setAttribute("class","swiper-slide")
 
