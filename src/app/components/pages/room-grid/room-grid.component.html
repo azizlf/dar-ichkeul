@@ -63,4 +63,73 @@
 		</div>
 	</div>
 </div>
+
+<div class="services-flex-list">
+    <div class="content">
+        <p class="title">Nos services</p>
+        <div class="services-list">   
+            <div class="item-serv" data-aos="fade-up">  
+                <i class="fa-solid fa-earth-asia"></i>
+                <p class="title">Aéroport</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
+            </div>
+            <div class="item-serv" data-aos="fade-up">                
+                <i class="fa-solid fa-car"></i>
+                <p class="title">Parking </p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-utensils"></i>
+                <p class="title">Petit déjeuner</p>  
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>     
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p class="title">piscine</p>
+                <div class="description">
+                   Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
+            </div>
+            <div class="item-serv" data-aos="fade-up">
+                <i class="fa-solid fa-wifi"></i>
+                <p class="title">Wifi</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
+            </div>
+            <div class="item-serv" data-aos="fade-up">                    
+                <i class="fa-solid fa-mug-saucer"></i>
+                <p class="title">Café Nespresso</p>
+                <div class="description">
+                    Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reserv-form-contact-page">
+    <div class="form">
+        <div class="title-form">RÉSERVER</div>
+        <div class="input date">
+            <input [matDatepicker]="dateDebutReservMobile" placeholder="Date d'arrivée" class="date-picker-no-show" />
+            <mat-datepicker-toggle style="width: 16%;" [for]="dateDebutReservMobile"></mat-datepicker-toggle>
+            <mat-datepicker #dateDebutReservMobile></mat-datepicker>
+        </div>
+        <div class="input date">
+            <input [matDatepicker]="dateFinReservMobile" placeholder="Date de depart" class="date-picker-no-show"  />
+            <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
+            <mat-datepicker #dateFinReservMobile></mat-datepicker>
+        </div>
+        <button>RÉSERVER</button>
+
+    </div>
+</div>
+
 <app-footer-two></app-footer-two>

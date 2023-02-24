@@ -323,6 +323,166 @@
 
 }
 
+
+
+.services-flex-list{
+
+    width: 100%;
+    height: 110%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.services-flex-list .content{
+
+    width: 90%;
+    height: 80%;
+
+}
+
+.services-flex-list .content .title{
+
+    font-size: 2.5vw;
+    font-family: 'Gilda Display', serif;
+    padding: 2%;
+    font-weight: 100;
+
+}
+
+.services-flex-list .content .services-list{
+
+    width: 100%;
+    height: 90%;
+
+}
+
+.services-flex-list .content .services-list .item-serv{
+
+    width: 30%;
+    height: 48%;
+    background-color: white;
+    box-shadow: 0 0 0.6vw 0 #00000012;
+    border: .1vw solid #d8d8d8;
+    float: left;
+    margin: 0 0 1% 2%;
+    overflow: hidden;
+
+}
+
+.services-flex-list .content .services-list .item-serv p {
+
+    margin: 0;
+
+}
+
+.services-flex-list .content .services-list .item-serv i{
+
+    font-size: 4vw;
+    padding: 0;
+    width: 91%;
+    text-align: right;
+    color: #aa8453;
+    margin-top: 5%;
+
+}
+
+.services-flex-list .content .services-list .item-serv .title{
+
+    width: 93%;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 1.9vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 5%;
+    margin-top: -14%;
+    color: #232323;
+    line-height: 3vw;
+
+}
+
+.services-flex-list .content .services-list .item-serv .description{
+
+    width: 90%;
+    height: 50%;
+    padding: 0 5% 5% 5%;
+    color: gray;
+
+}
+
+
+.reserv-form-contact-page{
+
+    width: 100%;
+    height: 80%;
+    background-image: url("/assets/img/photos_new_content/les_slides/IMG-0307.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.reserv-form-contact-page .form{
+
+    width: 25%;
+    height: 70%;
+    background-color: #f8f5f0;
+    padding: 3%;
+
+}
+
+.reserv-form-contact-page .form .title-form{
+
+    font-size: 1.7vw;
+    margin-bottom: 6%;
+    color: #ab8a62;
+    text-align: left;
+    border-bottom: 0.1vw solid #ab8a62;
+    padding: 12% 0;
+    margin-top: 12%;
+
+}
+
+.reserv-form-contact-page .form .input{
+
+    padding: 4% 0;
+    background: white;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+
+.reserv-form-contact-page .form .input input{
+
+    height: 100% !important;
+    width: 79%;
+    background-color: white;
+    padding: 6%;
+}
+
+.reserv-form-contact-page .form button{
+
+    width: 100%;
+    height: 15%;
+    background-color: #ab8a62;
+    color: white;
+    border: none;
+    font-size: 1.4vw;
+
+}
+
+
 @media (max-width:700px){
 
 
@@ -442,6 +602,93 @@
     .rooms-suites .rooms-list .content .flex-horizontal .item:hover .title-price{
 
         bottom: 6%;
+
+    }
+
+
+    .services-flex-list{
+
+        height: auto;
+
+    }
+
+    .services-flex-list .content{
+
+        width: 90%;
+        height: auto;
+
+    }
+
+    .services-flex-list .content .title{
+
+        font-size: 26px;
+        margin: 5% 0;
+        text-align: center;
+
+    }
+
+    .services-flex-list .content .services-list{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .services-flex-list .content .services-list .item-serv{
+
+        width: 95%;
+        height: 200px;
+        margin-bottom: 6%;
+
+    }
+
+    .services-flex-list .content .services-list .item-serv i{
+
+        font-size: 40px;
+
+    }
+
+    .services-flex-list .content .services-list .item-serv .title{
+
+        font-size: 19px;
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        padding-left: 5%;
+        margin-top: -13%;
+        color: #232323;
+        line-height: 37px;
+        justify-content: left;
+        text-align: left;
+
+    }
+
+    .services-flex-list .content .services-list .item-serv .description{
+
+        font-size: 16px;
+
+    }
+
+    
+    .reserv-form-contact-page .form{
+
+        width: 83%;
+        height: 83%;
+        background-color: #f8f5f0;
+        padding: 3% 7%;
+
+    }
+
+    .reserv-form-contact-page .form .title-form{
+
+        font-size: 28px;
+
+    }
+
+    .reserv-form-contact-page .form button{
+
+        height: 13%;
+        font-size: 23px;
 
     }
 }
