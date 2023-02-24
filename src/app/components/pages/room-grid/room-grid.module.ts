@@ -8,6 +8,8 @@ import { RoomGridComponent } from './room-grid.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ContentComponent } from './content/content.component';
 
+import { MatInputModule } from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [RoomGridComponent, ContentComponent],
@@ -16,7 +18,9 @@ import { ContentComponent } from './content/content.component';
     RoomGridRoutingModule,
     SharedModule,
     NgbModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatInputModule,
+    MatDatepickerModule
   ]
 })
 export class RoomGridModule { }
