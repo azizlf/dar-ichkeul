@@ -421,6 +421,14 @@
 
 }
 
+.testimonial-section .content .subject-section{
+
+    font-size: 2.9vw;
+    padding: 2% 0;
+    font-family: 'Gilda Display', serif;
+
+}
+
 .testimonial-section .content .hr{
 
     width: 100%;
@@ -743,6 +751,12 @@
     .testimonial-section .content .container-slider .testimonilas-slider .swiper-pagination .swiper-pagination-bullet{
 
         width: 2% !important;
+
+    }
+
+    .testimonial-section .content .subject-section{
+
+        font-size: 21px;
 
     }
 }
