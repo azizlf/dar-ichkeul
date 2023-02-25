@@ -526,8 +526,60 @@
 }
 
 
+.message-box-reserv{
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    background: #f8f5f0;
+    width: 30%;
+    z-index: 5000000000000000;
+    padding: 3% 3%;
+    font-size: 1.3vw;
+    border-left: 0.3vw solid #aa8453;
+    display: none;
+    align-items: center;
+    animation: msgBoxAim .6s;
+}
+
+@keyframes msgBoxAim{
+
+    0%{
+
+        right: -1%;
+        opacity: 0;
+
+    }
+
+}
+
+.message-box-reserv i{
+
+    font-size: 1.4vw;
+    color: green;
+    margin-right: 2%;
+
+}
+
+
 @media (max-width:700px){
 
+
+    .message-box-reserv{
+        position: fixed;
+        bottom: 9%;
+        right: 5%;
+        background: #f8f5f0;
+        z-index: 5000000000000000;
+        padding: 9% 6%;
+        font-size: 17px;
+        border-left: 0.3vw solid #aa8453;
+    }
+
+    .message-box-reserv i{
+
+        font-size: 20px;
+
+    }
 
     .slider-cover-restau{
 

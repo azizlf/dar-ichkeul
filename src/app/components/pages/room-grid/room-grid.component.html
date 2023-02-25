@@ -116,7 +116,7 @@
 
 
 <div class="reserv-form-contact-page">
-    <div class="form">
+    <div class="form" *ngIf="current_form === 'date'">
         <div class="title-form">RÉSERVER</div>
         <div class="input date">
             <input [matDatepicker]="dateDebutReservMobile" placeholder="Date d'arrivée" class="date-picker-no-show" />
@@ -128,9 +128,9 @@
             <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
             <mat-datepicker #dateFinReservMobile></mat-datepicker>
         </div>
-        <button>RESERVER</button>
+        <button (click)="nextForm()">RESERVER</button>
     </div>
-    <div class="form suiv-form">
+    <div class="form suiv-form" *ngIf="current_form === 'infos'">
         <label>Nom et Prénom</label>
         <label class="alert">Obligatoire</label>
         <div class="input">
@@ -146,8 +146,13 @@
         <div class="input">
             <input type="text" placeholder="Numéro de Téléphone">
         </div>
-        <button>CONFIRMER</button>
+        <button (click)="confirmReservation()">CONFIRMER</button>
     </div>
+</div>
+
+<div class="message-box-reserv" id="msgBoxReserv">
+    <i class="fa-solid fa-check"></i>
+    <span>Réservation confirmé avec succées</span>
 </div>
 
 <app-footer-two></app-footer-two>
