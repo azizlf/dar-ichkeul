@@ -39,9 +39,9 @@ export class RoomGridComponent implements OnInit {
 
   nextForm(){
     if(this.current_form === "date"){
-      current_form = "infos"
+      this.current_form = "infos"
     }else{
-      current_form = "date"
+      this.current_form = "date"
     }
   }
 
