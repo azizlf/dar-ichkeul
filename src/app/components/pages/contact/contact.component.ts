@@ -45,8 +45,10 @@ export class ContactComponent implements OnInit {
       this.msgBoxReserv.style.right = "-1%"
       setTimeout(()=>{
         this.msgBoxReserv.style.display = "none"
-      },200)
-    },5000)
+        this.msgBoxReserv.style.opacity = "1"
+        this.msgBoxReserv.style.right = "2%"
+      },1000)
+    },9000)
 
   }
     

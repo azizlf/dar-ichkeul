@@ -334,7 +334,7 @@
 
 .reserv-form-contact-page .form .input{
 
-    padding: 4% 0;
+    padding: 9% 0;
     background: white;
     height: 8%;
     display: flex;
@@ -398,7 +398,7 @@
 .reserv-form-contact-page .form.suiv-form .alert{
 
     position: absolute;
-    right: 15%;
+    right: 6%;
     font-size: 1vw;
     color: red;
 
@@ -551,7 +551,7 @@
 
     .reserv-form-contact-page .form{
 
-        width: 77%;
+        width: 86%;
         height: auto;
         background-color: #f8f5f0;
         padding: 8% 7%;
@@ -579,7 +579,7 @@
 
     .reserv-form-contact-page .form.suiv-form .alert{
 
-        right: 8%;
+        right: 2%;
         font-size: 16px;
 
     }
