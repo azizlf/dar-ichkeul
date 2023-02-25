@@ -409,9 +409,9 @@
     bottom: 7%;
     right: 2%;
     background: #f8f5f0;
-    width: 30%;
+    width: 33%;
     z-index: 5000000000000000;
-    padding: 3% 3%;
+    padding: 2% 2%;
     font-size: 1.3vw;
     border-left: 0.3vw solid #aa8453;
     display: none;
@@ -432,8 +432,9 @@
 
 .message-box-reserv i{
 
-    font-size: 1.4vw;
+    font-size: 2vw;
     color: green;
+    margin-right: 6%;
 
 }
 
@@ -442,13 +443,14 @@
 
     .message-box-reserv{
         position: fixed;
-        bottom: 9%;
-        right: 5%;
+        top: 18%;
         background: #f8f5f0;
         z-index: 5000000000000000;
-        padding: 9% 6%;
+        padding: 0 6%;
         font-size: 17px;
-        border-left: 0.3vw solid #aa8453;
+        border-left: 3px solid #aa8453;
+        width: 94%;
+        height: 13%;
     }
 
     .message-box-reserv i{

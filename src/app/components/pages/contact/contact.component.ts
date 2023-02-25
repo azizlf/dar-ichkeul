@@ -46,7 +46,7 @@ export class ContactComponent implements OnInit {
       setTimeout(()=>{
         this.msgBoxReserv.style.display = "none"
       },200)
-    },1000)
+    },5000)
 
   }
     
