@@ -305,7 +305,37 @@ settings = {
   ],
 };*/
 
+  
 
+
+  current_form = "date"
+  msgBoxReserv:any
+
+  nextForm(){
+    if(this.current_form === "date"){
+      this.current_form = "infos"
+    }else{
+      this.current_form = "date"
+    }
+  }
+
+  confirmReservation(){
+
+    this.msgBoxReserv = document.getElementById("msgBoxReserv")
+
+    this.msgBoxReserv.style.display = "flex"
+
+    setTimeout(()=>{
+      this.msgBoxReserv.style.opacity = "0"
+      this.msgBoxReserv.style.right = "-1%"
+      setTimeout(()=>{
+        this.msgBoxReserv.style.display = "none"
+        this.msgBoxReserv.style.opacity = "1"
+        this.msgBoxReserv.style.right = "2%"
+      },1000)
+    },9000)
+
+  }
 
 
 

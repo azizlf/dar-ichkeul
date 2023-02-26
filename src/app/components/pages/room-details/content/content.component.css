@@ -379,6 +379,458 @@
 
 }
 
+
+.our-services{
+
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.our-services .content{
+
+    width: 90%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+} 
+
+.our-services .content .desc-services{
+
+    width: 40%;
+    height: 100%;
+    color: white;
+
+}
+
+.our-services .content .desc-services p{
+
+    margin-bottom: 5%;
+
+}
+
+
+.our-services .content .desc-services .title{
+
+    font-size: 2vw;
+    color: #aa8453;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.our-services .content .desc-services .sb-title{
+
+    font-size: 4vw;
+    font-family: 'Gilda Display', serif;
+    line-height: 5vw;
+
+}
+
+.our-services .content .desc-services .description{
+
+    width: 80%;
+    font-size: 1.4vw;
+    line-height: 2vw;
+    color: #adadad;
+    font-family: 'Barlow Condensed', sans-serif;    
+
+}
+
+.our-services .content .slider{
+
+    width: 57%;
+    height: 90%;
+    overflow: hidden;
+
+}
+
+.our-services .content .slider .btn-slider{
+
+    width: 4%;
+    padding: .6% 0;
+    border: .1vw solid #aa8453;
+    color: #aa8453;
+    position: absolute;
+    font-size: 2.3vw;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    top: 42%;
+    cursor: pointer;
+
+}
+
+.our-services .content .slider .btn-slider.left{
+
+    left: 38%;
+
+}
+
+.our-services .content .slider .btn-slider.right{
+
+    right: -4.5%;
+
+}
+
+.our-services .content .slider .slider-prices{
+
+    width: 99%;
+    height: 100%;
+
+
+}
+
+
+.our-services .content .slider .slider-prices .slides-container{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .swiper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .swiper .swiper-wrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide{
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .image-cover{
+
+    width: 100%;
+    height: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide{
+
+    width: 100%;
+    height: 60%;
+    position: relative;
+    background-color: white;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .header{
+    
+    width: 100%;
+    height: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .header .title-slide{
+
+    font-size: 2vw;
+    font-family: 'Gilda Display', serif;
+    padding: 0 4%;
+
+}
+
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .header .logo{
+
+    font-size: 2.7vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #a98353;
+    padding: 0 6%;
+
+}
+
+.our-services .content .slider .slider-prices .container .slide .content-slide .description{
+
+    font-size: 1.4vw;
+    font-family: 'Gilda Display', serif;
+    width: 92%;
+    height: 74%;
+    padding: 0 6%;
+
+}
+
+
+@media (max-width:700px){
+
+    .our-services{
+
+        height: 76%;
+
+    }
+
+    .our-services .content .desc-services .description{
+
+        display: none;
+
+    }
+
+    .our-services .content{
+
+        display: block;
+        height: 89%;
+
+    }
+
+    .our-services .content p{
+
+        margin: 0;
+
+    }
+
+
+    .our-services .content .desc-services{
+
+        width: 100%;
+        height: 61%;
+
+    }
+
+    .our-services .content .desc-services .title{
+
+        font-size: 23px;
+
+    }
+
+    .our-services .content .desc-services .sb-title{
+
+        font-size: 39px;
+        line-height: 44px;
+
+    }
+    .our-services .content .desc-services .description{
+
+        font-size: 21px;
+        line-height: 24px;
+
+    }
+
+    .our-services .content .slider{
+
+        width: 100%;
+        height: 74%;
+        margin-top: -59%;
+
+    }
+
+    .our-services .content .slider .slider-prices{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .our-services .content .slider .btn-slider{
+
+        display: none;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide{
+        width: 78%;
+        height: 100%;
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .header .title-slide{
+
+        font-size: 21px;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .header .logo{
+
+        font-size: 29px;
+
+    }
+
+    .our-services .content .slider .slider-prices .container .slide .content-slide .description{
+
+        font-size: 14px;
+
+    }
+
+
+}
+
+.reserv-form-contact-page{
+
+    width: 100%;
+    height: 80%;
+    background-image: url("/assets/img/photos_new_content/les_slides/IMG-0307.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.reserv-form-contact-page .form{
+
+    width: 27%;
+    background-color: #f8f5f0;
+    padding: 3%;
+    display: block;
+
+}
+
+.reserv-form-contact-page .form .title-form{
+
+    font-size: 1.7vw;
+    margin-bottom: 6%;
+    color: #ab8a62;
+    text-align: left;
+    border-bottom: 0.1vw solid #ab8a62;
+    padding: 2% 0;
+    margin-top: 12%;
+
+}
+
+.reserv-form-contact-page .form .input{
+
+    padding: 9% 0;
+    background: white;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+.reserv-form-contact-page .form .input input{
+
+    height: 100% !important;
+    width: 79%;
+    background-color: white;
+    padding: 0 4%;
+    border: none;
+}
+
+.reserv-form-contact-page .form button{
+
+    padding: 4% 3%;
+    background-color: #ab8a62;
+    color: white;
+    border: none;
+    font-size: 1.4vw;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.reserv-form-contact-page .form button:hover{
+
+    background-color: #232323;
+
+}
+
+
+.reserv-form-contact-page .form.suiv-form{
+
+    position: relative;
+
+}
+
+.reserv-form-contact-page .form.suiv-form button{
+
+    width: 100%;
+
+}
+
+.reserv-form-contact-page .form.suiv-form .input{
+
+    margin-top: 2%;
+
+}
+
+.reserv-form-contact-page .form.suiv-form label{
+
+    font-family: 'Gilda Display', serif;
+    font-size: 1.4vw;
+
+}
+
+.reserv-form-contact-page .form.suiv-form .alert{
+
+    position: absolute;
+    right: 6%;
+    font-size: 1vw;
+    color: red;
+    display: none;
+
+}
+
+.message-box-reserv{
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    background: #f8f5f0;
+    width: 33%;
+    z-index: 5000000000000000;
+    padding: 2% 2%;
+    font-size: 1.3vw;
+    border-left: 0.3vw solid #aa8453;
+    display: none;
+    align-items: center;
+    animation: msgBoxAim .6s;
+}
+
+@keyframes msgBoxAim{
+
+    0%{
+
+        right: -1%;
+        opacity: 0;
+
+    }
+
+}
+
+.message-box-reserv i{
+
+    font-size: 2vw;
+    color: green;
+    margin-right: 6%;
+
+}
+
+
 @media (max-width:700px){
 
     .room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .button{
@@ -468,6 +920,41 @@
         width: 14.7%;
         padding: 3% 0;
         font-size: 31px;
+
+    }
+
+    .reserv-form-contact-page .form{
+
+        width: 86%;
+        height: auto;
+        background-color: #f8f5f0;
+        padding: 8% 7%;
+
+    }
+
+    .reserv-form-contact-page .form .title-form{
+
+        font-size: 28px;
+
+    }
+
+    .reserv-form-contact-page .form button{
+
+        width: 100%;
+        font-size: 23px;
+
+    }
+
+    .reserv-form-contact-page .form.suiv-form label{
+
+        font-size: 23px;
+
+    }
+
+    .reserv-form-contact-page .form.suiv-form .alert{
+
+        right: 2%;
+        font-size: 16px;
 
     }
 
