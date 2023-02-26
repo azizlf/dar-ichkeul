@@ -319,7 +319,7 @@ settings = {
     }
   }
 
-  confirmReservation(){
+  confirmReservationAlert(){
 
     this.msgBoxReserv = document.getElementById("msgBoxReserv")
 
