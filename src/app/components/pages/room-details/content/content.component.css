@@ -834,6 +834,24 @@
 
 @media (max-width:700px){
 
+    .message-box-reserv{
+        position: fixed;
+        top: 18%;
+        background: #f8f5f0;
+        z-index: 5000000000000000;
+        padding: 0 6%;
+        font-size: 17px;
+        border-left: 3px solid #aa8453;
+        width: 94%;
+        height: 13%;
+    }
+
+    .message-box-reserv i{
+
+        font-size: 20px;
+
+    }
+
     .room-details-infos .content .right-section .reservation-form-room-details .form .input-col-6-form .button{
 
         font-size: 21px;
