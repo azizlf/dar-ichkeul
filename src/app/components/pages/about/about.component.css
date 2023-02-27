@@ -18,7 +18,7 @@
     z-index: 15;
     border: .1vw solid #ffffff8f;
     border-radius: 100%;
-    padding: 1.2% 1.3%;
+    padding: 1.2% 1.5%;
     font-size: 1.3vw;
     transition: .4s;
     cursor: pointer;
@@ -429,6 +429,9 @@
 
 
 
+/********  testimonials design   **********/
+
+
 .testimonial-section{
 
     width: 100%;
@@ -584,7 +587,8 @@
 
 }
 
-.testimonial-section .content .container-slider .testimonilas-slider .swiper-pagination{
+
+.testimonial-section .content .container-slider .testimonilas-slider .pagination-testimonials-pc{
 
     width: 100%;
     height: 10%;
@@ -592,7 +596,26 @@
     align-items: center;
     justify-content: right;
     position: absolute;
-    bottom: 17%;
+    bottom: 7%;
+
+}
+
+.testimonial-section .content .container-slider .testimonilas-slider .pagination-testimonials-pc .swiper-pagination-bullet{
+
+    border: 1px solid #848484;
+    background-color: transparent;
+    transform: scale(1.1);
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+
+}
+
+.testimonial-section .content .container-slider .testimonilas-slider .pagination-testimonials-pc .swiper-pagination-bullet-active{
+
+    border-color: #aa8453;
+    background-color: #aa8453;
+
 
 }
 
@@ -677,6 +700,20 @@
 }
 
 @media (max-width:700px){
+
+    .slider-cover-room-details .arrow-btn-bottom{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 15px;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 43%;
+    }
 
     .text-block-section{
 
@@ -809,17 +846,6 @@
 
     }
 
-    .testimonial-section .content .container-slider .testimonilas-slider .swiper-pagination{
-
-        justify-content: center;
-
-    }
-
-    .testimonial-section .content .container-slider .testimonilas-slider .swiper-pagination .swiper-pagination-bullet{
-
-        width: 2% !important;
-
-    }
 
     .testimonial-section .content .subject-section{
 
@@ -962,6 +988,175 @@
     .act-section-mobile .content .description-section .time-act i{
 
         margin-right: 4%;
+
+    }
+
+    .container-testimonials{
+
+        width: 100%;
+        height: 85%;
+        background-image: url(/assets/img/photos_new_content/les_salons/IMG_6891.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25%;
+        padding-bottom: 10%;
+        position: relative;
+
+    }
+
+    .container-testimonials .content{
+
+        width: 95%;
+        height: 90%;
+
+    }
+
+
+    .container-testimonials .content .header{
+
+        width: 100%;
+        padding: 2% 0;
+        color: white;
+
+    }
+
+    .container-testimonials .content .header .title {
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 10px;
+    }
+
+    .container-testimonials .content .header .subject {
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .container-testimonials .content .header .hr{
+
+        width: 30%;
+        border-top: 1px solid #ffffffa8;
+
+    }
+
+
+    .container-testimonials .content .testimonials-slider{
+
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        overflow: hidden;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper{
+
+        width: 100%;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .description {
+        width: 97%;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.75em;
+        margin-bottom: 4%;
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user{
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user img{
+
+        width: 20%;
+        border-radius: 100%;
+        margin: 0 3% 0 1%;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user .details{
+
+
+
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user .details .rating{
+        
+        font-size: 11px;
+        color: #e4a853;
+
+    }
+
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user .details .name {
+        font-size: 20px;
+        margin-bottom: 4%;
+        font-weight: 400;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #fff;
+        line-height: 1em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .container-testimonials .content .testimonials-slider .swiper-wrapper .av-slide .info-user .details .profession {
+
+        font-size: 14px;
+        color: #fff;
+        line-height: 1em;
+        font-family: 'Barlow', sans-serif;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .pagination-testimonials{
+
+        bottom: 17%;
+        width: 100%;
+
+    }
+
+
+    .container-testimonials .content .testimonials-slider .pagination-testimonials .swiper-pagination-bullet{
+
+        border: 1px solid #848484;
+        background-color: transparent;
+        transform: scale(1.1);
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+
+    }
+
+    .container-testimonials .content .testimonials-slider .pagination-testimonials .swiper-pagination-bullet-active{
+
+        border-color: #aa8453;
+        background-color: #aa8453;
+
 
     }
 

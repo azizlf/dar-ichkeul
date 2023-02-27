@@ -347,7 +347,20 @@ export class AboutComponent implements OnInit {
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-testimonials-pc',
+        clickable: true,
+      }
+    })
+  }
+
+  initTestimonialsSliderMobile(){
+    new Swiper(".testimonials-slider", {
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.pagination-testimonials',
         clickable: true,
       }
     })
@@ -361,11 +374,40 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.testimonials.map((item)=>{
+    this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
-      this.createSlideAvis(item)
 
-    })
+    if(this.phoneScreen.matches){
+
+      this.containerTestSlider = document.getElementById('containerTestSlider')
+
+      this.containerTestSlider.style.display = "none"
+
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
+
+      this.containerTestSlider.style.display = "flex"
+
+      this.initTestimonialsSliderMobile()
+
+    }else{
+
+      this.containerTestSlider = document.getElementById('containerTestSlider')
+
+      this.containerTestSlider.style.display = "flex"
+
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
+
+      this.containerTestSlider.style.display = "none"
+
+      this.testimonials.map((item)=>{
+
+        this.createSlideAvis(item)
+
+      })
+
+      this.initTestimonialsSlider()
+
+    }
 
     this.cover_restau_page_images.map((img:any)=>{
 
