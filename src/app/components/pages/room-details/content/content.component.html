@@ -16,142 +16,142 @@
         
 </div>
 
-
-<div class="room-details-infos"  *ngFor="let item of room_selected">
-        
-        <div class="content" #roomDetailsSectionIN>
-            <div class="left-section">
-                <div class="titles">
-                    <span>Dar Ichkeul</span>
-                    <p> {{item.title}} </p>
-                </div>
-                <div class="description" [innerHtml]="item.longdesc"></div>
-
-                <div class="amenities-section">
-                    <div class="amenitie-item" *ngFor="let am of item.amenities">
-                        <i [class]="am.icon"></i>
-                        <span> {{am.title}} </span>
+<div class="container-room-details-CTN" #roomDetailsSectionIN>
+    <div class="room-details-infos"  *ngFor="let item of room_selected">
+            
+            <div class="content">
+                <div class="left-section">
+                    <div class="titles">
+                        <span>Dar Ichkeul</span>
+                        <p> {{item.title}} </p>
                     </div>
-                </div>
+                    <div class="description" [innerHtml]="item.longdesc"></div>
 
-                <button (click)="toContactForm(formReservSection)">RÉSERVER</button>
-
-            </div>
-
-            <div class="right-section">
-                <div class="reservation-form-room-details">
-                        
-                    <div class="form step-1" *ngIf="step_active === 'step 1'">
-
-                        <div class="input-col-6-form" [formGroup]="reservationChambreForm">
-                                <label>Date d'arrivée</label>
-                                <div class="input date">
-                                    <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebutMobile/>
-                                    <input [matDatepicker]="dateDebutReservMobile"  [min]="todayDate" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_arrive' />
-                                    <mat-datepicker-toggle style="width: 16%;" [for]="dateDebutReservMobile"></mat-datepicker-toggle>
-                                    <mat-datepicker #dateDebutReservMobile></mat-datepicker>
-                                </div>
-
-                                <label>Date de départ</label>
-                                <div class="input date">
-                                    <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
-                                    <input [matDatepicker]="dateFinReservMobile" [min]="DateArr2" [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_depart'>
-                                    <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
-                                    <mat-datepicker #dateFinReservMobile></mat-datepicker>
-                                </div>
-
-                                <label>Chambre</label>
-                                <div class="input">
-                                    <input [value]="item.title" style="pointer-events: none;user-select: none;" readonly class="input-show" />
-                                </div>
-                                <button class="button" [disabled]="!reservationChambreForm.valid"  (click)="nextStep('step 2')">Suivant</button>
+                    <div class="amenities-section">
+                        <div class="amenitie-item" *ngFor="let am of item.amenities">
+                            <i [class]="am.icon"></i>
+                            <span> {{am.title}} </span>
                         </div>
-
                     </div>
-                    <div class="form step-2" [formGroup]="user" *ngIf="step_active === 'step 2'">
-                        <div class="input-col-6-form">
-                                <label>Nom *</label>
-                                <div class="input" >
-                                    <input placeholder="Nom" class="input-show" formControlName='nom' />
-                                    <label *ngIf="user.controls.nom.hasError('required') && this.user.controls.nom.touched" style="
 
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
+                    <button (click)="toContactForm(formReservSection)">RÉSERVER</button>
 
-                                    ">Obligatoire</label>
-                                </div>
+                </div>
 
-                                <label>Prénom *</label>
-                                <div class="input">
-                                    <input placeholder="Prénom" class="input-show" formControlName='prenom'/>
-                                    <label *ngIf="user.controls.prenom.hasError('required') && this.user.controls.prenom.touched" style="
+                <div class="right-section">
+                    <div class="reservation-form-room-details">
+                            
+                        <div class="form step-1" *ngIf="step_active === 'step 1'">
+
+                            <div class="input-col-6-form" [formGroup]="reservationChambreForm">
+                                    <label>Date d'arrivée</label>
+                                    <div class="input date">
+                                        <input placeholder="Date d'arrivée" readonly class="input-show" #dateDebutMobile/>
+                                        <input [matDatepicker]="dateDebutReservMobile"  [min]="todayDate" class="date-picker-no-show" (dateChange)="this.getDateDebutValue($event,dateDebutMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_arrive' />
+                                        <mat-datepicker-toggle style="width: 16%;" [for]="dateDebutReservMobile"></mat-datepicker-toggle>
+                                        <mat-datepicker #dateDebutReservMobile></mat-datepicker>
+                                    </div>
+
+                                    <label>Date de départ</label>
+                                    <div class="input date">
+                                        <input placeholder="Date de départ" readonly class="input-show" #dateFinMobile/>
+                                        <input [matDatepicker]="dateFinReservMobile" [min]="DateArr2" [max]="maxResvation" class="date-picker-no-show" (dateChange)="this.getDateFinValue($event,dateFinMobile)" [matDatepickerFilter]="DateNoDispoFilter" formControlName='date_depart'>
+                                        <mat-datepicker-toggle style="width: 16%;" [for]="dateFinReservMobile"></mat-datepicker-toggle>
+                                        <mat-datepicker #dateFinReservMobile></mat-datepicker>
+                                    </div>
+
+                                    <label>Chambre</label>
+                                    <div class="input">
+                                        <input [value]="item.title" style="pointer-events: none;user-select: none;" readonly class="input-show" />
+                                    </div>
+                                    <button class="button" [disabled]="!reservationChambreForm.valid"  (click)="nextStep('step 2')">Suivant</button>
+                            </div>
+
+                        </div>
+                        <div class="form step-2" [formGroup]="user" *ngIf="step_active === 'step 2'">
+                            <div class="input-col-6-form">
+                                    <label>Nom *</label>
+                                    <div class="input" >
+                                        <input placeholder="Nom" class="input-show" formControlName='nom' />
+                                        <label *ngIf="user.controls.nom.hasError('required') && this.user.controls.nom.touched" style="
+
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
+
+                                        ">Obligatoire</label>
+                                    </div>
+
+                                    <label>Prénom *</label>
+                                    <div class="input">
+                                        <input placeholder="Prénom" class="input-show" formControlName='prenom'/>
+                                        <label *ngIf="user.controls.prenom.hasError('required') && this.user.controls.prenom.touched" style="
 
 
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
 
 
-                                    ">Obligatoire</label>
-                                </div>
+                                        ">Obligatoire</label>
+                                    </div>
 
-                                <label>Adresse E-mail *</label>
-                                <div class="input">
-                                    <input placeholder="Adresse E-mail" class="input-show" formControlName='email'/>
-                                    <label *ngIf="user.controls.email.hasError('required') && this.user.controls.email.touched" style="
+                                    <label>Adresse E-mail *</label>
+                                    <div class="input">
+                                        <input placeholder="Adresse E-mail" class="input-show" formControlName='email'/>
+                                        <label *ngIf="user.controls.email.hasError('required') && this.user.controls.email.touched" style="
 
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
 
-                                    ">Obligatoire</label>
-                                <label 
-                                    *ngIf="user.controls.email.hasError('email') && this.user.controls.email.touched" style="
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
-                                    ">Adresse invalide</label>
-                                </div>
+                                        ">Obligatoire</label>
+                                    <label 
+                                        *ngIf="user.controls.email.hasError('email') && this.user.controls.email.touched" style="
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
+                                        ">Adresse invalide</label>
+                                    </div>
 
-                                <label>Téléphone *</label>
-                                <div  class= "input">
-                                    <input  type="text" placeholder="Numéro de téléphone" class="input-show"formControlName='phone' (input)="validPhone($event.target.value)"/>
-                                    <label *ngIf="user.controls.phone.hasError('required') && this.user.controls.phone.touched" style="
+                                    <label>Téléphone *</label>
+                                    <div  class= "input">
+                                        <input  type="text" placeholder="Numéro de téléphone" class="input-show"formControlName='phone' (input)="validPhone($event.target.value)"/>
+                                        <label *ngIf="user.controls.phone.hasError('required') && this.user.controls.phone.touched" style="
 
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
 
-                                    ">Obligatoire</label>
-                                    <label *ngIf="testLengthPhone" style="
+                                        ">Obligatoire</label>
+                                        <label *ngIf="testLengthPhone" style="
 
-                                    color: red;
-                                    position: absolute;
-                                    margin-top: -34%;
-                                    right: 0;
+                                        color: red;
+                                        position: absolute;
+                                        margin-top: -34%;
+                                        right: 0;
 
-                                    ">numéro invalide</label>                            
-                                </div>
-                                <label>nombres de chambres</label>
-                                <div class="input">
-                                    <select class="input-show select" >
-                                        <option [value]="item" *ngFor="let item of  tabPresonnes " (change)="selectTarif($event)" >{{item}}</option>
-                                    </select>
-                                </div>
-                                <button class="button"  (click)="confirmReservation()">Confirmer</button>
+                                        ">numéro invalide</label>                            
+                                    </div>
+                                    <label>nombres de chambres</label>
+                                    <div class="input">
+                                        <select class="input-show select" >
+                                            <option [value]="item" *ngFor="let item of  tabPresonnes " (change)="selectTarif($event)" >{{item}}</option>
+                                        </select>
+                                    </div>
+                                    <button class="button"  (click)="confirmReservation()">Confirmer</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+            </div>
+    </div>
 </div>
-
 <div class="our-services">
     <div class="content">
         <div class="desc-services">
