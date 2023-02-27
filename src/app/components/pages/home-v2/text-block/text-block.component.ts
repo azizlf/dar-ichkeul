@@ -334,24 +334,42 @@ export class TextBlockComponent implements OnInit {
   }
 
 
+  containerTestSlider:any
+
   ngOnInit(): void {
 
-    this.testimonials.map((item)=>{
 
-      this.createSlideAvis(item)
-
-    })
 
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
 
     if(this.phoneScreen.matches){
-      
-      this.screen = "mobile"
+
+      this.containerTestSlider = document.getElementById('containerTestSlider')
+
+      this.containerTestSlider.style.display = "none"
+
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
+
+      this.containerTestSlider.style.display = "flex"
 
       this.initTestimonialsSliderMobile()
 
     }else{
+
+      this.containerTestSlider = document.getElementById('containerTestSlider')
+
+      this.containerTestSlider.style.display = "flex"
+
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
+
+      this.containerTestSlider.style.display = "none"
+
+      this.testimonials.map((item)=>{
+
+        this.createSlideAvis(item)
+
+      })
 
       this.initTestimonialsSlider()
 
