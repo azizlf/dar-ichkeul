@@ -395,9 +395,9 @@
 
 .services-flex-list .content .services-list .item-serv .description{
 
-    width: 90%;
-    height: 50%;
-    padding: 0 5% 5% 5%;
+    width: 97%;
+    height: auto;
+    padding: 0 5%;
     color: gray;
 
 }
@@ -849,12 +849,12 @@
 
     .services-flex-list .content .services-list .item-serv .title{
 
-        font-size: 19px;
+        font-size: 24px;
         width: 100%;
         float: left;
         overflow: hidden;
         padding-left: 5%;
-        margin-top: -13%;
+        margin-top: 0;
         color: #232323;
         line-height: 37px;
         justify-content: left;

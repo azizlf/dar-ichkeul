@@ -143,7 +143,7 @@
 <!---  testimoials sectio  --->
 
 
-<div class="testimonial-section" style="background-image: url('/assets/img/photos_new_content/les_salons/IMG_6891.jpg') ;">
+<div class="testimonial-section" *ngIf="screen === 'computer'" style="background-image: url('/assets/img/photos_new_content/les_salons/IMG_6891.jpg') ;">
     <div class="container-ctn">
         <div class="content">
             <p class="title">Témoignage</p>
@@ -156,3 +156,113 @@
         </div>
     </div>
 </div>
+
+
+<div class="container-testimonials" *ngIf="screen === 'mobile'">
+        <div class="content">
+            <div class="header">
+                <div class="title">TÉMOIGNAGE</div>
+                <div class="subject">Ce que nos clients disent de nous</div>
+                <div class="hr"></div>
+            </div>
+            <div class="slider testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide av-slide">
+                        <div class="description">
+                            Nous avons passé le week-end dernier un séjour en famille dans cette merveilleuse maison d hotes. L'accueil et le service sont à la hauteur de ce site exceptionnel.
+                        </div>
+                        <div class="info-user">
+                            <img src="assets/img/testimonial/01.png" />
+                            <div class="details">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="name">Mohamed Amous</div>
+                                <div class="profession">Founder, qux co.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide av-slide">
+                        <div class="description">
+                            Une belle surprise sur la région de Bizerte pour moi j'adore l'endroit reste à voir sur place 😍.
+                        </div>
+                        <div class="info-user">
+                            <img src="assets/img/testimonial/02.png" />
+                            <div class="details">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="name">Sarra Mihoub</div>
+                                <div class="profession">Founder, hilix</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide av-slide">
+                        <div class="description">
+                            un endroit féérique et un service hors norme, top.
+                        </div>
+                        <div class="info-user">
+                            <img src="assets/img/testimonial/03.png" />
+                            <div class="details">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="name">Ahlem Amara</div>
+                                <div class="profession">Founder, Condo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide av-slide">
+                        <div class="description">
+                            On a fait l'expérience et c'était Magnifique vraiment exceptionnel.
+                        </div>
+                        <div class="info-user">
+                            <img src="assets/img/testimonial/04.png" />
+                            <div class="details">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="name">Khédija Siala Bouassida</div>
+                                <div class="profession">Founder, hilix</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination-testimonials"></div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

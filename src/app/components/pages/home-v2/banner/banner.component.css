@@ -694,9 +694,10 @@
 
     .cover-section .content-cover-section p{
 
-        font-size: 37px;
+        font-size: 30px;
         width: 82%;
-        line-height: auto;
+        letter-spacing: 5px;
+        line-height: 1.35em;
 
     }
 

@@ -372,6 +372,33 @@ body {
 }
 
 
+.container-testimonials .content .testimonials-slider .pagination-testimonials{
+
+    bottom: 17%;
+    width: 100%;
+
+}
+
+
+.container-testimonials .content .testimonials-slider .pagination-testimonials .swiper-pagination-bullet{
+
+    border: 1px solid #848484;
+    background-color: transparent;
+    transform: scale(1.1);
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+
+}
+
+.container-testimonials .content .testimonials-slider .pagination-testimonials .swiper-pagination-bullet-active{
+
+    border-color: #aa8453;
+    background-color: #aa8453;
+
+
+}
+
 /*
 .mat-form-field-appearance-fill .mat-form-field-flex {
     border-radius: 4px 4px 0 0;

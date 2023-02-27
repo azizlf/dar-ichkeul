@@ -225,14 +225,14 @@
     .custom-footer .content-section .section-item.about{
 
         width: 96%;
-        height: 23%;
+        height: 29%;
 
     }
 
     .custom-footer .content-section .section-item{
 
         width: 97%;
-        height: 41%;
+        height: 40%;
         margin: 0 2%;
         overflow: hidden;
 
@@ -254,41 +254,47 @@
 
     .custom-footer .content-section .section-item .title{
 
-        font-size: 31px;
+        font-size: 24px;
 
     }
 
     .custom-footer .content-section .section-item .about-description{
 
-        font-size: 14px;
-        line-height: 15px;
-        padding: 1% 4%;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 2% 4%;
 
     }
 
     .custom-footer .content-section .section-item .pager-list .item-list span{
 
-        font-size: 17px;
+        font-size: 15px;
 
     }
 
     .custom-footer .content-section .section-item .contact-details .contact-adress{
 
-        font-size: 16px;
-        padding: 0 7%;
+        font-size: 14px;
+        padding: 0 6%;
 
     }
 
     .custom-footer .content-section .section-item .contact-details .contact-phone{
 
-        font-size: 27px;
+        font-size: 20px;
         padding: 5% 3%;
+
+    }
+
+    .custom-footer .content-section .section-item .contact-details .contact-phone img{
+
+        width: 8%;
 
     }
 
     .custom-footer .content-section .section-item .contact-details .contact-email{
 
-        font-size: 20px;
+        font-size: 15px;
 
     }
 

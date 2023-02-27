@@ -107,6 +107,8 @@ export class TextBlockComponent implements OnInit {
 
   ]
 
+  screen = "computer"
+
 
   initRoomsList(){
 
@@ -133,6 +135,19 @@ export class TextBlockComponent implements OnInit {
       spaceBetween: 0,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+      }
+    })
+  }
+
+  initTestimonialsSliderMobile(){
+    new Swiper(".testimonilas-slider", {
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.pagination-testimonials',
         clickable: true,
       }
     })
@@ -327,42 +342,18 @@ export class TextBlockComponent implements OnInit {
 
     })
 
-    this.containerTestimonialsSlider = document.getElementById("containerSwiperTestimonials")
-
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
-    const pagination_container = document.createElement("div")
-
-    pagination_container.setAttribute("class","swiper-pagination")
-
-    pagination_container.setAttribute("style",`
-
-      width: 79%;
-      height: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      position: absolute;
-      bottom: 17%;
-      transform: scale(1.5);
-
-    `)
 
     if(this.phoneScreen.matches){
+      
+      this.screen = "mobile"
 
+      this.initTestimonialsSliderMobile()
 
-      pagination_container.setAttribute("style",`
+    }else{
 
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: -4%;
-
-      `)
-
+      this.initTestimonialsSlider()
 
     }
 
@@ -370,7 +361,7 @@ export class TextBlockComponent implements OnInit {
 
     this.initRoomsList()
 
-    this.initTestimonialsSlider()
+    
 
   }
 //Routing
