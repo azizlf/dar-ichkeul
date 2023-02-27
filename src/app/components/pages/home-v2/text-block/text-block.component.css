@@ -262,6 +262,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 
 }
 
@@ -269,6 +270,7 @@
 
     width: 85%;
     height: 100%;
+    color: white;
 
 }
 
@@ -339,7 +341,7 @@
     top: 0;
     left: 0;
     transition: .6s;
-
+    color: white;
 }
 
 .rooms-suites .rooms-list .content .flex-item .content button{

@@ -640,12 +640,26 @@ export class RestaurantComponent implements OnInit {
 
   }
 
+
   initTestimonialsSlider(){
     new Swiper(".testimonilas-slider", {
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-testimonials-pc',
+        clickable: true,
+      }
+    })
+  }
+
+  initTestimonialsSliderMobile(){
+    new Swiper(".testimonials-slider", {
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.pagination-testimonials',
         clickable: true,
       }
     })
@@ -681,56 +695,44 @@ export class RestaurantComponent implements OnInit {
 
     })
 
-    this.testimonials.map((item)=>{
-
-      this.createSlideAvis(item)
-
-    })
-
-    this.containerTestimonialsSlider = document.getElementById("containerSwiperTestimonials")
-
+    
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
 
-    const pagination_container = document.createElement("div")
-
-    pagination_container.setAttribute("class","swiper-pagination")
-
-    pagination_container.setAttribute("style",`
-
-      width: 79%;
-      height: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      position: absolute;
-      bottom: 17%;
-      transform: scale(1.5);
-
-    `)
 
     if(this.phoneScreen.matches){
 
+      this.containerTestSlider = document.getElementById('containerTestSlider')
 
-      pagination_container.setAttribute("style",`
+      this.containerTestSlider.style.display = "none"
 
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: -4%;
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
 
-      `)
+      this.containerTestSlider.style.display = "flex"
 
+      this.initTestimonialsSliderMobile()
+
+    }else{
+
+      this.containerTestSlider = document.getElementById('containerTestSlider')
+
+      this.containerTestSlider.style.display = "flex"
+
+      this.containerTestSlider = document.getElementById('containerTestSliderMobile')
+
+      this.containerTestSlider.style.display = "none"
+
+      this.testimonials.map((item)=>{
+
+        this.createSlideAvis(item)
+
+      })
+
+      this.initTestimonialsSlider()
 
     }
 
-    this.containerTestimonialsSlider.appendChild(pagination_container)
-
     this.initSliderMenuRestau()
     this.initRestausSlider()
-    this.initTestimonialsSlider()
 
   }
 

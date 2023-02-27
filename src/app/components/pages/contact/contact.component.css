@@ -476,6 +476,20 @@
 
 @media (max-width:700px){
 
+    .slider-cover-restau .arrow-btn-bottom{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 15px;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 43%;
+    }
+
     .message-box-reserv{
         position: fixed;
         top: 18%;

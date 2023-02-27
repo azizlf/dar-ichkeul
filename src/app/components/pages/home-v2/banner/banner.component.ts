@@ -174,7 +174,7 @@ export class BannerComponent implements OnInit {
       
     },
     {
-      img: "assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.JPG",
+      img: "assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar ichkeul le luxe et la nature en harmonie",
       
