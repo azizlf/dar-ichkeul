@@ -31,6 +31,7 @@
 
 }
 
+
 .slider-cover-restau .container-slider-restau{
 
     width: 100%;
@@ -394,7 +395,7 @@
     font-size: 4vw;
     padding-left: 5%;
     width: 91%;
-    text-align: right;
+    text-align: left;
     color: #aa8453;
     margin-top: 5%;
 
@@ -424,7 +425,6 @@
     color: gray;
 
 }
-
 
 
 
@@ -701,7 +701,7 @@
 
 @media (max-width:700px){
 
-    .slider-cover-room-details .arrow-btn-bottom{
+    .slider-cover-restau .arrow-btn-bottom{
         width: 50px;
         height: 50px;
         line-height: 50px;
@@ -714,6 +714,7 @@
         justify-content: center;
         left: 43%;
     }
+
 
     .text-block-section{
 
@@ -803,7 +804,7 @@
 
     }
 
-        .testimonial-section{
+    .testimonial-section{
 
         width: 100%;
         height: 41%;
@@ -852,6 +853,7 @@
         font-size: 21px;
 
     }
+
 
 
     .services-flex-list{
