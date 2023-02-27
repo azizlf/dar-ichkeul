@@ -32,9 +32,12 @@
                             <i [class]="am.icon"></i>
                             <span> {{am.title}} </span>
                         </div>
+                        <div class="amenitie-item">
+                            <button class="mobile-resrev-btn" (click)="toBottom(roomDetailsSectionIN)">RÉSERVER</button>
+                        </div>
                     </div>
 
-                    <button (click)="toContactForm(formReservSection)">RÉSERVER</button>
+                    <button class="pc-resrev-btn" (click)="toContactForm(formReservSection)">RÉSERVER</button>
 
                 </div>
 

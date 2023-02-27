@@ -235,6 +235,21 @@
 
 }
 
+.room-details-infos .content .left-section .amenities-section .amenitie-item .mobile-resrev-btn{
+
+    padding: 4% 12%;
+    border: none;
+    background-color: #ab8a62;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    display: none;
+
+}
+
+
 .room-details-infos .content .left-section .amenities-section .amenitie-item i{
 
     margin-right: 5%;
@@ -637,6 +652,17 @@
 
 @media (max-width:700px){
 
+    .room-details-infos .content .left-section .amenities-section .amenitie-item .mobile-resrev-btn{
+
+        display: block;
+
+    }
+
+    .room-details-infos .content .left-section button{
+
+        display: none;
+
+    }
     .our-services{
 
         height: 76%;
