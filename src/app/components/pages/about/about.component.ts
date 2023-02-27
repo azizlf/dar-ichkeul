@@ -372,6 +372,8 @@ export class AboutComponent implements OnInit {
 
   }
 
+  containerTestSlider:any
+
   ngOnInit(): void {
 
     this.phoneScreen = window.matchMedia('(max-width: 700px)')
