@@ -353,6 +353,12 @@ export class AboutComponent implements OnInit {
     })
   }
 
+  toBottom(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
+
   ngOnInit(): void {
 
     this.testimonials.map((item)=>{

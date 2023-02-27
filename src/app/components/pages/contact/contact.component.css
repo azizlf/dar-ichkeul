@@ -7,6 +7,29 @@
 
 }
 
+.slider-cover-restau .arrow-btn-bottom{
+
+    position: absolute;
+    bottom: 6%;
+    left: 51%;
+    color: white;
+    background: #ffffff00;
+    z-index: 15;
+    border: .1vw solid #ffffff8f;
+    border-radius: 100%;
+    padding: 1.2% 1.3%;
+    font-size: 1.3vw;
+    transition: .4s;
+    cursor: pointer;
+
+}
+
+.slider-cover-restau .arrow-btn-bottom:hover{
+
+    border-color: #aa8453;
+
+}
+
 .slider-cover-restau .container-slider-restau{
 
     width: 100%;
@@ -299,7 +322,7 @@
 .reserv-form-contact-page{
 
     width: 100%;
-    height: 80%;
+    padding: 9% 0;
     background-image: url("/assets/img/photos_new_content/les_slides/IMG-0307.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -353,13 +376,24 @@
 
 .reserv-form-contact-page .form button{
 
-    padding: 4% 3%;
+    padding: 6% 3%;
     background-color: #ab8a62;
     color: white;
     border: none;
     font-size: 1.4vw;
     cursor: pointer;
     transition: .4s;
+
+}
+
+.reserv-form-contact-page .form.suiv-form .select-form-reserv{
+    padding: 0;
+}
+
+.reserv-form-contact-page .form.suiv-form .select-form-reserv select{
+
+    background-color: white;
+    font-size: 17px;
 
 }
 
@@ -401,6 +435,7 @@
     right: 6%;
     font-size: 1vw;
     color: red;
+    display: none;
 
 }
 

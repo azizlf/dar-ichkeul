@@ -377,6 +377,19 @@ settings = {
    
   }
 
+
+  toBottom(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
+
+  toContactForm(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
+
   containerSliderRoomDetails:any
 
   ngOnInit(): void {
@@ -393,8 +406,8 @@ settings = {
 
            
       }
-      console.log(this.titleRoom)
-      console.log(resp)
+      //console.log(this.titleRoom)
+      //console.log(resp)
     })
     
     var images:any

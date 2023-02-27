@@ -6,8 +6,9 @@
         <div class="btn-slider-restau slide-restau-left"><i class="fa-solid fa-angle-left"></i></div>
         <div class="btn-slider-restau slide-restau-right"><i class="fa-solid fa-angle-right"></i></div>
     </div>
+    <div class="arrow-btn-bottom" (click)="toBottom(contactSectionTEXT)"><i class="fa-solid fa-arrow-down"></i></div>
 </div>
-<div class="contact-content">
+<div class="contact-content" #contactSectionTEXT>
 		
 		<div class="infos">
 			<div class="title-site">DAR ICHKEUL</div>
@@ -98,6 +99,24 @@
     	<label class="alert">Obligatoire</label>
         <div class="input">
         	<input type="text" placeholder="Numéro de Téléphone">
+        </div>
+        <label>Adults</label>
+        <div class="input select-form-reserv">
+            <select>
+                <option value="Adults">Adults</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <label>Enfants</label>
+        <div class="input select-form-reserv">
+            <select>
+                <option value="Enfants">Enfants</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
         </div>
         <button (click)="confirmReservation()">CONFIRMER</button>
     </div>

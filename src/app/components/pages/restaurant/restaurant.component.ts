@@ -651,6 +651,13 @@ export class RestaurantComponent implements OnInit {
     })
   }
 
+
+  toBottom(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
+
   containerTestimonialsSlider:any
   phoneScreen:any
   ngOnInit(): void {

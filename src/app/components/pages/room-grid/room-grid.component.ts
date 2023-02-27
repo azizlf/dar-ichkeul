@@ -100,6 +100,13 @@ export class RoomGridComponent implements OnInit {
     })
   }
 
+  
+  toBottom(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
+
   ngOnInit(): void {
 
     this.cover_restau_page_images.map((img:any)=>{

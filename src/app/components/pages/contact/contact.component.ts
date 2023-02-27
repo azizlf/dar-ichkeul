@@ -90,6 +90,11 @@ export class ContactComponent implements OnInit {
     })
   }
 
+  toBottom(section:any){
+
+    section.scrollIntoView({ behavior: "smooth"});
+
+  }
 
   ngOnInit(): void {
 
