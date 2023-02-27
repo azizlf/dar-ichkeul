@@ -30,7 +30,7 @@ export class AboutComponent implements OnInit {
     },
     {
       title:"PISCINE",
-      image:"assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jfif",
+      image:"assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jpg",
       description:"",
       period:"daily",
       start_at:"07",

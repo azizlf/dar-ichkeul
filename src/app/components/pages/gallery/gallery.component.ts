@@ -27,7 +27,7 @@ export class GalleryComponent implements OnInit {
     },
     {
         "id": 4,
-        "img": "assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jfif"
+        "img": "assets/img/photos_new_content/les_slides/2d396e4f-86c9-4161-8d10-b06dded9ce67.jpg"
     },
     {
         "id": 3,
