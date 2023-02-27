@@ -369,7 +369,7 @@
 .services-flex-list .content .services-list .item-serv i{
 
     font-size: 4vw;
-    padding: 0;
+    padding-left: 5%;
     width: 91%;
     text-align: right;
     color: #aa8453;
@@ -387,7 +387,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     padding-left: 5%;
-    margin-top: -14%;
+    margin-top: 0;
     color: #232323;
     line-height: 3vw;
 

@@ -134,14 +134,14 @@ export class TextBlockComponent implements OnInit {
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination-testimonials-pc',
         clickable: true,
       }
     })
   }
 
   initTestimonialsSliderMobile(){
-    new Swiper(".testimonilas-slider", {
+    new Swiper(".testimonials-slider", {
       grabCursor: true,
       centeredSlides: true,
       loop: true,
