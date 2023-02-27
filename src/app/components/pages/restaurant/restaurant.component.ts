@@ -672,6 +672,7 @@ export class RestaurantComponent implements OnInit {
 
   }
 
+  containerTestimonialsSlider:any
   containerTestSlider:any
   phoneScreen:any
   ngOnInit(): void {
