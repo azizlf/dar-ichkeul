@@ -357,8 +357,6 @@ export class TextBlockComponent implements OnInit {
 
     }
 
-    this.containerTestimonialsSlider.appendChild(pagination_container)
-
     this.initRoomsList()
 
     
