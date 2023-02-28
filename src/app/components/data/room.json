@@ -10,10 +10,6 @@
         "gridimage": "https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-corniche-min.jpg",
         "listimage": "https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-corniche-min.jpg",
         "sliderimage": ["https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-corniche-min.jpg","https://www.marhba.com/images/alternatif/alternatif2020/maisonsdhotesdeluxetunisie.jpg"],
-        
-        //"gridimage": "assets/img/photos_new_content/bonneli/bonneli.jpg",
-        //"listimage": "assets/img/photos_new_content/bonneli/bonneli.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/bonneli/bonneli.jpg","assets/img/photos_new_content/bonneli/bonneli_2.jpg","assets/img/photos_new_content/bonneli/bonneli_5.jpg","assets/img/photos_new_content/bonneli/bonneli_6.jpg"],
         "text": "Suite Vue sur le Jardin",
         "longdesc": "<p>Isolez-vous en toute tranquillité dans cet espace lumineux où seul le chant des oiseaux vient interrompre le silence</p>",
         "authors": [
@@ -99,10 +95,6 @@
         "gridimage": "https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-ennassim-min.jpg",
         "listimage": "https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-ennassim-min.jpg",
         "sliderimage": ["https://voyage-et-vie.com/wp-content/uploads/2019/08/chambre-dar-ennassim-min.jpg","https://q-xx.bstatic.com/xdata/images/hotel/400x320/119644647.jpg?k=3f8afdbca5e0a2b62d4467a260e5ce7c85b41028e55f2e1657b8296684f5746c&o="],
-
-        //"gridimage": "assets/img/photos_new_content/cigogne/IMG_6918.jpg",
-        //"listimage": "assets/img/photos_new_content/cigogne/IMG_6918.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/cigogne/IMG_6918.jpg","assets/img/photos_new_content/cigogne/IMG_6919.jpg","assets/img/photos_new_content/cigogne/IMG_6921.jpg","assets/img/photos_new_content/cigogne/IMG_6923.jpg","assets/img/photos_new_content/cigogne/IMG_6925.jpg","assets/img/photos_new_content/cigogne/IMG_6926.jpg"],
         "text": "Suite Standard Vue sur la Ferme",
         "longdesc": "<p>Réveillez-vous au son du silence et en admirant des levers de soleil spectaculaires</p>",
         "authors": [
@@ -187,10 +179,6 @@
         "gridimage": "https://fwk.resabo.com/cr.fwk/images/hotels/Hotel-8313-20220120-110551.jpg",
         "listimage": "https://fwk.resabo.com/cr.fwk/images/hotels/Hotel-8313-20220120-110551.jpg",
         "sliderimage": ["https://fwk.resabo.com/cr.fwk/images/hotels/Hotel-8313-20220120-110551.jpg"],
-
-        //"gridimage": "assets/img/photos_new_content/amorpha/amorpha_1.jpg",
-        //"listimage": "assets/img/photos_new_content/amorpha/amorpha_1.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/amorpha/amorpha_1.jpg","assets/img/photos_new_content/amorpha/amorpha_2.jpg","assets/img/photos_new_content/amorpha/amorpha_3.jpg","assets/img/photos_new_content/amorpha/amorpha_6.jpg"],
         "text": "Suite avec Jacuzzi",
         "longdesc": "<p>Avec sa Jacuzzi, profitez du calme en vous offrant tout le confort dont vous avez besoin</p>",
         "authors": [
@@ -275,11 +263,6 @@
         "gridimage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/119644647.jpg?k=25cec2a5d8448f18fe8501cc3d029818f2529e680af328f5c42bf0dadda57a49&o=",
         "listimage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/119644647.jpg?k=25cec2a5d8448f18fe8501cc3d029818f2529e680af328f5c42bf0dadda57a49&o=",
         "sliderimage": ["https://q-xx.bstatic.com/xdata/images/hotel/max500/119644647.jpg?k=25cec2a5d8448f18fe8501cc3d029818f2529e680af328f5c42bf0dadda57a49&o="],
-
-        
-        //"gridimage": "assets/img/photos_new_content/ruppia/ruppia_2.jpg",
-        //"listimage": "assets/img/photos_new_content/ruppia/ruppia_2.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/ruppia/ruppia_2.jpg"],
         "text": "Suite avec Jacuzzi Vue sur la Piscine",
         "longdesc": "<p>Une suite dotée d'un Jacuzzi offrant une vue imprenable sur la piscine qui sera vous séduire par le style raffiné et luxueux</p>",
         "authors": [
@@ -366,11 +349,6 @@
         "gridimage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/119643292.jpg?k=60d6c681aa994fe9fd74fee1c7c05e15c0dd201154f19a878b82c1488724f97b&o=",
         "listimage": "https://q-xx.bstatic.com/xdata/images/hotel/max500/119643292.jpg?k=60d6c681aa994fe9fd74fee1c7c05e15c0dd201154f19a878b82c1488724f97b&o=",
         "sliderimage": ["https://q-xx.bstatic.com/xdata/images/hotel/max500/119643292.jpg?k=60d6c681aa994fe9fd74fee1c7c05e15c0dd201154f19a878b82c1488724f97b&o="],
-
-
-        //"gridimage": "assets/img/photos_new_content/Ciconia/C85A6393.jpg",
-        //"listimage": "assets/img/photos_new_content/Ciconia/C85A6393.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/Ciconia/C85A6393.jpg"],
         "text": "Suite Standard avec Terrasse",
         "longdesc": "<p>Avec sa terrasse privée, le regard s’attarde sur chaque détail à l'extrême raffinement</p>",
         "authors": [
@@ -456,10 +434,6 @@
         "gridimage": "https://cf.bstatic.com/xdata/images/hotel/max500/332875189.jpg?k=02c5b4ce08a28dd20aab5ab929154a8f98ce5919d7c19fc00baaf80afdbb3b2e&o=",
         "listimage": "https://cf.bstatic.com/xdata/images/hotel/max500/332875189.jpg?k=02c5b4ce08a28dd20aab5ab929154a8f98ce5919d7c19fc00baaf80afdbb3b2e&o=",
         "sliderimage": ["https://cf.bstatic.com/xdata/images/hotel/max500/332875189.jpg?k=02c5b4ce08a28dd20aab5ab929154a8f98ce5919d7c19fc00baaf80afdbb3b2e&o="],
-
-        //"gridimage": "assets/img/photos_new_content/colony/colony_3.jpg",
-        //"listimage": "assets/img/photos_new_content/colony/colony_3.jpg",
-        //"sliderimage": ["assets/img/photos_new_content/colony/colony_3.jpg","assets/img/photos_new_content/colony/colony_4.jpg","assets/img/photos_new_content/colony/IMG-0710.jpg"],
         "text": "Suite De Luxe avec Vue panoramique",
         "longdesc": "<p>Une suite moderne et luxueuse baignée de lumière naturelle, offrant un intérieur chaleureux et apaisant avec un fabuleux paysage, vous permet de contempler la beauté de la ville, de jour comme de nuit</p>",
         "authors": [
