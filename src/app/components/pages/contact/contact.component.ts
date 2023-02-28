@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
   cover_restau_page_images = [
     {
         "id": 1,
-        "img": "assets/img/photos_new_content/les_salons/IMG_6905.jpg"
+        "img": "/assets/img/photos_new_content/les_slides/IMG-0307.jpg"
        
     },
     {
