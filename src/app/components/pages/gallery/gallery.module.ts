@@ -16,8 +16,5 @@ import { ContentComponent } from './content/content.component';
     SharedModule,
     NgbModule
   ],
-  exports:[
-    ContentComponent
-  ]
 })
 export class GalleryModule { }
