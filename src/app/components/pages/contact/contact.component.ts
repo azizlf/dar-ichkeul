@@ -19,7 +19,7 @@ export class ContactComponent implements OnInit {
     },
     {
         "id": 2,
-        "img": "assets/img/photos_new_content/les_salons/169123192_740311870016706_1645887951205821900_n.jpg"
+        "img": "/assets/img/photos_new_content/les_slides/IMG-0307.jpg"
     }
   ]
 

@@ -404,9 +404,9 @@
 .services-flex-list .content .services-list .item-serv i{
 
     font-size: 4vw;
-    padding: 0;
+    padding-left: 5%;
     width: 91%;
-    text-align: right;
+    text-align: left;
     color: #aa8453;
     margin-top: 5%;
 
@@ -422,7 +422,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     padding-left: 5%;
-    margin-top: -14%;
+    margin-top: 0;
     color: #232323;
     line-height: 3vw;
 
@@ -430,12 +430,12 @@
 
 .services-flex-list .content .services-list .item-serv .description{
 
-    width: 90%;
-    height: 50%;
-    padding: 0 5% 5% 5%;
+    width: 97%;
+    height: auto;
+    padding: 0 5%;
     color: gray;
 
-}
+} 
 
 
 .reserv-form-contact-page{
@@ -783,12 +783,12 @@
 
     .services-flex-list .content .services-list .item-serv .title{
 
-        font-size: 19px;
+        font-size: 24px;
         width: 100%;
         float: left;
         overflow: hidden;
         padding-left: 5%;
-        margin-top: -13%;
+        margin-top: 0;
         color: #232323;
         line-height: 37px;
         justify-content: left;
