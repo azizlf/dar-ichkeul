@@ -35,10 +35,10 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/slick-carousel/slick/slick.scss",
               "./node_modules/slick-carousel/slick/slick-theme.scss",
-              /*"src/assets/css/font-awesome.min.css",
+              "src/assets/css/font-awesome.min.css",
               "src/assets/css/flaticon.css",
               "src/assets/css/default.css",
-              "src/assets/css/style.css",*/
+              "src/assets/css/style.css",
               "./node_modules/aos/dist/aos.css",
               "./node_modules/swiper/swiper-bundle.css",
               "src/styles.css"
