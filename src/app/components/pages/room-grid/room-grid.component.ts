@@ -25,12 +25,13 @@ export class RoomGridComponent implements OnInit {
   cover_restau_page_images = [
     {
       "id": 1,
-      "img": "assets/img/photos_new_content/les_salons/IMG_6891.jpg"
-       
+      //"img": "assets/img/photos_new_content/les_salons/IMG_6891.jpg"
+      img:"/assets/img/photos_new_content/les_slides/IMG-0307.jpg"
     },
     {
       "id": 2,
-      "img": "assets/img/photos_new_content/les_salons/169046606_740309813350245_1233950860878165254_n.jpg"
+      //"img": "assets/img/photos_new_content/les_salons/169046606_740309813350245_1233950860878165254_n.jpg"
+      img:"/assets/img/photos_new_content/les_slides/IMG-0307.jpg"
     }
   ]
 

@@ -156,25 +156,22 @@ export class BannerComponent implements OnInit {
 
 
   bannerPosts = [
-    {
-      img: "assets/img/photos_new_content/les_slides/02d26d31-7ec1-437f-8404-116d23297f80.jpg",
+    { 
+      img:"https://fwk.resabo.com/cr.fwk/images/hotels/Hotel-8121-20220218-121531.jpg",
+      //img: "assets/img/photos_new_content/les_slides/02d26d31-7ec1-437f-8404-116d23297f80.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar ichkeul le luxe et la nature en harmonie",
     },
     {
-      img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
-      tag: 'The ultimate luxury experience',
-      title: "Dar ichkeul le luxe et la nature en harmonie",
-      
-    },
-    {
-      img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
+      img:"https://fwk.resabo.com/cr.fwk/images/hotels/Hotel-8179-20220219-095340.jpg",
+      //img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar ichkeul le luxe et la nature en harmonie",
       
     },
     {
-      img: "assets/img/photos_new_content/les_slides/B0F1A858-DD8D-468A-89C0-1C9C0494E37A.jpg",
+      img:"http://tunisie.co/uploads/images/content/hotehiver-111116-3.jpg",
+      //img: "assets/img/photos_new_content/les_slides/178483159_751807848867108_6722969823734392856_n.jpg",
       tag: 'The ultimate luxury experience',
       title: "Dar ichkeul le luxe et la nature en harmonie",
       
